@@ -1,0 +1,76 @@
+.panel {
+  position: absolute;
+  top: 0;
+  left: -420px;
+  width: 360px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  transition: 0.3s left;
+}
+
+.panel.open {
+  left: 0px;
+}
+
+.panel-control {
+  text-align: right;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  background-color: antiquewhite;
+}
+
+.character-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.2rem;
+  align-items: center;
+}
+
+.character-card {
+  text-align: center;
+}
+
+.character-card label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-size: .7rem;
+}
+
+.character-card img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  overflow: hidden;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.character-card :checked + label:before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: var(--color-darkerblue);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+
+@media screen and (min-width: 800px) {
+  .character-card :checked + label:before {
+      right: 20px;
+  }
+}
+
+.character-card :checked + label img {
+  border: 2px solid var(--color-white);
+}
