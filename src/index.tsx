@@ -11,17 +11,20 @@ import Home from './views/Home';
 import Map from './views/Map';
 import reportWebVitals from './reportWebVitals';
 import { AvailableSeries } from './models';
+import { DATA } from './data';
 
+const routes = Object.keys(DATA)
+    .map((key: string) => ({
+      path: `/${ DATA[key as AvailableSeries].stub }`,
+      element: <Map name={key as AvailableSeries} />
+    }))
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />
   },
-  {
-    path: '/stormlight',
-    element: <Map name={AvailableSeries.stormlight} />
-  },
+  ...routes
 ]);
 
 const root = ReactDOM.createRoot(

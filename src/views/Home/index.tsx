@@ -1,11 +1,8 @@
 import React from 'react';
 import SeriesCard from '../../components/SeriesCard';
-import { seriesData as StormlightSeries } from '../../data/stormlight';
+import { DATA} from '../../data';
+import { AvailableSeries } from '../../models';
 import './Home.css';
-
-const AVAILABLE_SERIES = [
-  StormlightSeries
-];
 
 const Home = () => {
   return (
@@ -16,7 +13,10 @@ const Home = () => {
       </header>
       <div className='series-list'>
         {
-          AVAILABLE_SERIES.map(series => (<SeriesCard key={series.title} series={series} />))
+          Object.keys(DATA)
+            .map((key: string) => (
+              <SeriesCard key={(DATA[key as AvailableSeries]).title} series={DATA[key as AvailableSeries]} />
+            ))
         }
       </div>
     </div>

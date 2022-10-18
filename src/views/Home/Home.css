@@ -14,4 +14,9 @@ header {
   width: auto;
   margin: 0 auto;
   overflow-x: scroll;
+  display: flex;
+}
+
+.series-list .series-tile {
+  margin: 0 10px;
 }

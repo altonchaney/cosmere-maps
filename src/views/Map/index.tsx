@@ -8,7 +8,6 @@ import map from '../../assets/stormlight.webp';
 import { AvailableSeries } from '../../models';
 import './Map.css';
 import MapPanel from '../../components/MapPanel';
-import { characters } from '../../data/stormlight';
 import MapTimeline from '../../components/MapTimeline';
 import MapMarker from '../../components/MapMarker';
 
@@ -25,7 +24,7 @@ const Coordinates = () => {
 const Map = (props: {name: AvailableSeries}) => {
   const { name } = props;
   const data = useMemo(() => DATA[name], [name]);
-  const [visibleCharacters, setVisibleCharacters] = useState<string[]>(characters.map(c => c.name));
+  const [visibleCharacters, setVisibleCharacters] = useState<string[]>(data.characters.map(c => c.name));
   const [visibleBooks, setVisibleBooks] = useState<number[]>([0]);
   const [visibleRange, setVisibleRange] = useState<number[]>([0, 0]);
 
@@ -141,7 +140,7 @@ const Map = (props: {name: AvailableSeries}) => {
       </MapContainer>
       <MapPanel
         title={data.title}
-        characters={characters}
+        characters={data.characters}
         books={data.books}
         selectCharacter={toggleVisibleCharacters}
         selectBook={toggleVisibleBooks}

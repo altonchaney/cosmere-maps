@@ -1,6 +1,7 @@
 // DATA TYPES
 export enum AvailableSeries {
-  stormlight = 'stormlight'
+  stormlight = 'stormlight',
+  mistborn = 'mistborn'
 };
 
 export type Series = {
@@ -10,6 +11,7 @@ export type Series = {
   color: string;
   backgroundColor: string;
   books: Book[];
+  characters: Character[];
 };
 
 export type Book = {

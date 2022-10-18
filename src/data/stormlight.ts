@@ -230,7 +230,8 @@ export const seriesData: Series = {
   image: 'https://coppermind.net/w/images/TWoK_US_Cover_art.jpg',
   color: 'rgb(194,94,73)',
   backgroundColor: 'rgb(1,15,42)',
-  books: books
+  books: books,
+  characters: characters
 };
 
 export const STORMLIGHT_DATA: DataBundle = {
