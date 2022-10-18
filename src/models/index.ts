@@ -38,7 +38,7 @@ export type Marker = {
   coordinates: L.LatLngTuple;
   type: 'region' | 'city' | 'town' | 'event' | 'battle' | 'point of interest';
   image?: string;
-  chapters: Chapter[];
+  appearances: { [x: number]: Chapter[] };
   description?: string;
   coppermindLink?: string;
   confirmed: boolean;

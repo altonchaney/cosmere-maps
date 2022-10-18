@@ -5,14 +5,22 @@
   width: 100%;
   bottom: 20px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .MapTimeline > * {
-  width: 640px;
-  max-width: 640px;
-  padding: 0 30px 60px;
+  width: 100%;
+  margin: 0 20px;
+  overflow: hidden;
 }
 
 .MapTimeline p {
-  margin-bottom: 8px;
+  margin: -6px 0 6px;
+}
+
+.MapTimeline .scroll-container {
+  width: calc(100% + 40px);
+  overflow-x: scroll;
+  padding: 0 30px 40px;
+  margin: 0 -20px -20px;
 }

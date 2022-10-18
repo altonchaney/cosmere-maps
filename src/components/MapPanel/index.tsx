@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { GiExitDoor } from 'react-icons/gi';
 
 import { Book, Character } from '../../models';
 import ListItem from '../ListItem';
 import Title from '../Title';
 import './MapPanel.css';
+import colors from '../../assets/colors';
 
 const MapPanel = (
   props: {
     title: string,
     characters: Character[],
     books: Book[],
-    selectedCharacters: string[], selectedBooks: string[],
+    selectedCharacters: string[], selectedBooks: number[],
     selectCharacter: (name: string) => void,
-    selectBook: (name: string) => void
+    selectBook: (index: number) => void
   }
 ) => {
   const {
@@ -25,6 +27,7 @@ const MapPanel = (
 
   return (
     <div className={`MapPanel content-container ${ open ? 'open' : '' }`}>
+      <Link className='exit' to={'/'}><GiExitDoor size={15} color={colors.primary.whiteTransparent}/></Link>
       <Link to={'/'}><h1 className='alt'>Cosmere Maps</h1></Link>
       <Title title={title} subtitle='Series'/>
       <Title subtitle='Characters'/>
@@ -45,19 +48,19 @@ const MapPanel = (
       <Title subtitle='Books'/>
       <div className='list-container'>
         {
-          books.map(book => (
+          books.map((book, index) => (
             <ListItem
               key={`book-item-${book.title}`}
-              selected={selectedBooks.includes(book.title)}
+              selected={selectedBooks.includes(index)}
               title={book.title}
               image={book.image}
-              callback={() => selectBook(book.title)}
+              callback={() => selectBook(index)}
             />
           ))
         }
       </div>
       <div className='panel-control' onClick={() => setOpen(!open)}>
-        <p className='alt'>{ open ? 'Close' : 'Open' }</p>
+        <p className='alt'>{ open ? 'Close' : 'Menu' }</p>
       </div>
     </div>
   );

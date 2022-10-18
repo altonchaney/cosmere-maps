@@ -13,6 +13,16 @@
   left: 0px;
 }
 
+.exit {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+.MapPanel h1 {
+  margin: 10px 0 -8px;
+}
+
 .panel-control {
   cursor: pointer;
   border-radius: 8px;

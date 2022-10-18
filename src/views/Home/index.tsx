@@ -16,7 +16,7 @@ const Home = () => {
       </header>
       <div className='series-list'>
         {
-          AVAILABLE_SERIES.map(series => (<SeriesCard series={series} />))
+          AVAILABLE_SERIES.map(series => (<SeriesCard key={series.title} series={series} />))
         }
       </div>
     </div>
