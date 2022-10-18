@@ -19,9 +19,6 @@ const Home = () => {
           AVAILABLE_SERIES.map(series => (<SeriesCard series={series} />))
         }
       </div>
-      <footer>
-        <p className='alt'>Made by Alton Chaney. View source on Github.</p>
-      </footer>
     </div>
   );
 }

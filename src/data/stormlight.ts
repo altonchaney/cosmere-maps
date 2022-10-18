@@ -102,7 +102,45 @@ export const STORMLIGHT_DATA: DataBundle = {
       ],
       description: `A border skirmish between Amaram's princedom and one of its neighboring princedoms. Kaladin participated in this particular battle.`,
       confirmed: false
-    }
+    },
+    {
+      title: 'Kharbranth',
+      coordinates: [235.5, 1006.5],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/Kharbranth.jpg',
+      chapters: [
+        theWayOfKingsChapterList[4],
+        theWayOfKingsChapterList[6],
+        theWayOfKingsChapterList[8],
+        theWayOfKingsChapterList[9],
+      ],
+      description: `Kharbranth, the City of Bells, is an independent city-state on Roshar, ruled by Queen Savrahalidem. It is one of the five Vorin nations and home to the Palanaeum, the largest library on Roshar. Kharbranth is known for the quality of its hospitals, and people come from all over the world to study medicine from Kharbranth's surgeons.`,
+      confirmed: true
+    },
+    {
+      title: 'Shattered Plains',
+      coordinates: [259.5, 1429],
+      type: 'point of interest',
+      image: 'https://coppermind.net/w/images/Shattered_Plains_by_Noah_Bradley.jpg',
+      chapters: [
+        theWayOfKingsChapterList[7],
+        theWayOfKingsChapterList[10],
+        theWayOfKingsChapterList[12]
+      ],
+      description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan.[1][2] They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
+      confirmed: true
+    },
+    {
+      title: 'Hearthstone',
+      coordinates: [628.5, 1351.5],
+      type: 'town',
+      image: 'https://coppermind.net/w/images/Watcher_at_the_Rim_by_Marie_Seeberger.jpg',
+      chapters: [
+        theWayOfKingsChapterList[11]
+      ],
+      description: `Hearthstone is a large but remote town near the eastern border of the Sadeas princedom in Alethkar. The town serves as a focal point for the various farming communities in the region.`,
+      confirmed: true
+    },
   ],
   paths: [
     {
@@ -117,6 +155,42 @@ export const STORMLIGHT_DATA: DataBundle = {
         [398, 1337.5],
         [361, 1345]
       ]
-    }
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[0],
+      chapter: theWayOfKingsChapterList[4],
+      confirmed: true,
+      coordinates: [
+        [208.5, 911],
+        [226.5, 952],
+        [247.5, 977.5],
+        [235.5, 1006.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[0],
+      chapter: theWayOfKingsChapterList[5],
+      confirmed: true,
+      coordinates: [
+        [361, 1345],
+        [330, 1351.5],
+        [295.5, 1360],
+        [271.5, 1372],
+        [260, 1383.5],
+        [255, 1392.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[0],
+      chapter: theWayOfKingsChapterList[7],
+      confirmed: true,
+      coordinates: [
+        [255, 1392.5],
+        [254.5, 1407.5]
+      ]
+    },
   ]
 };

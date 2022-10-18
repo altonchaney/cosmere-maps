@@ -55,7 +55,13 @@ const Map = (props: {name: AvailableSeries}) => {
   };
 
   const renderMarkers = useCallback(() => {
+    var visibleRangeArray = [];
+    for (let i = visibleRange[0]; i <= visibleRange[1]; i++) { visibleRangeArray.push(i); }
+    const visibleChapters = visibleRangeArray.map((i) => (data.books[0].chapters[i].chapter));
     return data.markers
+      .filter(marker => (
+        marker.chapters.some(value => visibleChapters.includes(value.chapter))
+      ))
       .map(marker => (
         <Marker
           key={marker.title}
@@ -65,7 +71,7 @@ const Map = (props: {name: AvailableSeries}) => {
                 <MapMarker marker={marker} />
               ),
               iconSize: [22, 22],
-              iconAnchor: [11, 11],
+              iconAnchor: [11, 20],
             })
           }
           position={marker.coordinates}
@@ -80,7 +86,7 @@ const Map = (props: {name: AvailableSeries}) => {
           </Tooltip>
         </Marker>
       ))
-  }, []);
+  }, [visibleRange]);
 
   const renderPaths = useCallback(() => {
     return data.paths
