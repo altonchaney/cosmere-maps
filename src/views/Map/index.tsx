@@ -1,21 +1,27 @@
-import React, { useMemo, useState } from 'react';
-import { MapContainer, ImageOverlay, Marker, Polyline, useMapEvents, useMap, Rectangle } from 'react-leaflet';
-import L, { Icon } from 'leaflet';
+import React, { useCallback, useMemo, useState } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { MapContainer, ImageOverlay, Marker, Polyline, useMapEvents, ZoomControl, LayerGroup, FeatureGroup, Tooltip } from 'react-leaflet';
+import L, { DivIcon } from 'leaflet';
+// import {
+//   GiBookPile, //books
+//   GiExitDoor, //exit
+// } from 'react-icons/gi';
 
 import { DATA } from '../../data';
 import map from '../../assets/stormlight.webp';
-import { AvailableSeries, Chapter } from '../../models';
+import { AvailableSeries } from '../../models';
 import './Map.css';
 import MapPanel from '../../components/MapPanel';
 import { characters, books } from '../../data/stormlight';
-import MapTimeline, { ChapterRange } from '../../components/MapTimeline';
+import MapTimeline from '../../components/MapTimeline';
+import MapMarker from '../../components/MapMarker';
 
 
 const Coordinates = () => {
   const [position, setPosition] = useState<L.LatLng>();
   const map = useMapEvents({
     click(e) {
-      console.log(e.latlng)
+      console.log([e.latlng.lat, e.latlng.lng])
     }
   });
   return position ? (
@@ -30,7 +36,7 @@ const Map = (props: {name: AvailableSeries}) => {
   const data = useMemo(() => DATA[name], [name]);
   const [visibleCharacters, setVisibleCharacters] = useState<string[]>([]);
   const [visibleBooks, setVisibleBooks] = useState<string[]>([books[0].title]);
-  const [visibleRange, setVisibleRange] = useState<ChapterRange>({ start: data.books[0].chapters[0], end: data.books[0].chapters[0] });
+  const [visibleRange, setVisibleRange] = useState<number[]>([0, 0]);
 
   const toggleVisibleCharacters = (name: string) => {
     if (visibleCharacters.includes(name)) {
@@ -48,6 +54,57 @@ const Map = (props: {name: AvailableSeries}) => {
     }
   };
 
+  const renderMarkers = useCallback(() => {
+    return data.markers
+      .map(marker => (
+        <Marker
+          key={marker.title}
+          icon={
+            new DivIcon({
+              html: renderToStaticMarkup(
+                <MapMarker marker={marker} />
+              ),
+              iconSize: [22, 22],
+              iconAnchor: [11, 11],
+            })
+          }
+          position={marker.coordinates}
+        >
+          <Tooltip>
+            <div className='tooltip'>
+              {marker.image && <img src={marker.image} />}
+              <p className='alt'>{ marker.type }</p>
+              <h2>{ marker.title }</h2>
+              {marker.description && <p>{ marker.description }</p>}
+            </div>
+          </Tooltip>
+        </Marker>
+      ))
+  }, []);
+
+  const renderPaths = useCallback(() => {
+    return data.paths
+      .filter(path => (
+        visibleCharacters.includes(path.character.name) &&
+        data.books[0].chapters[visibleRange[0]].chapter <= path.chapter.chapter &&
+        data.books[0].chapters[visibleRange[1]].chapter >= path.chapter.chapter
+        // visibleBooks.includes
+      ))
+      .map(path => (
+        <Polyline
+          stroke
+          key={path.coordinates.join(',')}
+          positions={path.coordinates}
+          pathOptions={{
+            color: path.character.color, 
+            weight: 4,
+            dashArray: path.confirmed ? [0] : [10, 10, 1, 10],
+            opacity: path.confirmed ? 1 : 0.7
+          }}
+        />
+      ))
+  }, [visibleCharacters, visibleRange, visibleBooks]);
+
   return (
     <div className='map'>
       <MapContainer
@@ -58,53 +115,31 @@ const Map = (props: {name: AvailableSeries}) => {
         zoom={0}
         minZoom={-1} maxZoom={1}
         attributionControl={false}
+        zoomControl={false}
       >
+        <ZoomControl position='topright' />
         <ImageOverlay
           url={map}
           zIndex={-1}
           bounds={[[0,0], [1000,1720]]}
           className='map'
         />
-        {
-          data.markers
-            .map(marker => (
-              <Marker icon={new Icon({ iconUrl: marker.image, iconSize: [24, 24] })} position={marker.coordinates} />
-            ))
-        }
-        {
-          data.paths
-            .filter(path => (
-              visibleCharacters.includes(path.character.name) &&
-              visibleRange.start.chapter <= path.chapter.chapter &&
-              visibleRange.end.chapter >= path.chapter.chapter
-              // visibleBooks.includes
-            ))
-            .map(path => (
-              <Polyline
-                stroke
-                key={path.coordinates.join(',')}
-                positions={path.coordinates}
-                pathOptions={{
-                  color: path.character.color, 
-                  weight: 4,
-                  dashArray: path.confirmed ? [0] : [10, 10, 1, 10],
-                  opacity: path.confirmed ? 1 : 0.7
-                }}
-              />
-            ))
-        }
+        { renderMarkers() }
+        { renderPaths() }
         <Coordinates />
         
       </MapContainer>
       <MapPanel
         title={data.title}
         characters={characters}
-        selectCharacter={toggleVisibleCharacters}
         books={books}
+        selectCharacter={toggleVisibleCharacters}
         selectBook={toggleVisibleBooks}
+        selectedCharacters={visibleCharacters}
+        selectedBooks={visibleBooks}
       />
       <MapTimeline
-        chapters={data.books[0].chapters}
+        book={data.books[0]}
         callback={(range) => setVisibleRange(range)}
       />
     </div>

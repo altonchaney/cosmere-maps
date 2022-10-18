@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import SeriesCard from '../../components/SeriesCard';
 import { seriesData as StormlightSeries } from '../../data/stormlight';
 import './Home.css';
 
@@ -11,15 +11,17 @@ const Home = () => {
   return (
     <div className='Home'>
       <header>
-        
+        <h1>Cosmere Maps</h1>
+        <p>Follow along the character journeys in your favorite Cosmere series and see exactly where they were at specific parts of these stories. You can select character and books individually and are able to specify which chapters you’d like to see visible. For the best experience, use a tablet or desktop.</p>
       </header>
-      <div className=''>
+      <div className='series-list'>
         {
-          AVAILABLE_SERIES.map(series => (
-            <Link to={series.stub}>{ series.title }</Link>
-          ))
+          AVAILABLE_SERIES.map(series => (<SeriesCard series={series} />))
         }
       </div>
+      <footer>
+        <p className='alt'>Made by Alton Chaney. View source on Github.</p>
+      </footer>
     </div>
   );
 }

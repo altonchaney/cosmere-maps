@@ -6,10 +6,66 @@
   right: 0;
 }
 
-.map-image {
+.leaflet-map-pane, .leaflet-overlay-pane, .leaflet-paths-pane, .leaflet-tooltip-pane, .map-image {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+}
+
+.leaflet-map-pane, .leaflet-control-container {
+  z-index: 0;
+}
+
+.leaflet-control-container {
+  position: relative;
+  z-index: 1;
+}
+
+.leaflet-control-zoom {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: var(--black);
+  border-radius: 8px;
+}
+
+.leaflet-control-zoom > a:first-child {
+  border-bottom: 1px solid var(--whiteTransparent);
+}
+
+.leaflet-control-zoom > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 34px;
+}
+
+.tooltip {
+  position: absolute;
+  margin: 10px -120px;
+  width: 240px;
+  border-radius: 8px;
+  background-color: var(--black);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.tooltip img {
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tooltip p {
+  margin: 2px;
+  line-height: 18px;
+}
+
+.tooltip h2 {
+  margin-bottom: 6px;
+}
+
+.tooltip p.alt {
+  text-transform: capitalize;
 }

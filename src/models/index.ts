@@ -28,7 +28,7 @@ export type Character = {
   name: string;
   image: string;
   color: string;
-  coppermindLink: string;
+  coppermindLink?: string;
 };
 
 // MAP TYPES
@@ -37,10 +37,10 @@ export type Marker = {
   title: string;
   coordinates: L.LatLngTuple;
   type: 'region' | 'city' | 'town' | 'event' | 'battle' | 'point of interest';
-  image: string;
+  image?: string;
   chapters: Chapter[];
-  description: string;
-  coppermindLink: string;
+  description?: string;
+  coppermindLink?: string;
   confirmed: boolean;
 };
 
