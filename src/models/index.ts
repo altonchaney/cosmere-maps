@@ -1,3 +1,5 @@
+import { LatLngTuple } from "leaflet";
+
 // DATA TYPES
 export enum AvailableSeries {
   stormlight = 'stormlight',
@@ -35,6 +37,11 @@ export type Character = {
 
 // MAP TYPES
 
+export type Map = {
+  image: any;
+  dimensions: LatLngTuple
+};
+
 export type Marker = {
   title: string;
   coordinates: L.LatLngTuple;
@@ -55,6 +62,7 @@ export type Path = {
 };
 
 export type DataBundle = Series & {
+  map: Map,
   markers: Marker[],
   paths: Path[]
 }

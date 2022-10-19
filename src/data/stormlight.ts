@@ -1,4 +1,10 @@
-import { Book, Chapter, Character, DataBundle, Series } from "../models";
+import { Book, Chapter, Character, DataBundle, Map, Series } from "../models";
+import map from '../assets/stormlight.webp';
+
+const mapData: Map = {
+  image: map,
+  dimensions: [1000,1720]
+};
 
 enum CharacterIndex {
   'Kaladin' = 0,
@@ -236,6 +242,7 @@ export const seriesData: Series = {
 
 export const STORMLIGHT_DATA: DataBundle = {
   ...seriesData,
+  map: mapData,
   markers: [
     {
       title: 'Kholinar',

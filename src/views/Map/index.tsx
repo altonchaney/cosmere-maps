@@ -4,7 +4,6 @@ import { MapContainer, ImageOverlay, Marker, Polyline, useMapEvents, ZoomControl
 import L, { DivIcon } from 'leaflet';
 
 import { DATA } from '../../data';
-import map from '../../assets/stormlight.webp';
 import { AvailableSeries } from '../../models';
 import './Map.css';
 import MapPanel from '../../components/MapPanel';
@@ -120,8 +119,8 @@ const Map = (props: {name: AvailableSeries}) => {
       <MapContainer
         crs={L.CRS.Simple}
         style={{width: '100vw', height: '100%', overflow: 'hidden', backgroundColor: data.backgroundColor, zIndex: 0}}
-        maxBounds={[[0,0], [1000,1720]]}
-        center={[500,860]}
+        maxBounds={[[0,0], data.map.dimensions]}
+        center={[data.map.dimensions[0] / 2,data.map.dimensions[1] / 2]}
         zoom={0}
         minZoom={-1} maxZoom={1}
         attributionControl={false}
@@ -129,9 +128,9 @@ const Map = (props: {name: AvailableSeries}) => {
       >
         <ZoomControl position='topright' />
         <ImageOverlay
-          url={map}
+          url={data.map.image}
           zIndex={-1}
-          bounds={[[0,0], [1000,1720]]}
+          bounds={[[0,0], data.map.dimensions]}
           className='map'
         />
         { visibleBooks.map(i => renderMarkers(i)) }
