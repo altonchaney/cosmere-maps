@@ -1,5 +1,5 @@
 import { Book, Chapter, Character, DataBundle, Map, Series } from "../models";
-import map from '../assets/mistborn1.jpg';
+import map from '../assets/mistborn1.webp';
 
 const mapData: Map = {
   image: map,
