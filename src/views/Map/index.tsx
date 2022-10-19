@@ -66,7 +66,7 @@ const Map = (props: {name: AvailableSeries}) => {
                 <MapMarker marker={marker} />
               ),
               iconSize: [22, 22],
-              iconAnchor: [11, 16],
+              iconAnchor: [11, 11],
             })
           }
           opacity={latestVisibleBook === bookIndex ? 1 : 0.7}
@@ -91,7 +91,8 @@ const Map = (props: {name: AvailableSeries}) => {
         visibleCharacters.includes(path.character.name) &&
         (
           (
-            latestVisibleBook !== bookIndex
+            latestVisibleBook > bookIndex &&
+            data.books[latestVisibleBook].title !== path.book.title
           ) || (
             data.books[bookIndex].title === path.book.title &&
             data.books[bookIndex].chapters[visibleRange[0]].chapter <= path.chapter.chapter &&
@@ -99,10 +100,10 @@ const Map = (props: {name: AvailableSeries}) => {
           )
         )
       ))
-      .map(path => (
+      .map((path, i) => (
         <Polyline
           stroke
-          key={path.coordinates.join(',')}
+          key={path.character.name + '-' + path.coordinates.join(',') + '-' + i}
           positions={path.coordinates}
           pathOptions={{
             color: path.character.color, 

@@ -6,40 +6,6 @@ const mapData: Map = {
   dimensions: [1000,1720]
 };
 
-enum CharacterIndex {
-  'Kaladin' = 0,
-  'Shallan' = 1,
-  'Dalinar' = 2,
-  'Szeth' = 3
-}
-
-export const characters: Character[] =[
-  {
-    name: 'Kaladin',
-    image: 'https://coppermind.net/w/images/Kaladin_and_Syl.jpg',
-    color: 'rgb(44,66,128)',
-    coppermindLink: 'Kaladin'
-  },
-  {
-    name: 'Shallan',
-    image: 'https://coppermind.net/w/images/Shallan_in_the_Palanaeum.jpg',
-    color: 'rgb(150,36,42)',
-    coppermindLink: 'Shallan'
-  },
-  {
-    name: 'Dalinar',
-    image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
-    color: 'rgb(44,66,128)',
-    coppermindLink: 'Dalinar_Kholin'
-  },
-  {
-    name: 'Szeth',
-    image: 'https://coppermind.net/w/images/Szeth.jpg',
-    color: 'rgb(230,230,230)',
-    coppermindLink: 'Szeth'
-  },
-];
-
 const theWayOfKingsChapterList: Chapter[] = [
   { altName: 'Prelude', chapter: 0, part: 0 },
   { altName: 'Prologue', chapter: 0.1, part: 0 },
@@ -217,6 +183,49 @@ const wordsOfRadianceChapterList: Chapter[] = [
   { chapter: 75, part: 5 },
 ];
 
+export const characters: Character[] =[
+  {
+    name: 'Kaladin',
+    image: 'https://coppermind.net/w/images/Kaladin_and_Syl.jpg',
+    color: 'rgb(44,66,128)',
+    coppermindLink: 'Kaladin'
+  },
+  {
+    name: 'Shallan',
+    image: 'https://coppermind.net/w/images/Shallan_in_the_Palanaeum.jpg',
+    color: 'rgb(150,36,42)',
+    coppermindLink: 'Shallan'
+  },
+  {
+    name: 'Dalinar',
+    image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
+    color: 'rgb(44,66,128)',
+    coppermindLink: 'Dalinar_Kholin',
+    firstAppearance: { 1: theWayOfKingsChapterList[13] }
+  },
+  {
+    name: 'Adolin',
+    image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
+    color: 'rgb(44,66,128)',
+    coppermindLink: 'Adolin_Kholin',
+    firstAppearance: { 1: theWayOfKingsChapterList[13] }
+  },
+  {
+    name: 'Szeth',
+    image: 'https://coppermind.net/w/images/Szeth.jpg',
+    color: 'rgb(230,230,230)',
+    coppermindLink: 'Szeth'
+  },
+];
+
+enum CharacterIndex {
+  'Kaladin' = 0,
+  'Shallan' = 1,
+  'Dalinar' = 2,
+  'Adolin' = 3,
+  'Szeth' = 4
+};
+
 export const books: Book[] = [
   {
     title: 'The Way of Kings',
@@ -292,13 +301,9 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'point of interest',
       image: 'https://coppermind.net/w/images/Shattered_Plains_by_Noah_Bradley.jpg',
       appearances: {
-        1: [
-          theWayOfKingsChapterList[7],
-          theWayOfKingsChapterList[10],
-          theWayOfKingsChapterList[12]
-        ]
+        1: [7, 10, 12, 16, 17, 18, 19].map(i => theWayOfKingsChapterList[i])
       },
-      description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan.[1][2] They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
+      description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
       confirmed: true
     },
     {
@@ -327,6 +332,44 @@ export const STORMLIGHT_DATA: DataBundle = {
       description: `Fu Abra is a Purelaker village on Roshar. It is located somewhere on the Purelake and is the only village miles. A rare fish, known as a kolgril, can be found near the village.`,
       confirmed: false
     },
+    {
+      title: 'Davar Estate',
+      coordinates: [553, 1099],
+      type: 'town',
+      image: 'https://coppermind.net/w/images/thumb/Davar_family_by_zoethatcher_art.jpg/600px-Davar_family_by_zoethatcher_art.jpg',
+      appearances: {
+        1: [
+          theWayOfKingsChapterList[14]
+        ]
+      },
+      description: `The ancestral home of House Davar, and is known for mining.`,
+      confirmed: false
+    },
+    {
+      title: 'Ironsway',
+      coordinates: [433.5, 1032.5],
+      type: 'town',
+      appearances: {
+        1: [
+          theWayOfKingsChapterList[15]
+        ]
+      },
+      description: `Ironsway features a town square, several hundred homes, and three taverns, making it one of the largest settlements in Bavland.`,
+      confirmed: false
+    },
+    // {
+    //   title: 'Bornwater',
+    //   coordinates: [437.5, 1000],
+    //   type: 'town',
+    //   appearances: {
+    //     1: [
+    //       theWayOfKingsChapterList[15]
+    //     ]
+    //   },
+    //   description: `It is the largest town in its immediate area, although it could still be considered a "backwater". Outside of the city, there are plains where wild horses run free.`,
+    //   confirmed: false
+    // },
+
     
   ],
   paths: [
@@ -377,6 +420,26 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [
         [255, 1392.5],
         [254.5, 1407.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[0],
+      chapter: theWayOfKingsChapterList[15],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [543, 1318],
+        [568, 1277],
+        [586, 1240],
+        [610, 1202],
+        [611, 1176],
+        [569, 1107],
+        [529, 1086],
+        [501, 1068],
+        [471, 1052],
+        [455, 1047],
+        [433.5, 1032.5]
       ]
     },
   ]

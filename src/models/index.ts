@@ -33,6 +33,7 @@ export type Character = {
   image: string;
   color: string;
   coppermindLink?: string;
+  firstAppearance?: { [x: number]: Chapter }
 };
 
 // MAP TYPES

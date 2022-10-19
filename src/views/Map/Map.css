@@ -6,11 +6,16 @@
   right: 0;
 }
 
-.leaflet-map-pane, .leaflet-overlay-pane, .leaflet-paths-pane, .leaflet-tooltip-pane, .map-image {
+.leaflet-map-pane, .leaflet-overlay-pane,
+.leaflet-paths-pane, .leaflet-tooltip-pane,
+.leaflet-marker-pane,
+.leaflet-marker-icon, .map-image {
   position: absolute;
 }
 
-.leaflet-map-pane, .leaflet-control-container {
+.leaflet-tooltip-pane { z-index: 2; }
+
+.leaflet-map-pane, .leaflet-control-container, .leaflet-marker-pane {
   z-index: 0;
 }
 
@@ -41,7 +46,7 @@
 
 .tooltip {
   position: absolute;
-  margin: 10px -120px;
+  margin: 20px -120px;
   width: 240px;
   border-radius: 8px;
   background-color: var(--black);
