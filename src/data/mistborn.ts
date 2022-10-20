@@ -151,10 +151,10 @@ export const characters: Character[] =[
   },
   {
     name: 'TenSoon',
-    image: 'https://coppermind.net/w/images/thumb/Marsh_by_eyeronis.png/400px-Marsh_by_eyeronis.png',
-    color: 'rgb(58,68,75)',
+    image: 'https://coppermind.net/w/images/thumb/Tensoon_portrait_paint.png/1024px-Tensoon_portrait_paint.png',
+    color: 'rgb(198,99,36)',
     coppermindLink: 'TenSoon',
-    firstAppearance: { 3: theFinalEmpireChapterList[20] }
+    firstAppearance: { 2: wellOfAscensionChapterList[46] }
   },
 ];
 
@@ -240,37 +240,6 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       confirmed: true
     },
     {
-      title: 'Siege of Luthadel',
-      coordinates: [534, 790],
-      type: 'event',
-      appearances: {
-        2: [
-          0, 2, 4, 5, 7, 9, 10, 12,
-          13, 15, 16, 17, 19, 20,
-          21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-          31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
-          41, 42, 43, 44, 45, 46, 47, 48, 49
-        ].map(i => (wellOfAscensionChapterList[i]))
-      },
-      description: `The armies of Straff Venture, Ashweather Cett, and the Koloss army of Jastes Lekal besieged Luthadel, King Elend Venture's throne.`,
-      coppermindLink: 'Siege_of_Luthadel',
-      confirmed: true
-    },
-    {
-      title: 'Battle of Luthadel',
-      coordinates: [534, 790],
-      type: 'battle',
-      image: 'https://coppermind.net/w/images/Sazed_vs._Koloss_by_Lara_Sarmiento.jpg',
-      appearances: {
-        2: [
-          50, 51, 52, 53, 54
-        ].map(i => (wellOfAscensionChapterList[i]))
-      },
-      description: `The Battle of Luthadel is a major event in the history of Scadrial. It is a battle following the Siege of Luthadel.`,
-      coppermindLink: 'Battle_of_Luthadel',
-      confirmed: true
-    },
-    {
       title: 'Fellise',
       coordinates: [533.5, 759.5],
       type: 'town',
@@ -309,6 +278,37 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       },
       description: `The Pits of Hathsin are a system of caves near Luthadel on Scadrial at the time of the Final Empire in which atium geodes grow.`,
       coppermindLink: 'Pits_of_Hathsin',
+      confirmed: true
+    },
+    {
+      title: 'Siege of Luthadel',
+      coordinates: [534, 790],
+      type: 'event',
+      appearances: {
+        2: [
+          0, 2, 4, 5, 7, 9, 10, 12,
+          13, 15, 16, 17, 19, 20,
+          21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+          31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+          41, 42, 43, 44, 45, 46, 47, 48, 49
+        ].map(i => (wellOfAscensionChapterList[i]))
+      },
+      description: `The armies of Straff Venture, Ashweather Cett, and the Koloss army of Jastes Lekal besieged Luthadel, King Elend Venture's throne.`,
+      coppermindLink: 'Siege_of_Luthadel',
+      confirmed: true
+    },
+    {
+      title: 'Battle of Luthadel',
+      coordinates: [534, 790],
+      type: 'battle',
+      image: 'https://coppermind.net/w/images/Sazed_vs._Koloss_by_Lara_Sarmiento.jpg',
+      appearances: {
+        2: [
+          50, 51, 52, 53, 54
+        ].map(i => (wellOfAscensionChapterList[i]))
+      },
+      description: `The Battle of Luthadel is a major event in the history of Scadrial. It is a battle following the Siege of Luthadel.`,
+      coppermindLink: 'Battle_of_Luthadel',
       confirmed: true
     },
     {
@@ -701,6 +701,302 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         [437.5, 840.5],
         [423.5, 861],
         [413, 890.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[6],
+      confirmed: false,
+      coordinates: [
+        [532, 780.5],
+        [507, 810],
+        [485.5, 827],
+        [461.5, 830.5],
+        [437.5, 840.5],
+        [423.5, 861],
+        [413, 890.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [413, 890.5],
+        [404, 907.5],
+        [393, 920.5],
+        [378, 927.5],
+        [355.5, 934],
+        [338.5, 943],
+        [327, 952]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [413, 890.5],
+        [404, 907.5],
+        [393, 920.5],
+        [378, 927.5],
+        [355.5, 934],
+        [338.5, 943],
+        [327, 952]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[11],
+      confirmed: true,
+      coordinates: [
+        [327, 952],
+        [311, 969.5],
+        [301, 988],
+        [292.5, 1014.5],
+        [288, 1033.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[11],
+      confirmed: true,
+      coordinates: [
+        [327, 952],
+        [311, 969.5],
+        [301, 988],
+        [292.5, 1014.5],
+        [288, 1033.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[14],
+      confirmed: true,
+      coordinates: [
+        [288, 1033.5],
+        [322.5, 998.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[18],
+      confirmed: true,
+      coordinates: [
+        [322.5, 998.5],
+        [423.5, 887],
+        [472.5, 835.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [472.5, 835.5],
+        [532, 780.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[25],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [534, 790]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[25],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [534, 790]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[26],
+      confirmed: true,
+      coordinates: [
+        [534, 790],
+        [532, 780.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[26],
+      confirmed: true,
+      coordinates: [
+        [534, 790],
+        [532, 780.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[48],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [560.5, 770.5],
+        [578, 760.5],
+        [591.5, 739],
+        [601, 728.5],
+        [617, 727],
+        [630.5, 734.5],
+        [649.5, 738],
+        [672.5, 747]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[48],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [560.5, 770.5],
+        [578, 760.5],
+        [591.5, 739],
+        [601, 728.5],
+        [617, 727],
+        [630.5, 734.5],
+        [649.5, 738],
+        [672.5, 747]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Spook],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[48],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [560.5, 770.5],
+        [578, 760.5],
+        [591.5, 739],
+        [601, 728.5],
+        [617, 727],
+        [630.5, 734.5],
+        [649.5, 738],
+        [672.5, 747]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[51],
+      confirmed: true,
+      coordinates: [
+        [672.5, 747],
+        [649.5, 738],
+        [630.5, 734.5],
+        [617, 727],
+        [601, 728.5],
+        [591.5, 739],
+        [578, 760.5],
+        [560.5, 770.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[52],
+      confirmed: true,
+      coordinates: [
+        [560.5, 770.5],
+        [532, 780.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[55],
+      confirmed: true,
+      coordinates: [
+        [672.5, 747],
+        [649.5, 738],
+        [630.5, 734.5],
+        [617, 727],
+        [601, 728.5],
+        [591.5, 739],
+        [578, 760.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Spook],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[55],
+      confirmed: true,
+      coordinates: [
+        [672.5, 747],
+        [649.5, 738],
+        [630.5, 734.5],
+        [617, 727],
+        [601, 728.5],
+        [591.5, 739],
+        [578, 760.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[56],
+      confirmed: true,
+      coordinates: [
+        [578, 760.5],
+        [560.5, 770.5],
+        [532, 780.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Spook],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[56],
+      confirmed: true,
+      coordinates: [
+        [578, 760.5],
+        [560.5, 770.5],
+        [532, 780.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[1],
+      chapter: wellOfAscensionChapterList[59],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [507, 810],
+        [485.5, 827],
+        [461.5, 830.5],
+        [437.5, 840.5],
+        [423.5, 861],
+        [413, 890.5],
+        [404, 907.5],
+        [393, 920.5],
+        [378, 927.5],
+        [355.5, 934],
+        [338.5, 943],
+        [327, 952],
+        [311, 969.5],
+        [301, 988],
+        [292.5, 1014.5],
+        [288, 1033.5]
       ]
     },
   ]

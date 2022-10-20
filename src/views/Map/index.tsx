@@ -47,10 +47,13 @@ const Map = (props: {name: AvailableSeries}) => {
     const latestVisibleBook = Math.max(...visibleBooks);
     var visibleRangeArray = [];
     for (let i = visibleRange[0]; i <= visibleRange[1]; i++) { visibleRangeArray.push(i); }
-    const visibleChapters = visibleRangeArray.map((i) => (data.books[0].chapters[i].chapter));
+    const visibleChapters = visibleRangeArray.map((i) => (data.books[latestVisibleBook].chapters[i].chapter));
     return data.markers
       .filter(marker => (
-        latestVisibleBook !== bookIndex ||
+        (
+          latestVisibleBook > bookIndex &&
+          marker.appearances[bookIndex + 1]
+        ) ||
         (
           marker.appearances[bookIndex + 1] &&
           marker.appearances[bookIndex + 1]
@@ -146,6 +149,7 @@ const Map = (props: {name: AvailableSeries}) => {
         selectBook={toggleVisibleBooks}
         selectedCharacters={visibleCharacters}
         selectedBooks={visibleBooks}
+        visibleRange={visibleRange}
       />
       {
         visibleBooks.length &&

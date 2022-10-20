@@ -5,8 +5,8 @@
   transition: 0.3s left;
   margin: 20px;
   max-width: 280px;
-  /* overflow-y: scroll;
-  overflow-x: visible; */
+  max-height: calc(100vh - 180px);
+  overflow-y: scroll;
 }
 
 .MapPanel.open {
@@ -29,11 +29,16 @@
   width: 64px;
   height: 40px;
   position: absolute;
-  right: -36px;
-  top: 30px;
+  left: -30px;
+  top: 50px;
   background-color: var(--black);
   transform: rotate(-90deg);
   z-index: 1;
+  transition: 0.3s left;
+}
+
+.panel-control.open {
+  left: 270px;
 }
 
 .panel-control p {
