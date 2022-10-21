@@ -9,7 +9,7 @@ const mapData: Map = {
 const theWayOfKingsChapterList: Chapter[] = [
   { altName: 'Prelude', chapter: 0, part: 0 },
   { altName: 'Prologue', chapter: 0.1, part: 0 },
-  { chapter: 1, part: 1 },
+  { chapter: 1, part: 1 }, // 2
   { chapter: 2, part: 1 },
   { chapter: 3, part: 1 },
   { chapter: 4, part: 1 },
@@ -23,7 +23,7 @@ const theWayOfKingsChapterList: Chapter[] = [
   { altName: 'Interlude 1', chapter: 11.1, part: 1 },
   { altName: 'Interlude 2', chapter: 11.2, part: 1 },
   { altName: 'Interlude 3', chapter: 11.3, part: 1 },
-  { chapter: 12, part: 2 },
+  { chapter: 12, part: 2 }, // 16 (+4)
   { chapter: 13, part: 2 },
   { chapter: 14, part: 2 },
   { chapter: 15, part: 2 },
@@ -201,14 +201,14 @@ export const characters: Character[] =[
     image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
     color: 'rgb(44,66,128)',
     coppermindLink: 'Dalinar_Kholin',
-    firstAppearance: { 1: theWayOfKingsChapterList[13] }
+    firstAppearance: { 1: theWayOfKingsChapterList[16] }
   },
   {
     name: 'Adolin',
     image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
     color: 'rgb(44,66,128)',
     coppermindLink: 'Adolin_Kholin',
-    firstAppearance: { 1: theWayOfKingsChapterList[13] }
+    firstAppearance: { 1: theWayOfKingsChapterList[16] }
   },
   {
     name: 'Szeth',
@@ -301,7 +301,11 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'point of interest',
       image: 'https://coppermind.net/w/images/Shattered_Plains_by_Noah_Bradley.jpg',
       appearances: {
-        1: [7, 10, 12, 16, 17, 18, 19].map(i => theWayOfKingsChapterList[i])
+        1: [
+          7, 10, 12, 16, 17, 18, 19,
+          21, 22, 23, 25, 26, 27, 28, 30,
+          31, 32
+        ].map(i => theWayOfKingsChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
       confirmed: true
@@ -313,8 +317,8 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/Watcher_at_the_Rim_by_Marie_Seeberger.jpg',
       appearances: {
         1: [
-          theWayOfKingsChapterList[11]
-        ]
+          11, 20, 24, 29
+        ].map(i => theWayOfKingsChapterList[i])
       },
       description: `Hearthstone is a large but remote town near the eastern border of the Sadeas princedom in Alethkar. The town serves as a focal point for the various farming communities in the region.`,
       confirmed: true
