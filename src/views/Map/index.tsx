@@ -89,13 +89,31 @@ const Map = (props: {name: AvailableSeries}) => {
 
   const renderPaths = useCallback((bookIndex: number) => {
     const latestVisibleBook = Math.max(...visibleBooks);
+    // console.log(
+      data.paths
+      .map(path => (
+        visibleCharacters.includes(path.character.name) &&
+        (
+          (
+            latestVisibleBook > bookIndex &&
+            visibleBooks.includes(data.books.findIndex(b => (b.title === path.book.title))) &&
+            data.books.findIndex(b => (b.title === path.book.title)) < latestVisibleBook
+          ) || (
+            data.books[bookIndex].title === path.book.title &&
+            data.books[bookIndex].chapters[visibleRange[0]].chapter <= path.chapter.chapter &&
+            data.books[bookIndex].chapters[visibleRange[1]].chapter >= path.chapter.chapter
+          )
+        )
+      ))
+    // )
     return data.paths
       .filter(path => (
         visibleCharacters.includes(path.character.name) &&
         (
           (
             latestVisibleBook > bookIndex &&
-            data.books[latestVisibleBook].title !== path.book.title
+            visibleBooks.includes(data.books.findIndex(b => (b.title === path.book.title))) &&
+            data.books.findIndex(b => (b.title === path.book.title)) < latestVisibleBook
           ) || (
             data.books[bookIndex].title === path.book.title &&
             data.books[bookIndex].chapters[visibleRange[0]].chapter <= path.chapter.chapter &&
