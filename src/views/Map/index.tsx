@@ -66,13 +66,18 @@ const Map = (props: {name: AvailableSeries}) => {
           icon={
             new DivIcon({
               html: renderToStaticMarkup(
-                <MapMarker marker={marker} />
+                <MapMarker marker={marker} enlarged={latestVisibleBook === bookIndex && marker.appearances[bookIndex + 1].includes(data.books[bookIndex].chapters[visibleRange[1]])} />
               ),
-              iconSize: [22, 22],
-              iconAnchor: [11, 11],
+              iconSize: latestVisibleBook === bookIndex && marker.appearances[bookIndex + 1].includes(data.books[bookIndex].chapters[visibleRange[1]]) ?
+                [30, 30] : [22, 22],
+              iconAnchor: latestVisibleBook === bookIndex && marker.appearances[bookIndex + 1].includes(data.books[bookIndex].chapters[visibleRange[1]]) ?
+                [15, 15] : [11, 11],
             })
           }
-          opacity={latestVisibleBook === bookIndex ? 1 : 0.7}
+          opacity={
+            latestVisibleBook === bookIndex ?
+            1 : 0.6
+          }
           position={marker.coordinates}
         >
           <Tooltip>
@@ -89,23 +94,6 @@ const Map = (props: {name: AvailableSeries}) => {
 
   const renderPaths = useCallback((bookIndex: number) => {
     const latestVisibleBook = Math.max(...visibleBooks);
-    // console.log(
-      data.paths
-      .map(path => (
-        visibleCharacters.includes(path.character.name) &&
-        (
-          (
-            latestVisibleBook > bookIndex &&
-            visibleBooks.includes(data.books.findIndex(b => (b.title === path.book.title))) &&
-            data.books.findIndex(b => (b.title === path.book.title)) < latestVisibleBook
-          ) || (
-            data.books[bookIndex].title === path.book.title &&
-            data.books[bookIndex].chapters[visibleRange[0]].chapter <= path.chapter.chapter &&
-            data.books[bookIndex].chapters[visibleRange[1]].chapter >= path.chapter.chapter
-          )
-        )
-      ))
-    // )
     return data.paths
       .filter(path => (
         visibleCharacters.includes(path.character.name) &&
@@ -128,9 +116,14 @@ const Map = (props: {name: AvailableSeries}) => {
           positions={path.coordinates}
           pathOptions={{
             color: path.character.color, 
-            weight: 4,
+            weight: latestVisibleBook === bookIndex &&
+              data.books[bookIndex].chapters[visibleRange[1]].chapter === path.chapter.chapter ?
+              6 : 4,
             dashArray: path.confirmed ? [0] : [10, 10, 1, 10],
-            opacity: latestVisibleBook === bookIndex ? 1 : 0.7
+            opacity: latestVisibleBook === bookIndex ?
+              data.books[bookIndex].chapters[visibleRange[1]].chapter === path.chapter.chapter ?
+              1 : 0.75 :
+              0.5
           }}
         />
       ))

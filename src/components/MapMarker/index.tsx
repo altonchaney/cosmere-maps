@@ -13,27 +13,27 @@ import { Marker } from '../../models';
 import './MapMarker.css';
 
 
-const MapMarker = (props: { marker: Marker }) => {
-  const { marker } = props;
+const MapMarker = (props: { marker: Marker, enlarged: boolean }) => {
+  const { marker, enlarged } = props;
 
   const markerIcon = useCallback(() => {
     switch (marker.type) {
       case 'battle':
-        return <GiSwordsEmblem size={14} color={colors.primary.white}/>
+        return <GiSwordsEmblem size={enlarged ? 18 : 14} color={colors.primary.white}/>
       case 'region':
-        return <GiTreasureMap size={14} color={colors.primary.white}/>
+        return <GiTreasureMap size={enlarged ? 18 : 14} color={colors.primary.white}/>
       case 'city':
-        return <GiMedievalGate size={14} color={colors.primary.white}/>
+        return <GiMedievalGate size={enlarged ? 18 : 14} color={colors.primary.white}/>
       case 'town':
-        return <GiMedievalPavilion size={14} color={colors.primary.white}/>
+        return <GiMedievalPavilion size={enlarged ? 18 : 14} color={colors.primary.white}/>
       case 'event':
-        return <GiStabbedNote size={14} color={colors.primary.white}/>
+        return <GiStabbedNote size={enlarged ? 18 : 14} color={colors.primary.white}/>
       case 'point of interest':
-        return <GiDirectionSigns size={14} color={colors.primary.white}/>
+        return <GiDirectionSigns size={enlarged ? 18 : 14} color={colors.primary.white}/>
       default:
-        return <GiDirectionSigns size={14} color={colors.primary.white}/>
+        return <GiDirectionSigns size={enlarged ? 18 : 14} color={colors.primary.white}/>
     }
-  }, [marker]);
+  }, [marker, enlarged]);
 
   const markerColor = useCallback(() => {
     switch (marker.type) {
@@ -55,7 +55,7 @@ const MapMarker = (props: { marker: Marker }) => {
   }, [marker]);
 
   return (
-    <div className='Marker' style={{ backgroundColor: markerColor() }}>
+    <div className='Marker' style={{ backgroundColor: markerColor(), width: enlarged ? 30 : 22, height: enlarged ? 30 : 22 }}>
       { markerIcon() }
     </div>
   );
