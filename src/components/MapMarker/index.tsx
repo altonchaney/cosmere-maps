@@ -19,19 +19,19 @@ const MapMarker = (props: { marker: Marker, enlarged: boolean }) => {
   const markerIcon = useCallback(() => {
     switch (marker.type) {
       case 'battle':
-        return <GiSwordsEmblem size={enlarged ? 18 : 14} color={colors.primary.white}/>
+        return <GiSwordsEmblem size={enlarged ? 20 : 14} color={colors.primary.white}/>
       case 'region':
-        return <GiTreasureMap size={enlarged ? 18 : 14} color={colors.primary.white}/>
+        return <GiTreasureMap size={enlarged ? 20 : 14} color={colors.primary.white}/>
       case 'city':
-        return <GiMedievalGate size={enlarged ? 18 : 14} color={colors.primary.white}/>
+        return <GiMedievalGate size={enlarged ? 20 : 14} color={colors.primary.white}/>
       case 'town':
-        return <GiMedievalPavilion size={enlarged ? 18 : 14} color={colors.primary.white}/>
+        return <GiMedievalPavilion size={enlarged ? 20 : 14} color={colors.primary.white}/>
       case 'event':
-        return <GiStabbedNote size={enlarged ? 18 : 14} color={colors.primary.white}/>
+        return <GiStabbedNote size={enlarged ? 20 : 14} color={colors.primary.white}/>
       case 'point of interest':
-        return <GiDirectionSigns size={enlarged ? 18 : 14} color={colors.primary.white}/>
+        return <GiDirectionSigns size={enlarged ? 20 : 14} color={colors.primary.white}/>
       default:
-        return <GiDirectionSigns size={enlarged ? 18 : 14} color={colors.primary.white}/>
+        return <GiDirectionSigns size={enlarged ? 20 : 14} color={colors.primary.white}/>
     }
   }, [marker, enlarged]);
 
@@ -55,7 +55,7 @@ const MapMarker = (props: { marker: Marker, enlarged: boolean }) => {
   }, [marker]);
 
   return (
-    <div className='Marker' style={{ backgroundColor: markerColor(), width: enlarged ? 30 : 22, height: enlarged ? 30 : 22 }}>
+    <div className='Marker' style={{ backgroundColor: markerColor(), width: enlarged ? 36 : 22, height: enlarged ? 36 : 22 }}>
       { markerIcon() }
     </div>
   );

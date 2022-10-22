@@ -69,9 +69,9 @@ const Map = (props: {name: AvailableSeries}) => {
                 <MapMarker marker={marker} enlarged={latestVisibleBook === bookIndex && marker.appearances[bookIndex + 1].includes(data.books[bookIndex].chapters[visibleRange[1]])} />
               ),
               iconSize: latestVisibleBook === bookIndex && marker.appearances[bookIndex + 1].includes(data.books[bookIndex].chapters[visibleRange[1]]) ?
-                [30, 30] : [22, 22],
+                [36, 36] : [22, 22],
               iconAnchor: latestVisibleBook === bookIndex && marker.appearances[bookIndex + 1].includes(data.books[bookIndex].chapters[visibleRange[1]]) ?
-                [15, 15] : [11, 11],
+                [18, 18] : [11, 11],
             })
           }
           opacity={
@@ -118,12 +118,12 @@ const Map = (props: {name: AvailableSeries}) => {
             color: path.character.color, 
             weight: latestVisibleBook === bookIndex &&
               data.books[bookIndex].chapters[visibleRange[1]].chapter === path.chapter.chapter ?
-              6 : 4,
+              8 : 4,
             dashArray: path.confirmed ? [0] : [10, 10, 1, 10],
             opacity: latestVisibleBook === bookIndex ?
               data.books[bookIndex].chapters[visibleRange[1]].chapter === path.chapter.chapter ?
-              1 : 0.75 :
-              0.5
+              1 : 1 :
+              0.33
           }}
         />
       ))
