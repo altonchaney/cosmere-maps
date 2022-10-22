@@ -3,7 +3,8 @@ import { LatLngTuple } from "leaflet";
 // DATA TYPES
 export enum AvailableSeries {
   stormlight = 'stormlight',
-  mistborn = 'mistborn'
+  mistborn = 'mistborn',
+  mistborn2 = 'mistborn2'
 };
 
 export type Series = {

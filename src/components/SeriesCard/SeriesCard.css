@@ -1,7 +1,7 @@
 .series-tile {
   position: relative;
   width: 280px;
-  height: 420px;
+  height: 100%;
   display: flex;
   border-radius: 8px;
   flex-direction: column;
