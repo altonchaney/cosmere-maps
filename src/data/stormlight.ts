@@ -39,11 +39,11 @@ const theWayOfKingsChapterList: Chapter[] = [
   { chapter: 25, part: 2 },
   { chapter: 26, part: 2 },
   { chapter: 27, part: 2 },
-  { chapter: 28, part: 2 },
+  { chapter: 28, part: 2 }, // 32
   { altName: 'Interlude 4', chapter: 28.1, part: 2 },
   { altName: 'Interlude 5', chapter: 28.2, part: 2 },
   { altName: 'Interlude 6', chapter: 28.3, part: 2 },
-  { chapter: 29, part: 3 },
+  { chapter: 29, part: 3 }, // 36 (+7)
   { chapter: 30, part: 3 },
   { chapter: 31, part: 3 },
   { chapter: 32, part: 3 },
@@ -65,11 +65,11 @@ const theWayOfKingsChapterList: Chapter[] = [
   { chapter: 48, part: 3 },
   { chapter: 49, part: 3 },
   { chapter: 50, part: 3 },
-  { chapter: 51, part: 3 },
+  { chapter: 51, part: 3 }, // 58
   { altName: 'Interlude 7', chapter: 51.1, part: 3 },
   { altName: 'Interlude 8', chapter: 51.2, part: 3 },
   { altName: 'Interlude 9', chapter: 51.3, part: 3 },
-  { chapter: 52, part: 4 },
+  { chapter: 52, part: 4 }, // 62 (+10)
   { chapter: 53, part: 4 },
   { chapter: 54, part: 4 },
   { chapter: 55, part: 4 },
@@ -92,7 +92,7 @@ const theWayOfKingsChapterList: Chapter[] = [
   { chapter: 72, part: 5 },
   { chapter: 73, part: 5 },
   { chapter: 74, part: 5 },
-  { chapter: 75, part: 5 },
+  { chapter: 75, part: 5 }, // 85
   { altName: 'Epilogue', chapter: 75.1, part: 6 },
 ];
 
