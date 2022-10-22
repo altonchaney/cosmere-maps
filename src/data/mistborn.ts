@@ -112,6 +112,93 @@ const wellOfAscensionChapterList: Chapter[] = [
   { altName: 'Epilogue', chapter: 59.1, part: 6 }
 ];
 
+const theHeroOfAgesChapterList: Chapter[] = [
+  { altName: 'Prologue', chapter: 0, part: 0 },
+  { chapter: 1, part: 1 },
+  { chapter: 2, part: 1 },
+  { chapter: 3, part: 1 },
+  { chapter: 4, part: 1 },
+  { chapter: 5, part: 1 },
+  { chapter: 6, part: 1 },
+  { chapter: 7, part: 1 },
+  { chapter: 8, part: 1 },
+  { chapter: 9, part: 1 },
+  { chapter: 10, part: 1 },
+  { chapter: 11, part: 1 },
+  { chapter: 12, part: 1 },
+  { chapter: 13, part: 1 },
+  { chapter: 14, part: 2 },
+  { chapter: 15, part: 2 },
+  { chapter: 16, part: 2 },
+  { chapter: 17, part: 2 },
+  { chapter: 18, part: 2 },
+  { chapter: 19, part: 2 },
+  { chapter: 20, part: 2 },
+  { chapter: 21, part: 2 },
+  { chapter: 22, part: 2 },
+  { chapter: 23, part: 2 },
+  { chapter: 24, part: 2 },
+  { chapter: 25, part: 2 },
+  { chapter: 26, part: 2 },
+  { chapter: 27, part: 2 },
+  { chapter: 28, part: 2 },
+  { chapter: 29, part: 2 },
+  { chapter: 30, part: 2 },
+  { chapter: 31, part: 2 },
+  { chapter: 32, part: 2 },
+  { chapter: 33, part: 2 },
+  { chapter: 34, part: 3 },
+  { chapter: 35, part: 3 },
+  { chapter: 36, part: 3 },
+  { chapter: 37, part: 3 },
+  { chapter: 38, part: 3 },
+  { chapter: 39, part: 3 },
+  { chapter: 40, part: 3 },
+  { chapter: 41, part: 3 },
+  { chapter: 42, part: 3 },
+  { chapter: 43, part: 3 },
+  { chapter: 44, part: 3 },
+  { chapter: 45, part: 4 },
+  { chapter: 46, part: 4 },
+  { chapter: 47, part: 4 },
+  { chapter: 48, part: 4 },
+  { chapter: 49, part: 4 },
+  { chapter: 50, part: 4 },
+  { chapter: 51, part: 4 },
+  { chapter: 52, part: 4 },
+  { chapter: 53, part: 4 },
+  { chapter: 54, part: 4 },
+  { chapter: 55, part: 4 },
+  { chapter: 56, part: 4 },
+  { chapter: 57, part: 4 },
+  { chapter: 58, part: 4 },
+  { chapter: 59, part: 5 },
+  { chapter: 60, part: 5 },
+  { chapter: 61, part: 5 },
+  { chapter: 62, part: 5 },
+  { chapter: 63, part: 5 },
+  { chapter: 64, part: 5 },
+  { chapter: 65, part: 5 },
+  { chapter: 66, part: 5 },
+  { chapter: 67, part: 5 },
+  { chapter: 68, part: 5 },
+  { chapter: 69, part: 5 },
+  { chapter: 70, part: 5 },
+  { chapter: 71, part: 5 },
+  { chapter: 72, part: 5 },
+  { chapter: 73, part: 5 },
+  { chapter: 74, part: 5 },
+  { chapter: 75, part: 5 },
+  { chapter: 76, part: 6 },
+  { chapter: 77, part: 5 },
+  { chapter: 78, part: 5 },
+  { chapter: 79, part: 5 },
+  { chapter: 80, part: 5 },
+  { chapter: 81, part: 5 },
+  { chapter: 82, part: 5 },
+  { altName: 'Epilogue', chapter: 82.1, part: 5 }
+];
+
 export const characters: Character[] =[
   {
     name: 'Vin',
@@ -182,7 +269,7 @@ export const books: Book[] = [
   {
     title: 'The Hero of Ages',
     image: 'https://coppermind.net/w/images/thumb/The_Hero_of_Ages_Cover.jpeg/400px-The_Hero_of_Ages_Cover.jpeg',
-    chapters: theFinalEmpireChapterList
+    chapters: theHeroOfAgesChapterList
   }
 ];
 
@@ -232,8 +319,11 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
           21, 22, 23, 24, 26, 27, 28, 29, 30,
           31, 32, 33, 34, 35, 36, 37, 39, 40,
           42, 43, 44, 45, 46, 47, 48, 49, 50,
-          51, 52, 53, 54, 56, 57, 58, 59
-        ].map(i => (wellOfAscensionChapterList[i]))
+          51, 52, 53, 54, 56, 57, 58, 59,
+        ].map(i => (wellOfAscensionChapterList[i])),
+        3: [
+          18, 42, 52, 72, 73, 76, 77, 79
+        ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `Luthadel is the capital city of the Final Empire on Scadrial.`,
       coppermindLink: 'Luthadel',
@@ -274,7 +364,10 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       appearances: {
         1: [
           32
-        ].map(i => (theFinalEmpireChapterList[i]))
+        ].map(i => (theFinalEmpireChapterList[i])),
+        3: [
+          18, 22, 79, 80, 81, 82
+        ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `The Pits of Hathsin are a system of caves near Luthadel on Scadrial at the time of the Final Empire in which atium geodes grow.`,
       coppermindLink: 'Pits_of_Hathsin',
@@ -335,6 +428,106 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       },
       description: `The village consisted of ten large wooden hovels built in a loose circle with a well in the center, and a nobleman's manor a little farther up the valley. The skaa of Urbene were herdsmen. The village itself lay in a quiet hollow amid the rising landscape. It was described as picturesque.`,
       coppermindLink: 'Urbene',
+      confirmed: true
+    },
+    {
+      title: 'Vetitan',
+      coordinates: [423.5, 702.5],
+      type: 'town',
+      appearances: {
+        3: [
+          1, 3, 5
+        ].map(i => (theHeroOfAgesChapterList[i]))
+      },
+      description: `With a population of around seven thousand, Vetitan is fairly large for a farming community. Most houses are one-story buildings, but it is more urban than a plantation. The presence of nearby ore deposits make it both a farming and mining town.`,
+      coppermindLink: 'Vetitan',
+      confirmed: true
+    },
+    {
+      title: 'Tathingdwen',
+      coordinates: [813, 824.5],
+      type: 'city',
+      appearances: {
+        3: [
+          0
+        ].map(i => (theHeroOfAgesChapterList[i]))
+      },
+      description: `Tathingdwen is the capital of the Terris Dominance of the Final Empire on Scadrial.`,
+      coppermindLink: 'Tathingdwen',
+      confirmed: true
+    },
+    {
+      title: 'Kandra Homeland',
+      coordinates: [601.5, 786],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/TenSoon%27s_Judgement_by_Marc_Mestre.jpg',
+      appearances: {
+        3: [
+          2, 7, 9, 11, 20, 24, 33, 66, 68,
+          71, 75, 76, 78, 79, 80, 81,
+        ].map(i => (theHeroOfAgesChapterList[i]))
+      },
+      description: `The Homeland was the secret, underground nation of the kandra on Scadrial during the Final Empire.`,
+      coppermindLink: 'Kandra_Homeland',
+      confirmed: false
+    },
+    {
+      title: 'Lekal City',
+      coordinates: [446, 641.5],
+      type: 'town',
+      appearances: {
+        3: [
+          4
+        ].map(i => (theHeroOfAgesChapterList[i]))
+      },
+      description: `Lekal City was a country estate, with a manor house but lacked a true palace.`,
+      coppermindLink: 'Lekal_City',
+      confirmed: true
+    },
+    {
+      title: 'Urteau',
+      coordinates: [612.5, 952],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/Urteau.jpg',
+      appearances: {
+        3: [
+          14, 16, 19, 23, 26, 29, 31, 35, 38,
+          41, 46, 49, 53, 56, 58, 59, 62, 64,
+          66, 73, 83
+        ].map(i => (theHeroOfAgesChapterList[i]))
+      },
+      description: `Located northeast of Luthadel near the Kalling Ashmount, Urteau was the largest city in the Northern Dominance and was the hereditary home of House Venture.`,
+      coppermindLink: 'Urteau',
+      confirmed: true
+    },
+    {
+      title: 'Fadrex City',
+      coordinates: [557.5, 500],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/Fadrex_City.jpg',
+      appearances: {
+        3: [
+          25, 27, 28, 30, 32, 36, 37, 40, 43,
+          44, 45, 47, 48, 50, 51, 54, 55, 57,
+          60, 61, 63, 65, 67, 70, 73, 74
+        ].map(i => (theHeroOfAgesChapterList[i]))
+      },
+      description: `Fadrex City is a major trade hub in the Western Dominance of the Final Empire, several month's journey from Urteau. It is located near Chardees.`,
+      coppermindLink: 'Fadrex_City',
+      confirmed: true
+    },
+    {
+      title: 'Mount Tyrian',
+      coordinates: [552.5, 680],
+      type: 'point of interest',
+      image: 'https://coppermind.net/w/images/Ashmount.png',
+      appearances: {
+        3: [
+          34
+        ].map(i => (theHeroOfAgesChapterList[i]))
+      },
+      description: `Mount Tyrian was one of the seven Ashmounts in the Final Empire. These enormous volcanoes continuously emit ash which clouds the skies.`,
+      coppermindLink: 'Ashmounts',
       confirmed: true
     },
   ],
@@ -997,6 +1190,514 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         [301, 988],
         [292.5, 1014.5],
         [288, 1033.5]
+      ]
+    },
+    // hero of ages paths
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[1],
+      confirmed: true,
+      coordinates: [
+        [448, 721],
+        [423.5, 702.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[3],
+      confirmed: true,
+      coordinates: [
+        [448, 721],
+        [423.5, 702.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[6],
+      confirmed: false,
+      coordinates: [
+        [813, 824.5],
+        [799.5, 819.5],
+        [790, 815.5],
+        [781.5, 817],
+        [777, 806.5],
+        [759.5, 807]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [423.5, 702.5],
+        [448.5, 714],
+        [458, 712.5],
+        [470.5, 703.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [423.5, 702.5],
+        [448.5, 714],
+        [458, 712.5],
+        [470.5, 703.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [446, 641.5],
+        [441.5, 647.5],
+        [447.5, 657],
+        [451, 670],
+        [456.5, 684],
+        [470.5, 703.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[15],
+      confirmed: true,
+      coordinates: [
+        [470.5, 703.5],
+        [474.5, 688],
+        [476, 667],
+        [478.5, 655],
+        [486, 637],
+        [490, 626],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[15],
+      confirmed: true,
+      coordinates: [
+        [470.5, 703.5],
+        [474.5, 688],
+        [476, 667],
+        [478.5, 655],
+        [486, 637],
+        [490, 626],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[18],
+      confirmed: true,
+      coordinates: [
+        [470.5, 703.5],
+        [478, 717],
+        [482, 736.5],
+        [493.5, 752.5],
+        [503, 764.5],
+        [512, 772.5],
+        [525.5, 776],
+        [532, 780.5],
+        [565.5, 770],
+        [579, 760],
+        [597, 746],
+        [609, 750]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [490, 626],
+        [494, 607],
+        [498.5, 597.5],
+        [506, 590],
+        [512, 585],
+        [516, 574.5],
+        [519.5, 563.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [490, 626],
+        [494, 607],
+        [498.5, 597.5],
+        [506, 590],
+        [512, 585],
+        [516, 574.5],
+        [519.5, 563.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[25],
+      confirmed: true,
+      coordinates: [
+        [519.5, 563.5],
+        [524.5, 550],
+        [528, 537],
+        [535, 521],
+        [540.5, 515],
+        [549, 507],
+        [557.5, 500],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[25],
+      confirmed: true,
+      coordinates: [
+        [519.5, 563.5],
+        [524.5, 550],
+        [528, 537],
+        [535, 521],
+        [540.5, 515],
+        [549, 507],
+        [557.5, 500],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[29],
+      confirmed: true,
+      coordinates: [
+        [532, 780], // Luthadel
+        [541, 785.5],
+        [548.5, 798.5],
+        [570.5, 875],
+        [583, 883],
+        [587.5, 890],
+        [592.5, 898],
+        [595.5, 902],
+        [598.5, 918],
+        [599, 930.5],
+        [600.5, 945.5],
+        [604, 952.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[34],
+      confirmed: false,
+      coordinates: [
+        [759.5, 807],
+        [744, 798],
+        [729, 780],
+        [719, 762.5],
+        [712.5, 748],
+        [692, 743.5],
+        [685.5, 736],
+        [671, 719],
+        [658, 703],
+        [638.5, 686.5],
+        [613.5, 672.5],
+        [600, 672],
+        [588, 680],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.TenSoon],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[39],
+      confirmed: true,
+      coordinates: [
+        [601.5, 786],
+        [589.5, 789],
+        [579, 792.5],
+        [566.5, 790.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[42],
+      confirmed: false,
+      coordinates: [
+        [588, 680],
+        [589, 698.5],
+        [586.5, 722],
+        [579, 741],
+        [566.5, 755],
+        [547, 762.5],
+        [536.5, 767.5],
+        [532, 780.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.TenSoon],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[52],
+      confirmed: true,
+      coordinates: [
+        [566.5, 790.5],
+        [557, 784],
+        [551, 783],
+        [542.5, 783.5],
+        [532, 780.5],
+        [532, 780], // Luthadel
+        [541, 785.5],
+        [548.5, 798.5],
+        [570.5, 875],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.TenSoon],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[59],
+      confirmed: true,
+      coordinates: [
+        [570.5, 875],
+        [583, 883],
+        [587.5, 890],
+        [592.5, 898],
+        [595.5, 902],
+        [598.5, 918],
+        [599, 930.5],
+        [600.5, 945.5],
+        [604, 952.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[63],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [517, 756.5],
+        [509, 719],
+        [505, 690],
+        [505.5, 665],
+        [516, 620],
+        [528, 576],
+        [547, 527],
+        [557.5, 500]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.TenSoon],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[66],
+      confirmed: true,
+      coordinates: [
+        [604, 952.5],
+        [609.5, 934.5],
+        [607, 914],
+        [606, 887.5],
+        [605, 865.5],
+        [604, 835.5],
+        [605.5, 819],
+        [606, 807],
+        [605.5, 795.5],
+        [601.5, 786]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sazed],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[66],
+      confirmed: true,
+      coordinates: [
+        [604, 952.5],
+        [609.5, 934.5],
+        [607, 914],
+        [606, 887.5],
+        [605, 865.5],
+        [604, 835.5],
+        [605.5, 819],
+        [606, 807],
+        [605.5, 795.5],
+        [601.5, 786]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[69],
+      confirmed: true,
+      coordinates: [
+        [557.5, 500],
+        [547, 527],
+        [528, 576],
+        [516, 620],
+        [505.5, 665],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.TenSoon],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[71],
+      confirmed: true,
+      coordinates: [
+        [601.5, 786],
+        [606, 727],
+        [606, 711.5],
+        [607, 691],
+        [615.5, 658],
+        [619.5, 635],
+        [620, 618.5],
+        [612, 605.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[72],
+      confirmed: true,
+      coordinates: [
+        [505.5, 665],
+        [505, 690],
+        [509, 719],
+        [517, 756.5],
+        [532, 780.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[72],
+      confirmed: true,
+      coordinates: [
+        [557.5, 500],
+        [547, 527],
+        [528, 576],
+        [516, 620],
+        [505.5, 665],
+        [505, 690],
+        [509, 719],
+        [517, 756.5],
+        [532, 780.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.TenSoon],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[73],
+      confirmed: true,
+      coordinates: [
+        [612, 605.5],
+        [617.5, 626],
+        [614, 645.5],
+        [603.5, 668],
+        [596.5, 689.5],
+        [591, 718],
+        // [583.5, 736.5],
+        // [574, 749.5],
+        // [565.5, 758],
+        // [553.5, 762.5],
+        // [538.5, 766],
+        // [532, 780.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[74],
+      confirmed: true,
+      coordinates: [
+        [557.5, 500],
+        [547, 527],
+        [528, 576],
+        // [516, 620],
+        // [505.5, 665],
+        // [505, 690],
+        // [509, 719],
+        // [517, 756.5],
+        // [532, 780.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[76],
+      confirmed: true,
+      coordinates: [
+        [528, 576],
+        [516, 620],
+        [505.5, 665],
+        [505, 690],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[77],
+      confirmed: true,
+      coordinates: [
+        [505, 690],
+        [509, 719],
+        [517, 756.5],
+        [532, 780.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.TenSoon],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[78],
+      confirmed: true,
+      coordinates: [
+        [591, 718],
+        [590.5, 741],
+        [595.5, 767],
+        [601.5, 786]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Vin],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[79],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [565.5, 770],
+        [579, 760],
+        [597, 746],
+        [609, 750]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Elend],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[79],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [565.5, 770],
+        [579, 760],
+        [597, 746],
+        [609, 750]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Marsh],
+      book: books[2],
+      chapter: theHeroOfAgesChapterList[81],
+      confirmed: true,
+      coordinates: [
+        [532, 780.5],
+        [565.5, 770],
+        [579, 760],
+        [597, 746],
+        [609, 750]
       ]
     },
   ]
