@@ -260,8 +260,8 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/Kholinar.jpg',
       appearances: {
         1: [
-          theWayOfKingsChapterList[1]
-        ]
+          1, 86
+        ].map(i => theWayOfKingsChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
       coppermindLink: 'Kholinar',
@@ -273,7 +273,9 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'battle',
       appearances: {
         1: [
-          theWayOfKingsChapterList[2]
+          theWayOfKingsChapterList[2],
+          theWayOfKingsChapterList[54],
+          theWayOfKingsChapterList[58]
         ]
       },
       description: `A border skirmish between Amaram's princedom and one of its neighboring princedoms. Kaladin participated in this particular battle.`,
@@ -286,11 +288,9 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/Kharbranth.jpg',
       appearances: {
         1: [
-          theWayOfKingsChapterList[4],
-          theWayOfKingsChapterList[6],
-          theWayOfKingsChapterList[8],
-          theWayOfKingsChapterList[9],
-        ]
+          4, 6, 8, 9, 36, 40, 43, 46, 49,
+          52, 55, 57, 80, 81, 82, 84
+        ].map(i => theWayOfKingsChapterList[i])
       },
       description: `Kharbranth, the City of Bells, is an independent city-state on Roshar, ruled by Queen Savrahalidem. It is one of the five Vorin nations and home to the Palanaeum, the largest library on Roshar. Kharbranth is known for the quality of its hospitals, and people come from all over the world to study medicine from Kharbranth's surgeons.`,
       confirmed: true
@@ -304,7 +304,11 @@ export const STORMLIGHT_DATA: DataBundle = {
         1: [
           7, 10, 12, 16, 17, 18, 19,
           21, 22, 23, 25, 26, 27, 28, 30,
-          31, 32
+          31, 32, 37, 39, 41, 42, 45, 47,
+          50, 53, 56, 62, 63, 64, 65, 66,
+          67, 68, 69, 70, 71, 72, 73, 74,
+          75, 76, 77, 78, 79, 83, 85
+
         ].map(i => theWayOfKingsChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
@@ -317,7 +321,8 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/Watcher_at_the_Rim_by_Marie_Seeberger.jpg',
       appearances: {
         1: [
-          11, 20, 24, 29
+          11, 20, 24, 29, 38, 44, 48, 51,
+
         ].map(i => theWayOfKingsChapterList[i])
       },
       description: `Hearthstone is a large but remote town near the eastern border of the Sadeas princedom in Alethkar. The town serves as a focal point for the various farming communities in the region.`,
@@ -361,20 +366,92 @@ export const STORMLIGHT_DATA: DataBundle = {
       description: `Ironsway features a town square, several hundred homes, and three taverns, making it one of the largest settlements in Bavland.`,
       confirmed: false
     },
-    // {
-    //   title: 'Bornwater',
-    //   coordinates: [437.5, 1000],
-    //   type: 'town',
-    //   appearances: {
-    //     1: [
-    //       theWayOfKingsChapterList[15]
-    //     ]
-    //   },
-    //   description: `It is the largest town in its immediate area, although it could still be considered a "backwater". Outside of the city, there are plains where wild horses run free.`,
-    //   confirmed: false
-    // },
-
-    
+    {
+      title: 'Shinovar',
+      coordinates: [498, 381],
+      type: 'region',
+      image: 'https://coppermind.net/w/images/Farmer_by_Adam_J_Marin.png',
+      appearances: {
+        1: [
+          theWayOfKingsChapterList[33]
+        ]
+      },
+      description: `Shinovar is a nation on the western mainland of Roshar. Due to the mountains separating it from the rest of the continent, Shinovar is distinct both ecologically and culturally from the rest of Roshar. Shinovar natives are known as the Shin.`,
+      confirmed: true
+    },
+    {
+      title: 'Kasitor',
+      coordinates: [725, 442.5],
+      type: 'city',
+      appearances: {
+        1: [
+          theWayOfKingsChapterList[34]
+        ]
+      },
+      description: `Kasitor is a coastal city in Iri on Roshar and the home of a notable spren known as Cusicesh, the Protector.`,
+      confirmed: true
+    },
+    {
+      title: 'Bornwater',
+      coordinates: [437.5, 1000],
+      type: 'town',
+      appearances: {
+        1: [
+          theWayOfKingsChapterList[35]
+        ]
+      },
+      description: `It is the largest town in its immediate area, although it could still be considered a "backwater". Outside of the city, there are plains where wild horses run free.`,
+      confirmed: false
+    },
+    {
+      title: 'Sesemalex Dar',
+      coordinates: [264, 615.5],
+      type: 'city',
+      appearances: {
+        1: [
+          59
+        ].map(i => theWayOfKingsChapterList[i])
+      },
+      description: `Sesemalex Dar is the capital of the kingdom of Emul on Roshar during the Era of Solitude.`,
+      confirmed: true
+    },
+    {
+      title: 'Reshi Isles',
+      coordinates: [860, 932],
+      type: 'region',
+      appearances: {
+        1: [
+          60
+        ].map(i => theWayOfKingsChapterList[i])
+      },
+      description: `The Reshi Isles are a collection of islands on the northern edge of Roshar in the Reshi Sea. People from the Reshi Isles are called Reshi.`,
+      confirmed: true
+    },
+    {
+      title: 'Vedenar',
+      coordinates: [326, 1076.5],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/Vedenar_city_map.jpg',
+      appearances: {
+        1: [
+          61
+        ].map(i => theWayOfKingsChapterList[i])
+      },
+      description: `Vedenar is the capital city of Jah Keved on Roshar. Vedenar lies on the southern edge of Jah Keved, on the cliffs facing Tarat Sea. The sound of the waves crashing against the stone can be heard across the entire city.`,
+      confirmed: true
+    },
+    {
+      title: 'Feverstone Keep',
+      coordinates: [795.5, 520.5],
+      type: 'point of interest',
+      appearances: {
+        1: [
+          62
+        ].map(i => theWayOfKingsChapterList[i])
+      },
+      description: `Feverstone Keep is a fortress on ancient Roshar, in use during the False Desolation and Recreance.`,
+      confirmed: false
+    },
   ],
   paths: [
     {
@@ -446,5 +523,56 @@ export const STORMLIGHT_DATA: DataBundle = {
         [433.5, 1032.5]
       ]
     },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[0],
+      chapter: theWayOfKingsChapterList[35],
+      confirmed: false,
+      coordinates: [
+        [433.5, 1032.5],
+        [437.5, 1000]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[0],
+      chapter: theWayOfKingsChapterList[61],
+      confirmed: false,
+      coordinates: [
+        [437.5, 1000],
+        [431, 1016.5],
+        [423.5, 1035.5],
+        [416, 1049.5],
+        [408.5, 1062.5],
+        [395.5, 1071],
+        [375, 1077],
+        [355, 1078],
+        [344, 1079.5],
+        [326, 1076.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[0],
+      chapter: theWayOfKingsChapterList[81],
+      confirmed: false,
+      coordinates: [
+        [326, 1076.5],
+        [312.5, 1074.5],
+        [304, 1071],
+        [298, 1063.5],
+        [290.5, 1051.5],
+        [285.5, 1041],
+        [280.5, 1026],
+        [278.5, 1009],
+        [276, 1000.5],
+        [271.5, 995],
+        [260, 992],
+        [247, 992.5],
+        [240, 998.5],
+        [235.5, 1006.5]
+      ]
+    },
+    
   ]
 };
