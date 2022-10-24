@@ -41,6 +41,7 @@ export type Character = {
 
 export type Map = {
   image: any;
+  altImage?: any;
   dimensions: LatLngTuple
 };
 

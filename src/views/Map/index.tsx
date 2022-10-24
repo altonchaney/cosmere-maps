@@ -2,6 +2,9 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MapContainer, ImageOverlay, Marker, Polyline, useMapEvents, ZoomControl, Tooltip } from 'react-leaflet';
 import L, { DivIcon } from 'leaflet';
+import {
+  GiBrain, GiBrickWall
+} from 'react-icons/gi';
 
 import { DATA } from '../../data';
 import { AvailableSeries } from '../../models';
@@ -9,6 +12,7 @@ import './Map.css';
 import MapPanel from '../../components/MapPanel';
 import MapTimeline from '../../components/MapTimeline';
 import MapMarker from '../../components/MapMarker';
+import colors from '../../assets/colors';
 
 
 const Coordinates = () => {
@@ -23,6 +27,7 @@ const Coordinates = () => {
 const Map = (props: {name: AvailableSeries}) => {
   const { name } = props;
   const data = useMemo(() => DATA[name], [name]);
+  const [activeMap, setActiveMap] = useState<'physical' | 'cognitive'>('physical');
   const [visibleCharacters, setVisibleCharacters] = useState<string[]>(data.characters.map(c => c.name));
   const [visibleBooks, setVisibleBooks] = useState<number[]>([0]);
   const [visibleRange, setVisibleRange] = useState<number[]>([0, 0]);
@@ -120,7 +125,7 @@ const Map = (props: {name: AvailableSeries}) => {
               data.books[bookIndex].chapters[visibleRange[1]].chapter === path.chapter.chapter ?
               8 : 4,
             dashArray: path.confirmed ? [0] : [10, 10, 1, 10],
-            opacity: latestVisibleBook === bookIndex ? 1 : 0.33
+            opacity: latestVisibleBook === bookIndex ? 1 : 0.5
           }}
         />
       ))
@@ -131,7 +136,16 @@ const Map = (props: {name: AvailableSeries}) => {
       <MapContainer
         crs={L.CRS.Simple}
         style={{width: '100vw', height: '100%', overflow: 'hidden', backgroundColor: data.backgroundColor, zIndex: 0}}
-        maxBounds={[[0,0], data.map.dimensions]}
+        maxBounds={[
+          [
+            0 - (data.map.dimensions[0] / 4),
+            0 - (data.map.dimensions[1] / 4)
+          ],
+          [
+            data.map.dimensions[0] + (data.map.dimensions[0] / 4),
+            data.map.dimensions[1] + (data.map.dimensions[1] / 4)
+          ]
+        ]}
         center={[data.map.dimensions[0] / 2,data.map.dimensions[1] / 2]}
         zoom={0}
         minZoom={-1} maxZoom={1}
@@ -140,7 +154,7 @@ const Map = (props: {name: AvailableSeries}) => {
       >
         <ZoomControl position='topright' />
         <ImageOverlay
-          url={data.map.image}
+          url={activeMap === 'cognitive' && data.map.altImage ? data.map.altImage : data.map.image}
           zIndex={-1}
           bounds={[[0,0], data.map.dimensions]}
           className='map'
@@ -166,7 +180,37 @@ const Map = (props: {name: AvailableSeries}) => {
           callback={(range) => setVisibleRange(range)}
         />
       }
-      
+      {
+        data.map.altImage &&
+        <div className='realm-toggle'>
+          <div
+            onClick={() => setActiveMap('physical')}
+            className={`physical ${ activeMap === 'physical' ? 'active' : '' }`}
+          >
+            <GiBrickWall
+              color={
+                activeMap === 'physical' ?
+                colors.primary.black :
+                colors.primary.white
+              }
+              size={16}
+            />
+          </div>
+          <div
+            onClick={() => setActiveMap('cognitive')}
+            className={`cognitive ${ activeMap === 'cognitive' ? 'active' : '' }`}
+          >
+            <GiBrain
+              color={
+                activeMap === 'cognitive' ?
+                colors.primary.black :
+                colors.primary.white
+              }
+              size={16}
+            />
+          </div>
+        </div>
+      }
     </div>
   );
 }

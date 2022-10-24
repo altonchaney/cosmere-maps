@@ -1,11 +1,12 @@
 import { Book, Chapter, Character, DataBundle, Map, Series } from "../models";
-import map from '../assets/stormlight.webp';
+import physicalRealmMap from '../assets/stormlight.webp';
+import cognitiveRealmMap from '../assets/shadesmar.webp';
 
 const mapData: Map = {
-  image: map,
+  image: physicalRealmMap,
+  altImage: cognitiveRealmMap,
   dimensions: [1000,1720]
 };
-
 const theWayOfKingsChapterList: Chapter[] = [
   { altName: 'Prelude', chapter: 0, part: 0 },
   { altName: 'Prologue', chapter: 0.1, part: 0 },
@@ -93,9 +94,8 @@ const theWayOfKingsChapterList: Chapter[] = [
   { chapter: 73, part: 5 },
   { chapter: 74, part: 5 },
   { chapter: 75, part: 5 }, // 85
-  { altName: 'Epilogue', chapter: 75.1, part: 6 },
+  { altName: 'Epilogue', chapter: 75.1, part: 5 },
 ];
-
 const wordsOfRadianceChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -157,13 +157,16 @@ const wordsOfRadianceChapterList: Chapter[] = [
   { chapter: 49, part: 3 },
   { chapter: 50, part: 3 },
   { chapter: 51, part: 3 },
-  { chapter: 52, part: 4 },
-  { chapter: 53, part: 4 },
-  { chapter: 54, part: 4 },
-  { chapter: 55, part: 4 },
-  { chapter: 56, part: 4 },
-  { chapter: 57, part: 4 },
-  { chapter: 58, part: 4 },
+  { chapter: 52, part: 3 },
+  { chapter: 53, part: 3 },
+  { chapter: 54, part: 3 },
+  { chapter: 55, part: 3 },
+  { chapter: 56, part: 3 },
+  { chapter: 57, part: 3 },
+  { chapter: 58, part: 3 },
+  { altName: 'Interlude 9', chapter: 58.1, part: 3 },
+  { altName: 'Interlude 10', chapter: 58.2, part: 3 },
+  { altName: 'Interlude 11', chapter: 58.3, part: 3 },
   { chapter: 59, part: 4 },
   { chapter: 60, part: 4 },
   { chapter: 61, part: 4 },
@@ -175,12 +178,353 @@ const wordsOfRadianceChapterList: Chapter[] = [
   { chapter: 67, part: 4 },
   { chapter: 68, part: 4 },
   { chapter: 69, part: 4 },
-  { chapter: 70, part: 5 },
-  { chapter: 71, part: 5 },
-  { chapter: 72, part: 5 },
-  { chapter: 73, part: 5 },
-  { chapter: 74, part: 5 },
-  { chapter: 75, part: 5 },
+  { chapter: 70, part: 4 },
+  { chapter: 71, part: 4 },
+  { chapter: 72, part: 4 },
+  { chapter: 73, part: 4 },
+  { chapter: 74, part: 4 },
+  { chapter: 75, part: 4 },
+  { altName: 'Interlude 12', chapter: 75.1, part: 4 },
+  { altName: 'Interlude 13', chapter: 75.2, part: 4 },
+  { altName: 'Interlude 14', chapter: 75.3, part: 4 },
+  { chapter: 76, part: 5 },
+  { chapter: 77, part: 5 },
+  { chapter: 78, part: 5 },
+  { chapter: 79, part: 5 },
+  { chapter: 80, part: 5 },
+  { chapter: 81, part: 5 },
+  { chapter: 82, part: 5 },
+  { chapter: 83, part: 5 },
+  { chapter: 84, part: 5 },
+  { chapter: 85, part: 5 },
+  { chapter: 86, part: 5 },
+  { chapter: 87, part: 5 },
+  { chapter: 88, part: 5 },
+  { chapter: 89, part: 5 },
+  { altName: 'Epilogue', chapter: 89.1, part: 5 },
+];
+
+const edgedancerChapterList: Chapter[] = [
+  { altName: 'Prologue', chapter: 0 },
+  { chapter: 1 },
+  { chapter: 2 },
+  { chapter: 3 },
+  { chapter: 4 },
+  { chapter: 5 },
+  { chapter: 6 },
+  { chapter: 7 },
+  { chapter: 8 },
+  { chapter: 9 },
+  { chapter: 10 },
+  { chapter: 11 },
+  { chapter: 12 },
+  { chapter: 13 },
+  { chapter: 14 },
+  { chapter: 15 },
+  { chapter: 16 },
+  { chapter: 17 },
+  { chapter: 18 },
+  { chapter: 19 },
+  { chapter: 20 },
+];
+
+const oathbringerChapterList: Chapter[] = [
+  { altName: 'Prologue', chapter: 0, part: 0 },
+  { chapter: 1, part: 1 },
+  { chapter: 2, part: 1 },
+  { chapter: 3, part: 1 },
+  { chapter: 4, part: 1 },
+  { chapter: 5, part: 1 },
+  { chapter: 6, part: 1 },
+  { chapter: 7, part: 1 },
+  { chapter: 8, part: 1 },
+  { chapter: 9, part: 1 },
+  { chapter: 10, part: 1 },
+  { chapter: 11, part: 1 },
+  { chapter: 12, part: 1 },
+  { chapter: 13, part: 1 },
+  { chapter: 14, part: 1 },
+  { chapter: 15, part: 1 },
+  { chapter: 16, part: 1 },
+  { chapter: 17, part: 1 },
+  { chapter: 18, part: 1 },
+  { chapter: 19, part: 1 },
+  { chapter: 20, part: 1 },
+  { chapter: 21, part: 1 },
+  { chapter: 22, part: 1 },
+  { chapter: 23, part: 1 },
+  { chapter: 24, part: 1 },
+  { chapter: 25, part: 1 },
+  { chapter: 26, part: 1 },
+  { chapter: 27, part: 1 },
+  { chapter: 28, part: 1 },
+  { chapter: 29, part: 1 },
+  { chapter: 30, part: 1 },
+  { chapter: 31, part: 1 },
+  { chapter: 32, part: 1 },
+  { altName: 'Interlude 1', chapter: 32.1, part: 1 },
+  { altName: 'Interlude 2', chapter: 32.2, part: 1 },
+  { altName: 'Interlude 3', chapter: 32.3, part: 1 },
+  { chapter: 33, part: 2 },
+  { chapter: 34, part: 2 },
+  { chapter: 35, part: 2 },
+  { chapter: 36, part: 2 },
+  { chapter: 37, part: 2 },
+  { chapter: 38, part: 2 },
+  { chapter: 39, part: 2 },
+  { chapter: 40, part: 2 },
+  { chapter: 41, part: 2 },
+  { chapter: 42, part: 2 },
+  { chapter: 43, part: 2 },
+  { chapter: 44, part: 2 },
+  { chapter: 45, part: 2 },
+  { chapter: 46, part: 2 },
+  { chapter: 47, part: 2 },
+  { chapter: 48, part: 2 },
+  { chapter: 49, part: 2 },
+  { chapter: 50, part: 2 },
+  { chapter: 51, part: 2 },
+  { chapter: 52, part: 2 },
+  { chapter: 53, part: 2 },
+  { chapter: 54, part: 2 },
+  { chapter: 55, part: 2 },
+  { chapter: 56, part: 2 },
+  { chapter: 57, part: 2 },
+  { altName: 'Interlude 4', chapter: 57.1, part: 2 },
+  { altName: 'Interlude 5', chapter: 57.2, part: 2 },
+  { altName: 'Interlude 6', chapter: 57.3, part: 2 },
+  { chapter: 58, part: 3 },
+  { chapter: 59, part: 3 },
+  { chapter: 60, part: 3 },
+  { chapter: 61, part: 3 },
+  { chapter: 62, part: 3 },
+  { chapter: 63, part: 3 },
+  { chapter: 64, part: 3 },
+  { chapter: 65, part: 3 },
+  { chapter: 66, part: 3 },
+  { chapter: 67, part: 3 },
+  { chapter: 68, part: 3 },
+  { chapter: 69, part: 3 },
+  { chapter: 70, part: 3 },
+  { chapter: 71, part: 3 },
+  { chapter: 72, part: 3 },
+  { chapter: 73, part: 3 },
+  { chapter: 74, part: 3 },
+  { chapter: 75, part: 3 },
+  { chapter: 76, part: 3 },
+  { chapter: 77, part: 3 },
+  { chapter: 78, part: 3 },
+  { chapter: 79, part: 3 },
+  { chapter: 80, part: 3 },
+  { chapter: 81, part: 3 },
+  { chapter: 82, part: 3 },
+  { chapter: 83, part: 3 },
+  { chapter: 84, part: 3 },
+  { chapter: 85, part: 3 },
+  { chapter: 86, part: 3 },
+  { chapter: 87, part: 3 },
+  { altName: 'Interlude 7', chapter: 87.1, part: 3 },
+  { altName: 'Interlude 8', chapter: 87.2, part: 3 },
+  { altName: 'Interlude 9', chapter: 87.3, part: 3 },
+  { altName: 'Interlude 10', chapter: 87.4, part: 3 },
+  { altName: 'Interlude 11', chapter: 87.5, part: 3 },
+  { chapter: 88, part: 4 },
+  { chapter: 89, part: 4 },
+  { chapter: 90, part: 4 },
+  { chapter: 91, part: 4 },
+  { chapter: 92, part: 4 },
+  { chapter: 93, part: 4 },
+  { chapter: 94, part: 4 },
+  { chapter: 95, part: 4 },
+  { chapter: 96, part: 4 },
+  { chapter: 97, part: 4 },
+  { chapter: 98, part: 4 },
+  { chapter: 99, part: 4 },
+  { chapter: 100, part: 4 },
+  { chapter: 101, part: 4 },
+  { chapter: 102, part: 4 },
+  { chapter: 103, part: 4 },
+  { chapter: 104, part: 4 },
+  { chapter: 105, part: 4 },
+  { chapter: 106, part: 4 },
+  { chapter: 107, part: 4 },
+  { chapter: 108, part: 4 },
+  { chapter: 109, part: 4 },
+  { chapter: 110, part: 4 },
+  { chapter: 111, part: 4 },
+  { chapter: 112, part: 4 },
+  { chapter: 113, part: 4 },
+  { altName: 'Interlude 12', chapter: 113.1, part: 4 },
+  { altName: 'Interlude 13', chapter: 113.2, part: 4 },
+  { altName: 'Interlude 14', chapter: 113.3, part: 4 },
+  { chapter: 114, part: 5 },
+  { chapter: 115, part: 5 },
+  { chapter: 116, part: 5 },
+  { chapter: 117, part: 5 },
+  { chapter: 118, part: 5 },
+  { chapter: 119, part: 5 },
+  { chapter: 120, part: 5 },
+  { chapter: 121, part: 5 },
+  { chapter: 122, part: 5 },
+  { altName: 'Epilogue', chapter: 122.1, part: 5 },
+];
+
+const dawnshardChapterList: Chapter[] = [
+  { altName: 'Prologue', chapter: 0 },
+  { chapter: 1 },
+  { chapter: 2 },
+  { chapter: 3 },
+  { chapter: 4 },
+  { chapter: 5 },
+  { chapter: 6 },
+  { chapter: 7 },
+  { chapter: 8 },
+  { chapter: 9 },
+  { chapter: 10 },
+  { chapter: 11 },
+  { chapter: 12 },
+  { chapter: 13 },
+  { chapter: 14 },
+  { chapter: 15 },
+  { chapter: 16 },
+  { chapter: 17 },
+  { chapter: 18 },
+  { chapter: 19 },
+  { altName: 'Epilogue', chapter: 19.1 },
+];
+
+const rhythmOfWarChapterList: Chapter[] = [
+  { altName: 'Prologue', chapter: 0, part: 0 },
+  { chapter: 1, part: 1 },
+  { chapter: 2, part: 1 },
+  { chapter: 3, part: 1 },
+  { chapter: 4, part: 1 },
+  { chapter: 5, part: 1 },
+  { chapter: 6, part: 1 },
+  { chapter: 7, part: 1 },
+  { chapter: 8, part: 1 },
+  { chapter: 9, part: 1 },
+  { chapter: 10, part: 1 },
+  { chapter: 11, part: 1 },
+  { chapter: 12, part: 1 },
+  { chapter: 13, part: 1 },
+  { chapter: 14, part: 1 },
+  { chapter: 15, part: 1 },
+  { chapter: 16, part: 1 },
+  { chapter: 17, part: 1 },
+  { chapter: 18, part: 1 },
+  { chapter: 19, part: 1 },
+  { altName: 'Interlude 1', chapter: 19.1, part: 1 },
+  { altName: 'Interlude 2', chapter: 19.2, part: 1 },
+  { altName: 'Interlude 3', chapter: 19.3, part: 1 },
+  { chapter: 20, part: 2 },
+  { chapter: 21, part: 2 },
+  { chapter: 22, part: 2 },
+  { chapter: 23, part: 2 },
+  { chapter: 24, part: 2 },
+  { chapter: 25, part: 2 },
+  { chapter: 26, part: 2 },
+  { chapter: 27, part: 2 },
+  { chapter: 28, part: 2 },
+  { chapter: 29, part: 2 },
+  { chapter: 30, part: 2 },
+  { chapter: 31, part: 2 },
+  { chapter: 32, part: 2 },
+  { chapter: 33, part: 2 },
+  { chapter: 34, part: 2 },
+  { chapter: 35, part: 2 },
+  { chapter: 36, part: 2 },
+  { chapter: 37, part: 2 },
+  { chapter: 38, part: 2 },
+  { chapter: 39, part: 2 },
+  { chapter: 40, part: 2 },
+  { chapter: 41, part: 2 },
+  { chapter: 42, part: 2 },
+  { chapter: 43, part: 2 },
+  { altName: 'Interlude 4', chapter: 43.1, part: 2 },
+  { altName: 'Interlude 5', chapter: 43.2, part: 2 },
+  { altName: 'Interlude 6', chapter: 43.3, part: 2 },
+  { chapter: 44, part: 3 },
+  { chapter: 45, part: 3 },
+  { chapter: 46, part: 3 },
+  { chapter: 47, part: 3 },
+  { chapter: 48, part: 3 },
+  { chapter: 49, part: 3 },
+  { chapter: 50, part: 3 },
+  { chapter: 51, part: 3 },
+  { chapter: 52, part: 3 },
+  { chapter: 53, part: 3 },
+  { chapter: 54, part: 3 },
+  { chapter: 55, part: 3 },
+  { chapter: 56, part: 3 },
+  { chapter: 57, part: 3 },
+  { chapter: 58, part: 3 },
+  { chapter: 59, part: 3 },
+  { chapter: 60, part: 3 },
+  { chapter: 61, part: 3 },
+  { chapter: 62, part: 3 },
+  { chapter: 63, part: 3 },
+  { chapter: 64, part: 3 },
+  { chapter: 65, part: 3 },
+  { chapter: 66, part: 3 },
+  { chapter: 67, part: 3 },
+  { chapter: 68, part: 3 },
+  { chapter: 69, part: 3 },
+  { chapter: 70, part: 3 },
+  { chapter: 71, part: 3 },
+  { chapter: 72, part: 3 },
+  { altName: 'Interlude 7', chapter: 72.1, part: 3 },
+  { altName: 'Interlude 8', chapter: 72.2, part: 3 },
+  { altName: 'Interlude 9', chapter: 72.3, part: 3 },
+  { chapter: 73, part: 4 },
+  { chapter: 74, part: 4 },
+  { chapter: 75, part: 4 },
+  { chapter: 76, part: 4 },
+  { chapter: 77, part: 4 },
+  { chapter: 78, part: 4 },
+  { chapter: 79, part: 4 },
+  { chapter: 80, part: 4 },
+  { chapter: 81, part: 4 },
+  { chapter: 82, part: 4 },
+  { chapter: 83, part: 4 },
+  { chapter: 84, part: 4 },
+  { chapter: 85, part: 4 },
+  { chapter: 86, part: 4 },
+  { chapter: 87, part: 4 },
+  { chapter: 88, part: 4 },
+  { chapter: 89, part: 4 },
+  { chapter: 90, part: 4 },
+  { chapter: 91, part: 4 },
+  { chapter: 92, part: 4 },
+  { chapter: 93, part: 4 },
+  { chapter: 94, part: 4 },
+  { chapter: 95, part: 4 },
+  { chapter: 96, part: 4 },
+  { chapter: 97, part: 4 },
+  { altName: 'Interlude 10', chapter: 97.1, part: 4 },
+  { altName: 'Interlude 11', chapter: 97.2, part: 4 },
+  { altName: 'Interlude 12', chapter: 97.3, part: 4 },
+  { chapter: 98, part: 5 },
+  { chapter: 99, part: 5 },
+  { chapter: 100, part: 5 },
+  { chapter: 101, part: 5 },
+  { chapter: 102, part: 5 },
+  { chapter: 103, part: 5 },
+  { chapter: 104, part: 5 },
+  { chapter: 105, part: 5 },
+  { chapter: 106, part: 5 },
+  { chapter: 107, part: 5 },
+  { chapter: 108, part: 5 },
+  { chapter: 109, part: 5 },
+  { chapter: 110, part: 5 },
+  { chapter: 111, part: 5 },
+  { chapter: 112, part: 5 },
+  { chapter: 113, part: 5 },
+  { chapter: 114, part: 5 },
+  { chapter: 115, part: 5 },
+  { chapter: 116, part: 5 },
+  { chapter: 117, part: 5 },
+  { altName: 'Epilogue', chapter: 117.1, part: 5 },
 ];
 
 export const characters: Character[] =[
@@ -197,33 +541,109 @@ export const characters: Character[] =[
     coppermindLink: 'Shallan'
   },
   {
-    name: 'Dalinar',
-    image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
-    color: 'rgb(44,66,128)',
-    coppermindLink: 'Dalinar_Kholin',
-    firstAppearance: { 1: theWayOfKingsChapterList[16] }
-  },
-  {
-    name: 'Adolin',
-    image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
-    color: 'rgb(44,66,128)',
-    coppermindLink: 'Adolin_Kholin',
-    firstAppearance: { 1: theWayOfKingsChapterList[16] }
-  },
-  {
     name: 'Szeth',
     image: 'https://coppermind.net/w/images/Szeth.jpg',
     color: 'rgb(230,230,230)',
     coppermindLink: 'Szeth'
+  },
+  {
+    name: 'Dalinar',
+    image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
+    color: 'rgb(11,35,63)',
+    coppermindLink: 'Dalinar_Kholin',
+    firstAppearance: { 1: theWayOfKingsChapterList[16] }
+  },
+  {
+    name: 'Jasnah',
+    image: 'https://coppermind.net/w/images/thumb/Jasnah_Shuravf.jpg/400px-Jasnah_Shuravf.jpg',
+    color: 'rgb(106,57,156)',
+    coppermindLink: 'Jasnah_Kholin',
+    firstAppearance: { 1: theWayOfKingsChapterList[6] }
+  },
+  {
+    name: 'Adolin',
+    image: 'https://coppermind.net/w/images/thumb/Adolin.jpg/400px-Adolin.jpg',
+    color: 'rgb(100,150,200)',
+    coppermindLink: 'Adolin_Kholin',
+    firstAppearance: { 1: theWayOfKingsChapterList[16] }
+  },
+  {
+    name: 'Moash',
+    image: 'https://coppermind.net/w/images/thumb/Moash_Shuravf.jpg/400px-Moash_Shuravf.jpg',
+    color: 'rgb(216,57,71)',
+    coppermindLink: 'Moash',
+    firstAppearance: { 1: theWayOfKingsChapterList[18] }
+  },
+  {
+    name: 'Taravangian',
+    image: 'https://coppermind.net/w/images/thumb/Taravangian_Portrait_by_Marie_Seeberger.jpg/400px-Taravangian_Portrait_by_Marie_Seeberger.jpg',
+    color: 'rgb(154,56,13)',
+    coppermindLink: 'Taravangian',
+    firstAppearance: { 1: theWayOfKingsChapterList[6] }
+  },
+  {
+    name: 'Navani',
+    image: 'https://coppermind.net/w/images/Navani.jpg',
+    color: 'rgb(80,27,76)',
+    coppermindLink: 'Navani_Kholin',
+    firstAppearance: { 1: theWayOfKingsChapterList[26] }
+  },
+  {
+    name: 'Lopen',
+    image: 'https://coppermind.net/w/images/thumb/Lopen_Shuravf.png/400px-Lopen_Shuravf.png',
+    color: 'rgb(77,62,55)',
+    coppermindLink: 'Lopen',
+    firstAppearance: { 1: theWayOfKingsChapterList[39] }
+  },
+  {
+    name: 'Rysn',
+    image: 'https://coppermind.net/w/images/thumb/Rysn_by_paintweaver.jpg/400px-Rysn_by_paintweaver.jpg',
+    color: 'rgb(21,49,12)',
+    coppermindLink: 'Rysn_Ftori',
+    firstAppearance: { 1: theWayOfKingsChapterList[33] }
+  },
+  {
+    name: 'Eshonai',
+    image: 'https://coppermind.net/w/images/thumb/Eshonai_portrait_large.png/400px-Eshonai_portrait_large.png',
+    color: 'rgb(200,86,85)',
+    coppermindLink: 'Eshonai',
+    firstAppearance: { 1: theWayOfKingsChapterList[78] }
+  },
+  {
+    name: 'Venli',
+    image: 'https://coppermind.net/w/images/thumb/Venli.png/400px-Venli.png',
+    color: 'rgb(232,150,125)',
+    coppermindLink: 'Venli',
+    firstAppearance: { 2: wordsOfRadianceChapterList[13] }
+  },
+  {
+    name: 'Lift',
+    image: 'https://coppermind.net/w/images/thumb/Lift_by_Katie_Payne.jpg/400px-Lift_by_Katie_Payne.jpg',
+    color: 'rgb(129,180,184)',
+    coppermindLink: 'Lift',
+    firstAppearance: { 2: wordsOfRadianceChapterList[67] }
   },
 ];
 
 enum CharacterIndex {
   'Kaladin' = 0,
   'Shallan' = 1,
-  'Dalinar' = 2,
-  'Adolin' = 3,
-  'Szeth' = 4
+  'Szeth' = 2,
+
+  'Dalinar' = 3, // ch12
+  'Jasnah' = 4, // bk1 ch5
+  'Adolin' = 5, // ch12
+
+  'Moash' = 6, // bk1 ch14
+  'Taravangian' = 7, // bk1 ch5
+  'Navani' = 8, // bk1 ch22
+
+  'Lopen' = 9, // bk1 ch32
+  'Rysn' = 10, // bk1 int4
+
+  'Eshonai' = 11, // bk1 ch68
+  'Venli' = 12, //bk2 int1
+  'Lift' = 13, // bk2 int9
 };
 
 export const books: Book[] = [
@@ -236,6 +656,26 @@ export const books: Book[] = [
     title: 'Words of Radiance',
     image: 'https://coppermind.net/w/images/thumb/Words_of_Radiance.jpg/400px-Words_of_Radiance.jpg',
     chapters: wordsOfRadianceChapterList
+  },
+  {
+    title: 'Edgedancer',
+    image: 'https://coppermind.net/w/images/thumb/Edgedancer_Cover.jpg/400px-Edgedancer_Cover.jpg',
+    chapters: edgedancerChapterList
+  },
+  {
+    title: 'Oathbringer',
+    image: 'https://coppermind.net/w/images/thumb/Oathbringer_US_Hardcover.jpg/400px-Oathbringer_US_Hardcover.jpg',
+    chapters: oathbringerChapterList
+  },
+  {
+    title: 'Dawnshard',
+    image: 'https://coppermind.net/w/images/Dawnshard_cover.jpg',
+    chapters: dawnshardChapterList
+  },
+  {
+    title: 'Rhythm of War',
+    image: 'https://coppermind.net/w/images/thumb/RoW_US_cover.jpg/400px-RoW_US_cover.jpg',
+    chapters: rhythmOfWarChapterList
   }
 ];
 
@@ -254,6 +694,81 @@ export const STORMLIGHT_DATA: DataBundle = {
   map: mapData,
   markers: [
     {
+      title: 'Assassination of Gavilar',
+      coordinates: [513, 1369],
+      type: 'event',
+      image: 'https://coppermind.net/w/images/thumb/Reluctant_Villain_by_Art_Dem.jpg/400px-Reluctant_Villain_by_Art_Dem.jpg',
+      appearances: {
+        1: [1].map(i => theWayOfKingsChapterList[i]),
+        2: [0].map(i => wordsOfRadianceChapterList[i]),
+        4: [0].map(i => oathbringerChapterList[i]),
+        6: [0].map(i => rhythmOfWarChapterList[i])
+      },
+      description: `The Assassination of Gavilar was an assassination performed by Szeth-son-son-Vallano on orders from the Parshendi. It was a major turning point in Alethkar's history, leading to the War of Reckoning and most of the events in the Stormlight Archive.`,
+      coppermindLink: 'Assassination_of_Gavilar',
+      confirmed: true
+    },
+    {
+      title: 'Battle of Narak',
+      coordinates: [259.5, 1441],
+      type: 'battle',
+      image: 'https://coppermind.net/w/images/thumb/WoR_BG_cover_art.jpg/800px-WoR_BG_cover_art.jpg',
+      appearances: {
+        2: [95, 96, 97, 98, 99, 100, 101].map(i => wordsOfRadianceChapterList[i])
+      },
+      description: `The Battle of Narak is a major event during the War of Reckoning on Roshar. The battle ended the war and ushered in the True Desolation.`,
+      coppermindLink: 'Battle_of_Narak',
+      confirmed: true
+    },
+    {
+      title: 'Battle of Thaylen Field',
+      coordinates: [138, 1055],
+      type: 'battle',
+      image: 'https://coppermind.net/w/images/thumb/Dalinar_Perpendicularity.png/420px-Dalinar_Perpendicularity.png',
+      appearances: {
+        3: [129, 130, 131, 132, 133, 134].map(i => oathbringerChapterList[i])
+      },
+      description: `The Battle of Thaylen Field is one of the first major engagements in the True Desolation. It's fought between the human armies, led by Dalinar Kholin, and the Voidbringers, mainly Fused, under direct command of Odium.`,
+      coppermindLink: 'Battle_of_Thaylen_Field',
+      confirmed: true
+    },
+    {
+      title: 'Battle of the Tower',
+      coordinates: [259.5, 1435],
+      type: 'battle',
+      image: 'https://coppermind.net/w/images/thumb/The_Leap_by_Grant_Hansen.jpg/600px-The_Leap_by_Grant_Hansen.jpg',
+      appearances: {
+        1: [75, 76, 77, 78].map(i => theWayOfKingsChapterList[i])
+      },
+      description: `The Battle of the Tower is a major engagement during the War of Reckoning fought by the combined armies of the Alethi Highprinces Dalinar Kholin and Torol Sadeas against the Parshendi forces led by Eshonai.`,
+      coppermindLink: 'Battle_of_the_Tower',
+      confirmed: true
+    },
+    {
+      title: 'Expedition to Akinah',
+      coordinates: [138, 1061],
+      type: 'event',
+      image: 'https://coppermind.net/w/images/thumb/Aboard_the_Wandersail.jpg/400px-Aboard_the_Wandersail.jpg',
+      appearances: {
+        5: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
+      },
+      description: `The Wandersail's expedition to Akinah in late 1174 led to the discovery of a Dawnshard, several Soulcasters, and Shardplate.`,
+      coppermindLink: 'Expedition_to_Akinah',
+      confirmed: true
+    },
+    {
+      title: 'Siege of Kholinar',
+      coordinates: [513, 1375],
+      type: 'battle',
+      image: 'https://coppermind.net/w/images/thumb/Attack_on_Roshar_by_Connor_Chamberlain.jpg/400px-Attack_on_Roshar_by_Connor_Chamberlain.jpg',
+      appearances: {
+        4: [89, 90, 91, 93].map(i => oathbringerChapterList[i])
+      },
+      description: `The Siege of Kholinar, and the ensuing battle inside Kholinar Palace, is a major event that occurs during the True Desolation. The battle resulted in a Voidbringer victory and occupation of the city, the death of King Elhokar, and several of the modern Knights Radiant being transported to the Cognitive Realm.`,
+      coppermindLink: 'Siege_of_Kholinar',
+      confirmed: true
+    },
+    {
       title: 'Kholinar',
       coordinates: [513, 1363.5],
       type: 'city',
@@ -261,7 +776,10 @@ export const STORMLIGHT_DATA: DataBundle = {
       appearances: {
         1: [
           1, 86
-        ].map(i => theWayOfKingsChapterList[i])
+        ].map(i => theWayOfKingsChapterList[i]),
+        2: [
+          0
+        ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
       coppermindLink: 'Kholinar',
@@ -297,8 +815,8 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       title: 'Shattered Plains',
-      coordinates: [259.5, 1429],
-      type: 'point of interest',
+      coordinates: [259.5, 1423],
+      type: 'region',
       image: 'https://coppermind.net/w/images/Shattered_Plains_by_Noah_Bradley.jpg',
       appearances: {
         1: [
@@ -308,10 +826,25 @@ export const STORMLIGHT_DATA: DataBundle = {
           50, 53, 56, 62, 63, 64, 65, 66,
           67, 68, 69, 70, 71, 72, 73, 74,
           75, 76, 77, 78, 79, 83, 85
-
-        ].map(i => theWayOfKingsChapterList[i])
+        ].map(i => theWayOfKingsChapterList[i]),
+        2: [
+          2, 4, 5, 8, 9, 12, 13
+        ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
+      confirmed: true
+    },
+    {
+      title: 'Stormseat',
+      coordinates: [259.5, 1429],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/Narak_by_Connor_Chamberlain.jpg',
+      appearances: {
+        2: [
+          13, 16
+        ].map(i => wordsOfRadianceChapterList[i])
+      },
+      description: `Stormseat was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning, it's called Narak, or Exile, and serves as the home of the listeners.`,
       confirmed: true
     },
     {
@@ -349,7 +882,10 @@ export const STORMLIGHT_DATA: DataBundle = {
       appearances: {
         1: [
           theWayOfKingsChapterList[14]
-        ]
+        ],
+        2: [
+          10 
+        ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `The ancestral home of House Davar, and is known for mining.`,
       confirmed: false
@@ -450,6 +986,41 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => theWayOfKingsChapterList[i])
       },
       description: `Feverstone Keep is a fortress on ancient Roshar, in use during the False Desolation and Recreance.`,
+      confirmed: false
+    },
+    {
+      title: 'Akinah',
+      coordinates: [498.5, 104.5],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/Akinah_city_map.jpg',
+      appearances: {
+        5: [12, 13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
+      },
+      description: `Akinah is the ancient capital of the Silver Kingdom of Aimia on Roshar. In more modern times, it is also known as The Rock of Secrets and The Void's Playground. The city itself was destroyed long ago, and during the Era of Solitude it exists only as a ruin. It is the location of an apparently functional Oathgate and its underwater caverns formerly contained a Dawnshard.`,
+      coppermindLink: 'Akinah',
+      confirmed: true
+    },
+    {
+      title: 'Iri',
+      coordinates: [672, 469],
+      type: 'region',
+      appearances: {
+        2: [14].map(i => wordsOfRadianceChapterList[i])
+      },
+      description: `Iri is a kingdom in northwestern Roshar. Prior to the Recreance, it was one of the Silver Kingdoms. People from Iri are called Iriali. Iri is ruled by three monarchs, currently two kings and a queen. The Iriali queen has authority over foreign policy.`,
+      coppermindLink: 'Iri',
+      confirmed: true
+    },
+    {
+      title: 'Relu-na',
+      coordinates: [739, 843],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/thumb/Tan-na_by_Marie_Seeberger.jpg/600px-Tan-na_by_Marie_Seeberger.jpg',
+      appearances: {
+        2: [15].map(i => wordsOfRadianceChapterList[i])
+      },
+      description: `Relu-na is a Tai-na in the Reshi Sea on Roshar. A greatshell the size of an island, she is worshiped as a god by her inhabitants.`,
+      coppermindLink: 'Relu-na',
       confirmed: false
     },
   ],
@@ -573,6 +1144,245 @@ export const STORMLIGHT_DATA: DataBundle = {
         [235.5, 1006.5]
       ]
     },
-    
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[1],
+      confirmed: false,
+      coordinates: [
+        [235.5, 1006], // kharbranth
+        [243, 993.5],
+        [234.5, 986],
+        [217, 986.5],
+        [204, 991],
+        [195, 1002],
+        [186, 1019.5],
+        [182.5, 1029.5],
+        [178, 1042.5],
+        [175, 1056.5],
+        [176, 1068.5],
+        [176.5, 1080.5],
+        [171.5, 1094.5], // ch 1
+        [165.5, 1106], 
+        [160, 1119.5],
+        [154.5, 1136],
+        [104.5, 1214.5], // shipwreck ch 11
+        [98, 1214.5],
+        [93.5, 1209.5],
+        [90.5, 1209],
+        [86.5, 1210.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[1],
+      confirmed: false,
+      coordinates: [
+        [235.5, 1006], // kharbranth
+        [243, 993.5],
+        [234.5, 986],
+        [217, 986.5],
+        [204, 991],
+        [195, 1002],
+        [186, 1019.5],
+        [182.5, 1029.5],
+        [178, 1042.5],
+        [175, 1056.5],
+        [176, 1068.5],
+        [176.5, 1080.5],
+        [171.5, 1094.5], // ch 1
+        [165.5, 1106], 
+        [160, 1119.5],
+        [154.5, 1136],
+        [104.5, 1214.5], // shipwreck ch 11
+        [98, 1214.5],
+        [93.5, 1209.5],
+        [90.5, 1209],
+        [86.5, 1210.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[3],
+      confirmed: true,
+      coordinates: [
+        [86.5, 1210.5],
+        [80, 1214.5],
+        [78.5, 1220.5],
+        [79, 1238.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[3],
+      confirmed: true,
+      coordinates: [
+        [86.5, 1210.5],
+        [80, 1214.5],
+        [78.5, 1220.5],
+        [79, 1238.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[6],
+      confirmed: true,
+      coordinates: [
+        [79, 1238.5],
+        [83, 1260.5],
+        [86, 1280],
+        [88.5, 1299],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[6],
+      confirmed: true,
+      coordinates: [
+        [79, 1238.5],
+        [83, 1260.5],
+        [86, 1280],
+        [88.5, 1299],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[7],
+      confirmed: true,
+      coordinates: [
+        [88.5, 1299],
+        [92.5, 1316.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[7],
+      confirmed: true,
+      coordinates: [
+        [88.5, 1299],
+        [92.5, 1316.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[11],
+      confirmed: true,
+      coordinates: [
+        [92.5, 1316.5],
+        [106, 1354],
+        [118, 1358.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[17],
+      confirmed: true,
+      coordinates: [
+        [118, 1358.5],
+        [129.5, 1360],
+        [138, 1361],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[19],
+      confirmed: true,
+      coordinates: [
+        [138, 1361],
+        [156.5, 1365],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [156.5, 1365],
+        [165, 1369],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[24],
+      confirmed: true,
+      coordinates: [
+        [165, 1369],
+        [177.5, 1374.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[28],
+      confirmed: true,
+      coordinates: [
+        [177.5, 1374.5],
+        [189.5, 1383.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[32],
+      confirmed: true,
+      coordinates: [
+        [189.5, 1383.5],
+        [200, 1389],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[34],
+      confirmed: true,
+      coordinates: [
+        [200, 1389],
+        [211.5, 1398],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[35],
+      confirmed: true,
+      coordinates: [
+        [211.5, 1398],
+        [223, 1405.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[35],
+      confirmed: true,
+      coordinates: [
+        [223, 1405.5],
+        [235.5, 1413],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[44],
+      confirmed: true,
+      coordinates: [
+        [235.5, 1413],
+        [243, 1417.5],
+      ]
+    },
   ]
 };
+
+// NOTE: done with shallan up through chapter 36, everyone else through interlude 4

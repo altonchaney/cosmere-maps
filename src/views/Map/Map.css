@@ -74,3 +74,29 @@
 .tooltip p.alt {
   text-transform: capitalize;
 }
+
+.realm-toggle {
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 44px);
+  background-color: var;
+  width: 88px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+}
+
+.realm-toggle > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.realm-toggle > .active {
+  background-color: var(--white);
+}
