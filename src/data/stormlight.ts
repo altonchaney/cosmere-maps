@@ -778,7 +778,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           1, 86
         ].map(i => theWayOfKingsChapterList[i]),
         2: [
-          0
+          0, 87, 
         ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
@@ -828,7 +828,14 @@ export const STORMLIGHT_DATA: DataBundle = {
           75, 76, 77, 78, 79, 83, 85
         ].map(i => theWayOfKingsChapterList[i]),
         2: [
-          2, 4, 5, 8, 9, 12, 13
+          2, 4, 5, 8, 9, 12, 13, 18, 20, 22,
+          26, 27, 29, 30, 33, 35, 36, 37, 40,
+          41, 43, 44, 45, 46, 48, 49, 50, 51,
+          52, 54, 55, 57, 58, 59, 60, 61, 62,
+          63, 64, 65, 66, 70, 71, 73, 74, 75,
+          77, 78, 79, 80, 81, 82, 83, 85, 86,
+          90, 91, 92, 93, 94, 95, 96, 97, 98,
+          99, 100, 101, 102
         ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
@@ -841,7 +848,8 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/Narak_by_Connor_Chamberlain.jpg',
       appearances: {
         2: [
-          13, 16
+          13, 16, 39, 42, 69, 88, 97, 98, 99,
+          100, 101
         ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `Stormseat was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning, it's called Narak, or Exile, and serves as the home of the listeners.`,
@@ -884,7 +892,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           theWayOfKingsChapterList[14]
         ],
         2: [
-          10 
+          10, 23, 31, 47, 53, 56, 72, 76, 84
         ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `The ancestral home of House Davar, and is known for mining.`,
@@ -971,7 +979,10 @@ export const STORMLIGHT_DATA: DataBundle = {
       appearances: {
         1: [
           61
-        ].map(i => theWayOfKingsChapterList[i])
+        ].map(i => theWayOfKingsChapterList[i]),
+        2: [
+          89
+        ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `Vedenar is the capital city of Jah Keved on Roshar. Vedenar lies on the southern edge of Jah Keved, on the cliffs facing Tarat Sea. The sound of the waves crashing against the stone can be heard across the entire city.`,
       confirmed: true
@@ -1022,6 +1033,48 @@ export const STORMLIGHT_DATA: DataBundle = {
       description: `Relu-na is a Tai-na in the Reshi Sea on Roshar. A greatshell the size of an island, she is worshiped as a god by her inhabitants.`,
       coppermindLink: 'Relu-na',
       confirmed: false
+    },
+    {
+      title: 'Azimir',
+      coordinates: [332.5, 643],
+      type: 'city',
+      appearances: {
+        2: [
+          67
+        ].map(i => wordsOfRadianceChapterList[i]),
+        3: [
+          0, 
+        ].map(i => edgedancerChapterList[i])
+      },
+      description: `Azimir is the capital city of Azir, and the seat of the Prime Aqasix, the leader of the Azish Empire.`,
+      confirmed: true
+    },
+    {
+      title: 'Urithiru',
+      coordinates: [362, 802],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/thumb/Urithiru3_by_Jacobo_Montoya.jpg/889px-Urithiru3_by_Jacobo_Montoya.jpg',
+      appearances: {
+        2: [
+          68, 100, 101, 102, 103
+        ].map(i => wordsOfRadianceChapterList[i])
+      },
+      description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
+      confirmed: true
+    },
+    {
+      title: 'Yeddaw',
+      coordinates: [318, 611],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/thumb/Yeddaw.png/400px-Yeddaw.png',
+      appearances: {
+        3: [
+          2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+          13, 14, 15, 16, 17, 18, 19, 20
+        ].map(i => edgedancerChapterList[i])
+      },
+      description: `Yeddaw's shape and appearance is very unusual because it is composed of hundreds of trenches cut into the ground by hired Shardblades, the Imperial Shardblades of Azir. All inhabitants live inside of the trenches, but farming is done above the city in the spaces between trenches.`,
+      confirmed: true
     },
   ],
   paths: [
@@ -1350,6 +1403,29 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [
         [200, 1389],
         [211.5, 1398],
+        [222, 1409],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[34],
+      confirmed: true,
+      coordinates: [
+        [253.5, 1408],
+        [242, 1404],
+        [222, 1409],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[34],
+      confirmed: true,
+      coordinates: [
+        [253.5, 1408],
+        [242, 1404],
+        [222, 1409],
       ]
     },
     {
@@ -1358,18 +1434,28 @@ export const STORMLIGHT_DATA: DataBundle = {
       chapter: wordsOfRadianceChapterList[35],
       confirmed: true,
       coordinates: [
-        [211.5, 1398],
-        [223, 1405.5],
-      ]
-    },
-    {
-      character: characters[CharacterIndex.Shallan],
-      book: books[1],
-      chapter: wordsOfRadianceChapterList[35],
-      confirmed: true,
-      coordinates: [
-        [223, 1405.5],
+        [222, 1409],
         [235.5, 1413],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[35],
+      confirmed: true,
+      coordinates: [
+        [222, 1409],
+        [253.5, 1408],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[35],
+      confirmed: true,
+      coordinates: [
+        [222, 1409],
+        [253.5, 1408],
       ]
     },
     {
@@ -1379,10 +1465,292 @@ export const STORMLIGHT_DATA: DataBundle = {
       confirmed: true,
       coordinates: [
         [235.5, 1413],
-        [243, 1417.5],
+        [253.5, 1408],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[62],
+      confirmed: true,
+      coordinates: [
+        [253.5, 1408],
+        [259, 1396.5],
+        [265.5, 1383.5],
+        [274.5, 1389],
+        [282.5, 1390.5],
+        [274.5, 1389],
+        [265.5, 1383.5],
+        [259, 1396.5],
+        [253.5, 1408],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[36],
+      confirmed: false,
+      coordinates: [
+        [235.5, 1006.5],
+        [220, 1028],
+        [213, 1049],
+        [211, 1072],
+        [210, 1104],
+        [210, 1125],
+        [211, 1142],
+        [214, 1163],
+        [219, 1188],
+        [223, 1214],
+        [226, 1232],
+        [228, 1252],
+        [225, 1266],
+        [221, 1285],
+        [225, 1298],
+        [237, 1311],
+        [242, 1330],
+        [245, 1350],
+        [245, 1369],
+        [245, 1381],
+        [248, 1397],
+        [253.5, 1408],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[68],
+      confirmed: false,
+      coordinates: [
+        [253.5, 1408],
+        [252, 1393],
+        [257, 1375],
+        [264, 1350],
+        [271, 1339],
+        [282, 1324],
+        [292, 1302],
+        [303, 1279],
+        [315, 1253],
+        [322, 1230],
+        [330, 1195],
+        [327, 1172],
+        [327, 1150],
+        [325, 1136],
+        [327, 1124],
+        [332, 1113],
+        [332, 1100],
+        [330, 1088],
+        [325, 1065],
+        [325, 1044],
+        [326, 1017],
+        [329, 996],
+        [334, 978],
+        [334, 964],
+        [335, 943],
+        [338, 922],
+        [342, 902],
+        [348, 878],
+        [356, 854],
+        [359, 839],
+        [361, 821],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[89],
+      confirmed: true,
+      coordinates: [
+        [235.5, 1006.5],
+        [247.5, 997],
+        [263, 995.5],
+        [276.5, 1001.5],
+        [281.5, 1016.5],
+        [285, 1036],
+        [296, 1056.5],
+        [306.5, 1067],
+        [312, 1070],
+        [326, 1076.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[89],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [350, 815],
+        [338, 834],
+        [332, 860],
+        [327, 881],
+        [320, 910],
+        [318, 933],
+        [321, 959],
+        [324, 975],
+        [323, 989],
+        [319, 1012],
+        [319, 1039],
+        [323, 1063],
+        [326, 1076.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[100],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[100],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[100],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[101],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[101],
+      confirmed: true,
+      coordinates: [
+        [253.5, 1408],
+        [251.5, 1400],
+        [251, 1392],
+        [251.5, 1385.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[104],
+      confirmed: false,
+      coordinates: [
+        [92.5, 1316.5],
+        [111.5, 1316.5],
+        [123.5, 1314.5],
+        [130.5, 1311.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[1],
+      chapter: wordsOfRadianceChapterList[98],
+      confirmed: false,
+      coordinates: [
+        [326, 1076.5],
+        [319, 1109.5],
+        [324, 1119.5],
+        [327, 1135],
+        [328.5, 1160],
+        [322, 1179],
+        [315.5, 1194.5],
+        [307, 1207.5],
+        [297.5, 1224.5],
+        [286.5, 1242],
+        [275, 1254.5],
+        [268.5, 1280.5],
+        [261.5, 1307],
+        [258, 1333.5],
+        [253, 1365],
+        [252, 1385.5],
+        [253.5, 1408]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lift],
+      book: books[2],
+      chapter: edgedancerChapterList[1],
+      confirmed: true,
+      coordinates: [
+        [332.5, 643],
+        [326, 626.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lift],
+      book: books[2],
+      chapter: edgedancerChapterList[2],
+      confirmed: true,
+      coordinates: [
+        [326, 626.5],
+        [318, 611]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[2],
+      chapter: edgedancerChapterList[9],
+      confirmed: false,
+      coordinates: [
+        [253.5, 1408],
+        [256, 1388],
+        [269, 1364],
+        [277, 1336],
+        [287, 1308],
+        [292, 1271],
+        [301, 1238],
+        [308, 1206],
+        [319, 1182],
+        [329, 1156],
+        [338, 1123],
+        [340, 1100],
+        [348, 1059],
+        [348, 1022],
+        [347, 980],
+        [343, 942],
+        [334, 907],
+        [328, 874],
+        [310, 849],
+        [299, 830],
+        [288, 811],
+        [276, 791],
+        [271, 773],
+        [271, 752],
+        [273, 723],
+        [281, 690],
+        [290, 658],
+        [300, 636],
+        [308, 621],
+        [318, 611],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lift],
+      book: books[2],
+      chapter: edgedancerChapterList[20],
+      confirmed: true,
+      coordinates: [
+        [318, 611],
+        [326, 626.5]
       ]
     },
   ]
 };
-
-// NOTE: done with shallan up through chapter 36, everyone else through interlude 4
