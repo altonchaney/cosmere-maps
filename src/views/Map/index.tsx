@@ -102,13 +102,11 @@ const Map = (props: {name: AvailableSeries}) => {
     return data.paths
       .filter(path => (
         visibleCharacters.includes(path.character.name) &&
+        path.book.title === data.books[bookIndex].title &&
+        visibleBooks.includes(bookIndex) &&
         (
+          latestVisibleBook > bookIndex ||
           (
-            latestVisibleBook > bookIndex &&
-            visibleBooks.includes(data.books.findIndex(b => (b.title === path.book.title))) &&
-            data.books.findIndex(b => (b.title === path.book.title)) < latestVisibleBook
-          ) || (
-            data.books[bookIndex].title === path.book.title &&
             data.books[bookIndex].chapters[visibleRange[0]].chapter <= path.chapter.chapter &&
             data.books[bookIndex].chapters[visibleRange[1]].chapter >= path.chapter.chapter
           )
