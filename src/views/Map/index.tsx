@@ -34,12 +34,12 @@ const Map = (props: {name: AvailableSeries}) => {
     return !!localStorage.getItem(`${name}-Range`) &&
       JSON.parse(localStorage.getItem(`${name}-Range`) as string)
   }, [name]);
-  const valueReferencer = useMemo(() => ({
+  const valueHandler = useMemo(() => ({
     'Characters': visibleCharacters,
     'Books': visibleBooks,
     'Range': visibleRange,
   }), [visibleCharacters, visibleBooks, visibleRange]);
-  const valueHandler = useMemo(() => ({
+  const valueSetterHandler = useMemo(() => ({
     'Characters': setVisibleCharacters,
     'Books': setVisibleBooks,
   }), []);
@@ -140,9 +140,9 @@ const Map = (props: {name: AvailableSeries}) => {
     ['Characters', 'Books'].forEach(key => {
       if (localStorage.getItem(`${name}-${key}`)) {
         const savedValue = JSON.parse(localStorage.getItem(`${name}-${key}`) as string);
-        valueHandler[key as ('Characters' | 'Books')](savedValue);
+        valueSetterHandler[key as ('Characters' | 'Books')](savedValue);
       } else {
-        localStorage.setItem(`${name}-${key}`, JSON.stringify(valueReferencer[key as ('Characters' | 'Books')]));
+        localStorage.setItem(`${name}-${key}`, JSON.stringify(valueHandler[key as ('Characters' | 'Books')]));
       }
     });
   }, [name]);
