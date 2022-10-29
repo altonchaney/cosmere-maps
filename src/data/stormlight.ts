@@ -921,7 +921,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           0, 87, 
         ].map(i => wordsOfRadianceChapterList[i]),
         4: [
-          39, 52
+          39, 52, 66
         ].map(i => oathbringerChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
@@ -2396,7 +2396,6 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [
         [138, 1049],
         [362, 802],
-        [138, 1049],
       ]
     },
     {
@@ -2407,7 +2406,6 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [
         [138, 1049],
         [362, 802],
-        [138, 1049],
       ]
     },
     {
@@ -2428,6 +2426,47 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [
         [362, 802],
         [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[66],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [259.5, 1423]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[66],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [259.5, 1423]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[66],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [259.5, 1423]
       ]
     },
   ]

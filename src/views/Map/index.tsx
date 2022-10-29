@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MapContainer, ImageOverlay, Marker, Polyline, useMapEvents, ZoomControl, Tooltip } from 'react-leaflet';
 import L, { DivIcon } from 'leaflet';
@@ -13,7 +13,6 @@ import MapPanel from '../../components/MapPanel';
 import MapTimeline from '../../components/MapTimeline';
 import MapMarker from '../../components/MapMarker';
 import colors from '../../assets/colors';
-
 
 const Coordinates = () => {
   const map = useMapEvents({
@@ -31,21 +30,32 @@ const Map = (props: {name: AvailableSeries}) => {
   const [visibleCharacters, setVisibleCharacters] = useState<string[]>(data.characters.map(c => c.name));
   const [visibleBooks, setVisibleBooks] = useState<number[]>([0]);
   const [visibleRange, setVisibleRange] = useState<number[]>([0, 0]);
+  const initialRange: number[] = useMemo(() => {
+    return !!localStorage.getItem(`${name}-Range`) &&
+      JSON.parse(localStorage.getItem(`${name}-Range`) as string)
+  }, [name]);
+  const valueReferencer = useMemo(() => ({
+    'Characters': visibleCharacters,
+    'Books': visibleBooks,
+    'Range': visibleRange,
+  }), [visibleCharacters, visibleBooks, visibleRange]);
+  const valueHandler = useMemo(() => ({
+    'Characters': setVisibleCharacters,
+    'Books': setVisibleBooks,
+  }), []);
 
-  const toggleVisibleCharacters = (name: string) => {
-    if (visibleCharacters.includes(name)) {
-      setVisibleCharacters(visibleCharacters.filter(n => (n !== name)));
-    } else {
-      setVisibleCharacters([...visibleCharacters, name]);
-    }
+  const toggleVisibleCharacters = (characterName: string) => {
+    let newVisibleCharacters: string[] = visibleCharacters.includes(characterName) ?
+      visibleCharacters.filter(n => (n !== characterName)) : [...visibleCharacters, characterName];
+    setVisibleCharacters(newVisibleCharacters);
+    localStorage.setItem(`${name}-Characters`, JSON.stringify(newVisibleCharacters));
   };
 
-  const toggleVisibleBooks = (index: number) => {
-    if (visibleBooks.includes(index)) {
-      setVisibleBooks(visibleBooks.filter(i => (i !== index)));
-    } else {
-      setVisibleBooks([...visibleBooks, index]);
-    }
+  const toggleVisibleBooks = (bookIndex: number) => {
+    const newVisibleBooks: number[] = visibleBooks.includes(bookIndex) ?
+      visibleBooks.filter(i => (i !== bookIndex)) : [...visibleBooks, bookIndex];
+    setVisibleBooks(newVisibleBooks);
+    localStorage.setItem(`${name}-Books`, JSON.stringify(newVisibleBooks));
   };
 
   const renderMarkers = useCallback((bookIndex: number) => {
@@ -126,6 +136,17 @@ const Map = (props: {name: AvailableSeries}) => {
       ))
   }, [visibleCharacters, visibleBooks, visibleRange, data.books, data.paths]);
 
+  useEffect(() => {
+    ['Characters', 'Books'].forEach(key => {
+      if (localStorage.getItem(`${name}-${key}`)) {
+        const savedValue = JSON.parse(localStorage.getItem(`${name}-${key}`) as string);
+        valueHandler[key as ('Characters' | 'Books')](savedValue);
+      } else {
+        localStorage.setItem(`${name}-${key}`, JSON.stringify(valueReferencer[key as ('Characters' | 'Books')]));
+      }
+    });
+  }, [name]);
+
   return (
     <div className='map'>
       <MapContainer
@@ -172,7 +193,11 @@ const Map = (props: {name: AvailableSeries}) => {
         visibleBooks.length &&
         <MapTimeline
           book={data.books[Math.max(...visibleBooks)]}
-          callback={(range) => setVisibleRange(range)}
+          initialValue={initialRange}
+          callback={(range) => {
+            setVisibleRange(range);
+            localStorage.setItem(`${name}-Range`, JSON.stringify(range));
+          }}
         />
       }
       {
