@@ -921,7 +921,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           0, 87, 
         ].map(i => wordsOfRadianceChapterList[i]),
         4: [
-          39, 52, 66
+          39, 52, 66, 67, 68, 69
         ].map(i => oathbringerChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
@@ -1197,7 +1197,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => wordsOfRadianceChapterList[i]),
         3: [
           0, 
-        ].map(i => edgedancerChapterList[i])
+        ].map(i => edgedancerChapterList[i]),
+        4: [
+          71, 
+        ].map(i => oathbringerChapterList[i])
       },
       description: `Azimir is the capital city of Azir, and the seat of the Prime Aqasix, the leader of the Azish Empire.`,
       confirmed: true
@@ -1215,7 +1218,8 @@ export const STORMLIGHT_DATA: DataBundle = {
           1, 2, 4, 8, 9, 10, 12, 13, 15, 16,
           18, 21, 22, 24, 25, 27, 28, 29, 30,
           36, 37, 38, 41, 42, 43, 44, 45, 47,
-          49, 50, 53, 54, 56, 59, 60, 62, 64
+          49, 50, 53, 54, 56, 59, 60, 62, 64,
+          71
         ].map(i => oathbringerChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
@@ -2191,7 +2195,6 @@ export const STORMLIGHT_DATA: DataBundle = {
         [513, 1363.5]
       ]
     },
-
     {
       character: characters[CharacterIndex.Kaladin],
       book: books[3],
@@ -2438,7 +2441,6 @@ export const STORMLIGHT_DATA: DataBundle = {
         [138, 1049],
       ]
     },
-
     {
       character: characters[CharacterIndex.Kaladin],
       book: books[3],
@@ -2469,7 +2471,140 @@ export const STORMLIGHT_DATA: DataBundle = {
         [259.5, 1423]
       ]
     },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[66],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1423],
+        [271, 1414],
+        [280, 1405.5],
+        [290.5, 1397.5],
+        [303.5, 1390.5],
+        [315, 1384],
+        [345.5, 1372.5],
+        [367, 1370],
+        [390.5, 1368],
+        [413, 1369.5],
+        [430, 1372],
+        [453.5, 1376],
+        [470, 1373.5],
+        [479.5, 1371],
+        [498.5, 1367.5],
+        [513, 1363.5],
+        [498.5, 1367.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[66],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1423],
+        [271, 1414],
+        [280, 1405.5],
+        [290.5, 1397.5],
+        [303.5, 1390.5],
+        [315, 1384],
+        [345.5, 1372.5],
+        [367, 1370],
+        [390.5, 1368],
+        [413, 1369.5],
+        [430, 1372],
+        [453.5, 1376],
+        [470, 1373.5],
+        [479.5, 1371],
+        [498.5, 1367.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[66],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1423],
+        [271, 1414],
+        [280, 1405.5],
+        [290.5, 1397.5],
+        [303.5, 1390.5],
+        [315, 1384],
+        [345.5, 1372.5],
+        [367, 1370],
+        [390.5, 1368],
+        [413, 1369.5],
+        [430, 1372],
+        [453.5, 1376],
+        [470, 1373.5],
+        [479.5, 1371],
+        [498.5, 1367.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[67],
+      confirmed: true,
+      coordinates: [
+        [498.5, 1367.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[67],
+      confirmed: true,
+      coordinates: [
+        [498.5, 1367.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[67],
+      confirmed: true,
+      coordinates: [
+        [498.5, 1367.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[70],
+      confirmed: false,
+      coordinates: [
+        [138, 1049],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[3],
+      chapter: oathbringerChapterList[70],
+      confirmed: false,
+      coordinates: [
+        [138, 1049],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[71],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [332.5, 643],
+        [362, 802]
+      ]
+    },
   ]
 };
 
-// done up to oathbringer ch 60
+
+// done up to oathbringer ch 66
