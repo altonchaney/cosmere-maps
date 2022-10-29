@@ -55,12 +55,9 @@ const Map = (props: {name: AvailableSeries}) => {
     const visibleChapters = visibleRangeArray.map((i) => (data.books[latestVisibleBook].chapters[i].chapter));
     return data.markers
       .filter(marker => (
+        marker.appearances[bookIndex + 1] &&
         (
-          latestVisibleBook > bookIndex &&
-          marker.appearances[bookIndex + 1]
-        ) ||
-        (
-          marker.appearances[bookIndex + 1] &&
+          latestVisibleBook > bookIndex ||
           marker.appearances[bookIndex + 1]
             .some(chapter => visibleChapters.includes(chapter.chapter))
         )
