@@ -8,19 +8,25 @@ import './MapTimeline.css';
 
 export type ChapterRange = { start: Chapter, end: Chapter };
 
-const MapTimeline = (props: { book: Book, initialValue: number[], callback: (range: number[]) => void }) => {
+const MapTimeline = (props: { book: Book, initialValue?: number[], callback: (range: number[]) => void }) => {
   const { book, initialValue, callback } = props;
   const [selectedRange, setSelectedRange] = useState<number[]>([0, 0]);
+  const [initialValueSet, setInitialValueSet] = useState<boolean>(false);
 
   const changeChapterRange = (e: number[]) => {
     setSelectedRange(e);
     callback(e);
   };
 
-  useEffect(() => changeChapterRange([0, 0]), [book]);
+  useEffect(() => {
+    initialValueSet && changeChapterRange([0, 0]);
+  }, [book]);
 
   useEffect(() => {
-    !!initialValue && changeChapterRange(initialValue);
+    if (!!initialValue && !initialValueSet) {
+      changeChapterRange(initialValue);
+      setInitialValueSet(true);
+    }
   }, [initialValue]);
 
   return (

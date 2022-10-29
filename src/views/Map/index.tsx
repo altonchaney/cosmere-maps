@@ -30,10 +30,7 @@ const Map = (props: {name: AvailableSeries}) => {
   const [visibleCharacters, setVisibleCharacters] = useState<string[]>(data.characters.map(c => c.name));
   const [visibleBooks, setVisibleBooks] = useState<number[]>([0]);
   const [visibleRange, setVisibleRange] = useState<number[]>([0, 0]);
-  const initialRange: number[] = useMemo(() => {
-    return !!localStorage.getItem(`${name}-Range`) &&
-      JSON.parse(localStorage.getItem(`${name}-Range`) as string)
-  }, [name]);
+  const [initialRange, setInitialRange] = useState<number[]>();
   const valueHandler = useMemo(() => ({
     'Characters': visibleCharacters,
     'Books': visibleBooks,
@@ -145,6 +142,10 @@ const Map = (props: {name: AvailableSeries}) => {
         localStorage.setItem(`${name}-${key}`, JSON.stringify(valueHandler[key as ('Characters' | 'Books')]));
       }
     });
+
+    if (!!localStorage.getItem(`${name}-Range`) && !initialRange) {
+      setInitialRange(JSON.parse(localStorage.getItem(`${name}-Range`) as string));
+    }
   }, [name]);
 
   return (
@@ -189,17 +190,15 @@ const Map = (props: {name: AvailableSeries}) => {
         selectedBooks={visibleBooks}
         visibleRange={visibleRange}
       />
-      {
-        visibleBooks.length &&
-        <MapTimeline
-          book={data.books[Math.max(...visibleBooks)]}
-          initialValue={initialRange}
-          callback={(range) => {
-            setVisibleRange(range);
-            localStorage.setItem(`${name}-Range`, JSON.stringify(range));
-          }}
-        />
-      }
+      <MapTimeline
+        book={data.books[Math.max(...visibleBooks)]}
+        initialValue={initialRange}
+        callback={(range) => {
+          range.sort();
+          setVisibleRange(range);
+          localStorage.setItem(`${name}-Range`, JSON.stringify(range));
+        }}
+      />
       {
         data.map.altImage &&
         <div className='realm-toggle'>
