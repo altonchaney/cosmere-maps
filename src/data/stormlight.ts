@@ -902,7 +902,9 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'battle',
       image: 'https://coppermind.net/w/images/thumb/Attack_on_Roshar_by_Connor_Chamberlain.jpg/400px-Attack_on_Roshar_by_Connor_Chamberlain.jpg',
       appearances: {
-        4: [89, 90, 91, 93].map(i => oathbringerChapterList[i])
+        4: [
+          84, 85, 86, 87, 88, 89, 90, 91, 93,
+      ].map(i => oathbringerChapterList[i])
       },
       description: `The Siege of Kholinar, and the ensuing battle inside Kholinar Palace, is a major event that occurs during the True Desolation. The battle resulted in a Voidbringer victory and occupation of the city, the death of King Elhokar, and several of the modern Knights Radiant being transported to the Cognitive Realm.`,
       coppermindLink: 'Siege_of_Kholinar',
@@ -921,7 +923,9 @@ export const STORMLIGHT_DATA: DataBundle = {
           0, 87, 
         ].map(i => wordsOfRadianceChapterList[i]),
         4: [
-          39, 52, 66, 67, 68, 69
+          39, 52, 66, 67, 68, 69, 73, 74, 75, 76,
+          78, 79, 80, 83, 84, 85, 86, 87, 88, 89,
+          90, 91, 93, 98, 99, 105, 116
         ].map(i => oathbringerChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
@@ -981,7 +985,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           99, 100, 101, 102
         ].map(i => wordsOfRadianceChapterList[i]),
         4: [
-          35, 63
+          35, 63, 94
         ].map(i => oathbringerChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
@@ -1133,7 +1137,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           61
         ].map(i => theWayOfKingsChapterList[i]),
         2: [
-          89
+          89, 111
         ].map(i => wordsOfRadianceChapterList[i])
       },
       description: `Vedenar is the capital city of Jah Keved on Roshar. Vedenar lies on the southern edge of Jah Keved, on the cliffs facing Tarat Sea. The sound of the waves crashing against the stone can be heard across the entire city.`,
@@ -1219,7 +1223,8 @@ export const STORMLIGHT_DATA: DataBundle = {
           18, 21, 22, 24, 25, 27, 28, 29, 30,
           36, 37, 38, 41, 42, 43, 44, 45, 47,
           49, 50, 53, 54, 56, 59, 60, 62, 64,
-          71
+          71, 92, 95, 107, 111, 114, 115, 118,
+          120, 122
         ].map(i => oathbringerChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
@@ -1232,7 +1237,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/thumb/Thaylen_City_by_Connor_Chamberlain.jpg/400px-Thaylen_City_by_Connor_Chamberlain.jpg',
       appearances: {
         4: [
-          64, 65
+          64, 65, 122, 124
         ].map(i => oathbringerChapterList[i])
       },
       description: `Thaylen City is located on the northwestern coast of the largest of the islands forming Thaylenah. It sits on the shores of Longbrow's Straits, a strip of ocean dividing Thaylenah from the Rosharan mainland. The city was built inside a massive natural lait to protect it from highstorms.`,
@@ -1284,7 +1289,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/thumb/Rathalas_by_Connor_Chamberlain.jpg/400px-Rathalas_by_Connor_Chamberlain.jpg',
       appearances: {
         4: [
-          11
+          11, 77, 81, 82
         ].map(i => oathbringerChapterList[i])
       },
       description: `Rathalas, also known as the Rift, was a city in in the northern part of the Eastern Crownlands near central Alethkar. The city was burnt to the ground in 1163 and has not since been rebuilt.`,
@@ -1325,6 +1330,88 @@ export const STORMLIGHT_DATA: DataBundle = {
       },
       description: `Jokasha Monastery, sometimes referred to simply as Jokasha, is the home of the Devotary of the Mind, a scholarly group of ardents on Roshar. It is considered a peaceful and desirable location, with many ardents spending half their lives trying to get transferred there.`,
       confirmed: false
+    },
+    {
+      title: 'Herdaz',
+      coordinates: [663, 1259],
+      type: 'region',
+      image: 'https://coppermind.net/w/images/thumb/Rathalas_by_Connor_Chamberlain.jpg/400px-Rathalas_by_Connor_Chamberlain.jpg',
+      appearances: {
+        4: [
+          97
+        ].map(i => oathbringerChapterList[i])
+      },
+      description: `Herdaz is a coastal nation in the north-east of Roshar, covering approximately one million square kilometres of land. Most of its jagged coastline lies on the Reshi Sea, while a small part of it faces Steamwater Ocean and the Bay of Elibath.`,
+      coppermindLink: 'Herdaz',
+      confirmed: true
+    },
+    {
+      title: 'Sea of Lost Lights',
+      coordinates: [469, 1237],
+      type: 'region',
+      image: 'https://coppermind.net/w/images/thumb/Sea_of_Lost_Lights.jpg/400px-Sea_of_Lost_Lights.jpg',
+      appearances: {
+        4: [
+          93, 100, 102, 104
+        ].map(i => oathbringerChapterList[i])
+      },
+      coppermindLink: 'Sea_of_Lost_Lights',
+      description: `The Sea of Lost Lights lies in the region of Shadesmar corresponding to the Physical nations of Alethkar, Jah Keved, and Herdaz, as well as the Frostlands, Unclaimed Hills, and Thaylenah.`,
+      confirmed: true
+    },
+    {
+      title: 'Skybreaker Fortress',
+      coordinates: [538, 797],
+      type: 'point of interest',
+      appearances: {
+        4: [
+          101, 103, 109
+        ].map(i => oathbringerChapterList[i])
+      },
+      coppermindLink: 'Order_of_Skybreakers',
+      description: `A small fortress in Marabethia that overlooks the Purelake. Hopefuls are brought to the fortress for testing, and squires and Masters reside there while training (unless they are away on a mission).`,
+      confirmed: true
+    },
+    {
+      title: `Riino's Lighthouse`,
+      coordinates: [493.5, 1346.5],
+      type: 'point of interest',
+      image: 'https://coppermind.net/w/images/thumb/Shadesmar_Travel_by_LittleGreyDragon.jpeg/400px-Shadesmar_Travel_by_LittleGreyDragon.jpeg',
+      appearances: {
+        4: [
+          106, 108
+        ].map(i => oathbringerChapterList[i])
+      },
+      coppermindLink: 'Riino%27s_lighthouse',
+      description: `The lighthouse functions as a waypoint in which passing ships can restock their supplies, as well as signalling that there is land nearby. The dwelling is also used by Riino to conduct readings of the future for passing travellers.`,
+      confirmed: false
+    },
+    {
+      title: `Celebrant`,
+      coordinates: [355, 1298],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/Celebrant.png',
+      appearances: {
+        4: [
+          112, 113
+        ].map(i => oathbringerChapterList[i])
+      },
+      coppermindLink: 'Celebrant',
+      description: `Celebrant is a city in the Sea of Lost Lights in Roshar's subastral of the Cognitive Realm. Celebrant is a prominent population center and major trading port.`,
+      confirmed: true
+    },
+    {
+      title: `Marat`,
+      coordinates: [235, 791],
+      type: 'region',
+      appearances: {
+        4: [
+          117
+        ].map(i => oathbringerChapterList[i])
+      },
+      coppermindLink: 'Marat',
+      description: `Marat is a small kingdom in southern Roshar. It is part of the Makabaki region.`,
+      confirmed: true
     },
   ],
   paths: [
@@ -2343,8 +2430,8 @@ export const STORMLIGHT_DATA: DataBundle = {
         // [558, 1328],
         [553, 1333],
         [547, 1338],
-        // [542, 1342.5],
-        // [537, 1347.5],
+        [542, 1342.5],
+        [537, 1347.5],
         // [529.5, 1353],
         // [522.5, 1357],
         // [520, 1358.5],
@@ -2603,8 +2690,598 @@ export const STORMLIGHT_DATA: DataBundle = {
         [362, 802]
       ]
     },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[72],
+      confirmed: false,
+      coordinates: [
+        [380, 1172],
+        [369, 1162],
+        [372, 1139.5],
+        [379.5, 1116],
+        [399.5, 1104],
+        [419.5, 1112],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[77],
+      confirmed: false,
+      coordinates: [
+        [419.5, 1112],
+        [408, 1117],
+        [404.5, 1125],
+        [399, 1140],
+        [398, 1157.5],
+        [395, 1177.5],
+        [394.5, 1200],
+        [395, 1219],
+        [395, 1234.5],
+        [395, 1255],
+        [395, 1272],
+        [392, 1284.5],
+        [391.5, 1292.5],
+        [390.5, 1307.5],
+        [389.5, 1321],
+        [389.5, 1328.5],
+        [392, 1337.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[3],
+      chapter: oathbringerChapterList[84],
+      confirmed: true,
+      coordinates: [
+        // [566.5, 1320.5],
+        // [558, 1328],
+        // [553, 1333],
+        // [547, 1338],
+        // [542, 1342.5],
+        [537, 1347.5],
+        [529.5, 1353],
+        [522.5, 1357],
+        [520, 1358.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      book: books[3],
+      chapter: oathbringerChapterList[96],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1423],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[99],
+      confirmed: false,
+      coordinates: [
+        [392, 1337.5],
+        [513, 1363.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[3],
+      chapter: oathbringerChapterList[101],
+      confirmed: false,
+      coordinates: [
+        [318, 611],
+        [338, 610],
+        [369, 610],
+        [403, 616],
+        [429, 617],
+        [459, 628],
+        [490, 632],
+        [513, 640],
+        [536, 642],
+        [551, 652],
+        [557, 673],
+        [555, 696],
+        [552, 722],
+        [556, 739],
+        [559, 753],
+        [562, 774],
+        [551, 790],
+        [538, 797],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[106],
+      confirmed: true,
+      coordinates: [
+        [513, 1363.5],
+        [509.5, 1354.5],
+        [506, 1352],
+        [501, 1351],
+        [493.5, 1346.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[106],
+      confirmed: true,
+      coordinates: [
+        [513, 1363.5],
+        [509.5, 1354.5],
+        [506, 1352],
+        [501, 1351],
+        [493.5, 1346.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[106],
+      confirmed: true,
+      coordinates: [
+        [513, 1363.5],
+        [509.5, 1354.5],
+        [506, 1352],
+        [501, 1351],
+        [493.5, 1346.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[110],
+      confirmed: true,
+      coordinates: [
+        [493.5, 1346.5],
+        [488.5, 1341.5],
+        [483, 1337],
+        [479, 1331.5],
+        [473.5, 1321.5],
+        [470, 1310.5],
+        [465.5, 1300.5],
+        [460.5, 1290],
+        [454, 1280.5],
+        [450.5, 1276.5],
+        // [441, 1275],
+        // [432.5, 1274.5],
+        // [423, 1275],
+        // [413.5, 1281.5],
+        // [406, 1286],
+        // [401.5, 1293.5],
+        // [393.5, 1295.5],
+        // [384, 1295.5],
+        // [375.5, 1296.5],
+        // [366.5, 1297.5],
+        // [355, 1298]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[110],
+      confirmed: true,
+      coordinates: [
+        [493.5, 1346.5],
+        [488.5, 1341.5],
+        [483, 1337],
+        [479, 1331.5],
+        [473.5, 1321.5],
+        [470, 1310.5],
+        [465.5, 1300.5],
+        [460.5, 1290],
+        [454, 1280.5],
+        [450.5, 1276.5],
+        // [441, 1275],
+        // [432.5, 1274.5],
+        // [423, 1275],
+        // [413.5, 1281.5],
+        // [406, 1286],
+        // [401.5, 1293.5],
+        // [393.5, 1295.5],
+        // [384, 1295.5],
+        // [375.5, 1296.5],
+        // [366.5, 1297.5],
+        // [355, 1298]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[110],
+      confirmed: true,
+      coordinates: [
+        [493.5, 1346.5],
+        [488.5, 1341.5],
+        [483, 1337],
+        [479, 1331.5],
+        [473.5, 1321.5],
+        [470, 1310.5],
+        [465.5, 1300.5],
+        [460.5, 1290],
+        [454, 1280.5],
+        [450.5, 1276.5],
+        // [441, 1275],
+        // [432.5, 1274.5],
+        // [423, 1275],
+        // [413.5, 1281.5],
+        // [406, 1286],
+        // [401.5, 1293.5],
+        // [393.5, 1295.5],
+        // [384, 1295.5],
+        // [375.5, 1296.5],
+        // [366.5, 1297.5],
+        // [355, 1298]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[3],
+      chapter: oathbringerChapterList[111],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [326, 1076.5],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[111],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [326, 1076.5],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      book: books[3],
+      chapter: oathbringerChapterList[111],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [326, 1076.5],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[112],
+      confirmed: true,
+      coordinates: [
+        // [493.5, 1346.5],
+        // [488.5, 1341.5],
+        // [483, 1337],
+        // [479, 1331.5],
+        // [473.5, 1321.5],
+        // [470, 1310.5],
+        // [465.5, 1300.5],
+        // [460.5, 1290],
+        // [454, 1280.5],
+        [450.5, 1276.5],
+        [441, 1275],
+        [432.5, 1274.5],
+        [423, 1275],
+        [413.5, 1281.5],
+        [406, 1286],
+        [401.5, 1293.5],
+        [393.5, 1295.5],
+        [384, 1295.5],
+        [375.5, 1296.5],
+        [366.5, 1297.5],
+        [355, 1298]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[112],
+      confirmed: true,
+      coordinates: [
+        // [493.5, 1346.5],
+        // [488.5, 1341.5],
+        // [483, 1337],
+        // [479, 1331.5],
+        // [473.5, 1321.5],
+        // [470, 1310.5],
+        // [465.5, 1300.5],
+        // [460.5, 1290],
+        // [454, 1280.5],
+        [450.5, 1276.5],
+        [441, 1275],
+        [432.5, 1274.5],
+        [423, 1275],
+        [413.5, 1281.5],
+        [406, 1286],
+        [401.5, 1293.5],
+        [393.5, 1295.5],
+        [384, 1295.5],
+        [375.5, 1296.5],
+        [366.5, 1297.5],
+        [355, 1298]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[112],
+      confirmed: true,
+      coordinates: [
+        // [493.5, 1346.5],
+        // [488.5, 1341.5],
+        // [483, 1337],
+        // [479, 1331.5],
+        // [473.5, 1321.5],
+        // [470, 1310.5],
+        // [465.5, 1300.5],
+        // [460.5, 1290],
+        // [454, 1280.5],
+        [450.5, 1276.5],
+        [441, 1275],
+        [432.5, 1274.5],
+        [423, 1275],
+        [413.5, 1281.5],
+        [406, 1286],
+        [401.5, 1293.5],
+        [393.5, 1295.5],
+        [384, 1295.5],
+        [375.5, 1296.5],
+        [366.5, 1297.5],
+        [355, 1298]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[3],
+      chapter: oathbringerChapterList[117],
+      confirmed: false,
+      coordinates: [
+        [538, 797],
+        [516, 784],
+        [487, 767],
+        [454, 762],
+        [428, 752],
+        [396, 748],
+        [361, 747],
+        [325, 749],
+        [285, 762],
+        [263, 775],
+        [235, 791],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[119],
+      confirmed: true,
+      coordinates: [
+        [355, 1298],
+        [369.5, 1292.5],
+        [377.5, 1285.5],
+        [374, 1275],
+        [357.5, 1264],
+        [342, 1262],
+        [321.5, 1257],
+        [307.5, 1244],
+        [297.5, 1235],
+        [289, 1222.5],
+        [277, 1217],
+        [266.5, 1221.5],
+        [257.5, 1227],
+        [248.5, 1227.5],
+        [241, 1224.5],
+        [226.5, 1214.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[119],
+      confirmed: true,
+      coordinates: [
+        [355, 1298],
+        [369.5, 1292.5],
+        [377.5, 1285.5],
+        [374, 1275],
+        [357.5, 1264],
+        [342, 1262],
+        [321.5, 1257],
+        [307.5, 1244],
+        [297.5, 1235],
+        [289, 1222.5],
+        [277, 1217],
+        [266.5, 1221.5],
+        [257.5, 1227],
+        [248.5, 1227.5],
+        [241, 1224.5],
+        [226.5, 1214.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[119],
+      confirmed: true,
+      coordinates: [
+        [355, 1298],
+        [369.5, 1292.5],
+        [377.5, 1285.5],
+        [374, 1275],
+        [357.5, 1264],
+        [342, 1262],
+        [321.5, 1257],
+        [307.5, 1244],
+        [297.5, 1235],
+        [289, 1222.5],
+        [277, 1217],
+        [266.5, 1221.5],
+        [257.5, 1227],
+        [248.5, 1227.5],
+        [241, 1224.5],
+        [226.5, 1214.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[121],
+      confirmed: true,
+      coordinates: [
+        [226.5, 1214.5],
+        [219.5, 1205],
+        [213.5, 1194.5],
+        [208, 1177],
+        [205, 1158.5],
+        [201.5, 1134],
+        [195.5, 1106.5],
+        [188.5, 1084],
+        [184.5, 1077.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[121],
+      confirmed: true,
+      coordinates: [
+        [226.5, 1214.5],
+        [219.5, 1205],
+        [213.5, 1194.5],
+        [208, 1177],
+        [205, 1158.5],
+        [201.5, 1134],
+        [195.5, 1106.5],
+        [188.5, 1084],
+        [184.5, 1077.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[121],
+      confirmed: true,
+      coordinates: [
+        [226.5, 1214.5],
+        [219.5, 1205],
+        [213.5, 1194.5],
+        [208, 1177],
+        [205, 1158.5],
+        [201.5, 1134],
+        [195.5, 1106.5],
+        [188.5, 1084],
+        [184.5, 1077.5],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[122],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[3],
+      chapter: oathbringerChapterList[122],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[3],
+      chapter: oathbringerChapterList[122],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      book: books[3],
+      chapter: oathbringerChapterList[122],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[3],
+      chapter: oathbringerChapterList[122],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[123],
+      confirmed: true,
+      coordinates: [
+        [184.5, 1077.5],
+        [174.5, 1075],
+        [162.5, 1070],
+        [156, 1066],
+        [149, 1059],
+        [144, 1054],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[123],
+      confirmed: true,
+      coordinates: [
+        [184.5, 1077.5],
+        [174.5, 1075],
+        [162.5, 1070],
+        [156, 1066],
+        [149, 1059],
+        [144, 1054],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[3],
+      chapter: oathbringerChapterList[123],
+      confirmed: true,
+      coordinates: [
+        [184.5, 1077.5],
+        [174.5, 1075],
+        [162.5, 1070],
+        [156, 1066],
+        [149, 1059],
+        [144, 1054],
+        [138, 1049]
+      ]
+    },
   ]
 };
 
-
-// done up to oathbringer ch 66
+// done up to oathbringer interlude 12
