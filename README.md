@@ -27,15 +27,15 @@ The seconde script will automatically start the local web server and you will be
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the webapp in the default development mode and opens it in a web browser.
 
-### `npm test`
+#### `npm test`
 
 Launches the test runner in the interactive watch mode, and will output results in your terminal.
 
-### `npm run build`
+#### `npm run build`
 
 Builds a production ready bundle for the app. Useful for seeing exactly how the webapp is served to end users.
 
@@ -52,22 +52,27 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 ## To-Do List
 
 ### Functionality
+
 - [ ] Draw paths progressively from start to end points
 - [ ] Unconfirmed marker indicators
 - [ ] Render Character icons where they are on the map
 
+
 ### Series Data
+
 **Mistborn Era 1**
 - [x] The Final Empire
 - [x] Well of Ascension
 - [x] The Hero of Ages
 - [ ] Secret History
 
+
 **Mistborn Era 2**
 - [x] The Allow of Law
 - [x] Shadows of Self
 - [x] The Bands of Mourning
 - [ ] The Lost Metal
+
 
 **The Stormlight Archive**
 - [x] The Way of Kings
@@ -77,13 +82,16 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 - [ ] Dawnshard
 - [ ] Rhythm of War
 
+
 **White Sand**
 - [ ] White Sand Vol. 1
 - [ ] White Sand Vol. 2
 - [ ] White Sand Vol. 3
 
+
 **Elantris**
 - [ ] Elantris
+
 
 **Warbreaker**
 - [ ] Warbreaker
