@@ -920,7 +920,9 @@ export const STORMLIGHT_DATA: DataBundle = {
         2: [
           0, 87, 
         ].map(i => wordsOfRadianceChapterList[i]),
-        4: [39].map(i => oathbringerChapterList[i])
+        4: [
+          39, 52
+        ].map(i => oathbringerChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
       coppermindLink: 'Kholinar',
@@ -979,7 +981,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           99, 100, 101, 102
         ].map(i => wordsOfRadianceChapterList[i]),
         4: [
-          35
+          35, 63
         ].map(i => oathbringerChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
@@ -994,7 +996,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         2: [
           13, 16, 39, 42, 69, 88, 97, 98, 99,
           100, 101
-        ].map(i => wordsOfRadianceChapterList[i])
+        ].map(i => wordsOfRadianceChapterList[i]),
+        4: [
+          49, 58
+        ].map(i => oathbringerChapterList[i])
       },
       description: `Stormseat was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning, it's called Narak, or Exile, and serves as the home of the listeners.`,
       confirmed: true
@@ -1152,6 +1157,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'city',
       image: 'https://coppermind.net/w/images/Akinah_city_map.jpg',
       appearances: {
+        4: [61].map(i => oathbringerChapterList[i]),
         5: [12, 13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
       },
       description: `Akinah is the ancient capital of the Silver Kingdom of Aimia on Roshar. In more modern times, it is also known as The Rock of Secrets and The Void's Playground. The city itself was destroyed long ago, and during the Era of Solitude it exists only as a ruin. It is the location of an apparently functional Oathgate and its underwater caverns formerly contained a Dawnshard.`,
@@ -1208,10 +1214,24 @@ export const STORMLIGHT_DATA: DataBundle = {
         4: [
           1, 2, 4, 8, 9, 10, 12, 13, 15, 16,
           18, 21, 22, 24, 25, 27, 28, 29, 30,
-          36, 37, 38, 41, 42, 43, 44
+          36, 37, 38, 41, 42, 43, 44, 45, 47,
+          49, 50, 53, 54, 56, 59, 60, 62, 64
         ].map(i => oathbringerChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
+      confirmed: true
+    },
+    {
+      title: 'Thaylen City',
+      coordinates: [138, 1049],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/thumb/Thaylen_City_by_Connor_Chamberlain.jpg/400px-Thaylen_City_by_Connor_Chamberlain.jpg',
+      appearances: {
+        4: [
+          64, 65
+        ].map(i => oathbringerChapterList[i])
+      },
+      description: `Thaylen City is located on the northwestern coast of the largest of the islands forming Thaylenah. It sits on the shores of Longbrow's Straits, a strip of ocean dividing Thaylenah from the Rosharan mainland. The city was built inside a massive natural lait to protect it from highstorms.`,
       confirmed: true
     },
     {
@@ -1272,7 +1292,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'city',
       appearances: {
         4: [
-          31
+          31, 48
         ].map(i => oathbringerChapterList[i])
       },
       description: `Revolar is a city in Vamah princedom and one of the larger cities in the region. It is located close to a tributary of the Windrunner River which forms the eastern border between Vamah princedom and Ruthar princedom.`,
@@ -2202,7 +2222,215 @@ export const STORMLIGHT_DATA: DataBundle = {
         [362, 802],
       ]
     },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[3],
+      chapter: oathbringerChapterList[48],
+      confirmed: true,
+      coordinates: [
+        [251.5, 1385.5],
+        [266, 1370],
+        [282, 1364],
+        [301, 1365],
+        [318, 1365],
+        [339, 1370],
+        [363, 1370],
+        [388, 1373],
+        [407, 1377],
+        [428, 1372],
+        [446, 1369],
+        [468, 1358],
+        [482, 1351],
+        [496, 1342],
+        [524, 1324],
+        [547, 1324],
+        [566, 1321],
+        [566.5, 1320.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[49],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[3],
+      chapter: oathbringerChapterList[51],
+      confirmed: true,
+      coordinates: [
+        [566.5, 1320.5],
+        [558, 1328],
+        // [553, 1333],
+        // [547, 1338],
+        // [542, 1342.5],
+        // [537, 1347.5],
+        // [529.5, 1353],
+        // [522.5, 1357],
+        // [520, 1358.5],
+        // [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[53],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[3],
+      chapter: oathbringerChapterList[54],
+      confirmed: true,
+      coordinates: [
+        // [566.5, 1320.5],
+        [558, 1328],
+        [553, 1333],
+        // [547, 1338],
+        // [542, 1342.5],
+        // [537, 1347.5],
+        // [529.5, 1353],
+        // [522.5, 1357],
+        // [520, 1358.5],
+        // [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[55],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [534, 1362],
+        [557, 1363],
+        [587, 1359],
+        [615, 1342],
+        [643, 1314],
+        [644, 1284],
+        [637, 1267],
+        [628, 1250],
+        [605, 1235],
+        [575, 1218],
+        [535, 1203],
+        [504, 1189],
+        [482, 1180],
+        [452, 1176],
+        [424, 1172],
+        [401, 1166],
+        [380, 1172],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[3],
+      chapter: oathbringerChapterList[57],
+      confirmed: true,
+      coordinates: [
+        // [566.5, 1320.5],
+        // [558, 1328],
+        [553, 1333],
+        [547, 1338],
+        // [542, 1342.5],
+        // [537, 1347.5],
+        // [529.5, 1353],
+        // [522.5, 1357],
+        // [520, 1358.5],
+        // [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[58],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [259.5, 1429],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: false,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [138, 1049]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: true,
+      coordinates: [
+        [138, 1049],
+        [362, 802],
+        [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: true,
+      coordinates: [
+        [138, 1049],
+        [362, 802],
+        [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[3],
+      chapter: oathbringerChapterList[64],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049],
+      ]
+    },
   ]
 };
 
-// done up to oathbringer ch 42
+// done up to oathbringer ch 60
