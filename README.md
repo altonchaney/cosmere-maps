@@ -55,7 +55,7 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 
 - [ ] Draw paths progressively from start to end points
 - [ ] Unconfirmed marker indicators
-- [ ] Render Character icons where they are on the map
+- [ ] Render character icons where they are on the map
 
 
 ### Series Data
@@ -78,7 +78,7 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 - [x] The Way of Kings
 - [x] Words of Radiance
 - [x] Edgedancer
-- [ ] Oathbringer
+- [x] Oathbringer
 - [ ] Dawnshard
 - [ ] Rhythm of War
 

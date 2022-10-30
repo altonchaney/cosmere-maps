@@ -9,7 +9,7 @@ const Home = () => {
     <div className='Home'>
       <header>
         <h1>Cosmere Maps</h1>
-        <label>Last Updated 10/25/2022</label>
+        <label>Last Updated 10/30</label>
         <p>Follow along the character journeys in your favorite Cosmere series and see exactly where they were at specific parts of these stories. You can select character and books individually and are able to specify which chapters you’d like to see visible. For the best experience, use a tablet or desktop.</p>
       </header>
       <div className='series-list'>
