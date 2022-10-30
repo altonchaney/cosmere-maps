@@ -1027,7 +1027,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/Akinah_city_map.jpg',
       appearances: {
         4: [61].map(i => oathbringerChapterList[i]),
-        5: [12, 13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
+        5: [13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
       },
       description: `Akinah is the ancient capital of the Silver Kingdom of Aimia on Roshar. In more modern times, it is also known as The Rock of Secrets and The Void's Playground. The city itself was destroyed long ago, and during the Era of Solitude it exists only as a ruin. It is the location of an apparently functional Oathgate and its underwater caverns formerly contained a Dawnshard.`,
       coppermindLink: 'Akinah',
@@ -1090,7 +1090,10 @@ export const STORMLIGHT_DATA: DataBundle = {
           49, 50, 53, 54, 56, 59, 60, 62, 64,
           71, 92, 95, 107, 111, 114, 115, 118,
           120, 122, 127, 129, 132, 133, 136
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        5: [
+          2, 3
+        ].map(i => dawnshardChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
       confirmed: true
@@ -1104,7 +1107,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         4: [
           64, 65, 122, 124, 126, 129, 130, 131,
           132, 133, 134, 135
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        5: [
+          1, 20
+        ].map(i => dawnshardChapterList[i])
       },
       description: `Thaylen City is located on the northwestern coast of the largest of the islands forming Thaylenah. It sits on the shores of Longbrow's Straits, a strip of ocean dividing Thaylenah from the Rosharan mainland. The city was built inside a massive natural lait to protect it from highstorms.`,
       confirmed: true
@@ -3452,7 +3458,408 @@ export const STORMLIGHT_DATA: DataBundle = {
         [362, 802],
       ]
     },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[2],
+      confirmed: true,
+      coordinates: [
+        [138, 1049],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[4],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[4],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[5],
+      confirmed: true,
+      coordinates: [
+        [138, 1049],
+        [142, 1027],
+        [142, 1010],
+        [146, 991],
+        [159, 982],
+        [178, 970],
+        [191, 949],
+        [198, 917],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[5],
+      confirmed: true,
+      coordinates: [
+        [138, 1049],
+        [142, 1027],
+        [142, 1010],
+        [146, 991],
+        [159, 982],
+        [178, 970],
+        [191, 949],
+        [198, 917],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[6],
+      confirmed: true,
+      coordinates: [
+        [198, 917],
+
+        [196, 893],
+        [194, 872],
+        [188, 843],
+        [180, 804],
+        [177, 779],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[6],
+      confirmed: true,
+      coordinates: [
+        [198, 917],
+
+        [196, 893],
+        [194, 872],
+        [188, 843],
+        [180, 804],
+        [177, 779],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[7],
+      confirmed: true,
+      coordinates: [
+        [177, 779],
+
+        [177, 746],
+        [177, 717],
+        [177, 678],
+        [177, 650],
+        [174, 614],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[7],
+      confirmed: true,
+      coordinates: [
+        [177, 779],
+
+        [177, 746],
+        [177, 717],
+        [177, 678],
+        [177, 650],
+        [174, 614],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [174, 614],
+
+        [173, 574],
+        [173, 541],
+        [174, 507],
+        [176, 474],
+        [177, 435],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [174, 614],
+
+        [173, 574],
+        [173, 541],
+        [174, 507],
+        [176, 474],
+        [177, 435],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [177, 435],
+
+        [184, 395],
+        [189, 371],
+        [194, 346],
+        [199, 330],
+        [214, 313],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [177, 435],
+
+        [184, 395],
+        [189, 371],
+        [194, 346],
+        [199, 330],
+        [214, 313],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [214, 313],
+
+        [230, 311],
+        [265, 304],
+        [289, 301],
+        [316, 294],
+        [339, 287],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [214, 313],
+
+        [230, 311],
+        [265, 304],
+        [289, 301],
+        [316, 294],
+        [339, 287],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[11],
+      confirmed: true,
+      coordinates: [
+        [339, 287],
+
+        [359, 277],
+        [382, 266],
+        [399, 261],
+        [415, 251],
+        [437, 235],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[11],
+      confirmed: true,
+      coordinates: [
+        [339, 287],
+
+        [359, 277],
+        [382, 266],
+        [399, 261],
+        [415, 251],
+        [437, 235],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [437, 235],
+
+        [458, 219],
+        [473, 208],
+        [483, 199],
+        [496, 186],
+        [500, 171],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [437, 235],
+
+        [458, 219],
+        [473, 208],
+        [483, 199],
+        [496, 186],
+        [500, 171],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [500, 171],
+        [501, 157],
+        [501, 139],
+        [501, 129],
+        [499, 120],
+        [498.5, 104.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [500, 171],
+        [501, 157],
+        [501, 139],
+        [501, 129],
+        [499, 120],
+        [498.5, 104.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Rysn],
+      book: books[4],
+      chapter: dawnshardChapterList[20],
+      confirmed: true,
+      coordinates: [
+        [498.5, 104.5],
+        [498, 125],
+        [501, 168],
+        [498, 206],
+        [490, 237],
+        [465, 258],
+        [429, 280],
+        [392, 302],
+        [357, 317],
+        [314, 330],
+        [287, 334],
+        [263, 350],
+        [254, 370],
+        [236, 402],
+        [224, 431],
+        [206, 434],
+        [188, 442],
+        [179, 465],
+        [173, 508],
+        [173, 550],
+        [173, 580],
+        [173, 614],
+        [170, 643],
+        [178, 693],
+        [180, 725],
+        [178, 759],
+        [173, 787],
+        [163, 819],
+        [149, 867],
+        [139, 897],
+        [137, 922],
+        [139, 940],
+        [146, 955],
+        [153, 966],
+        [152, 985],
+        [145, 1003],
+        [141, 1017],
+        [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[20],
+      confirmed: true,
+      coordinates: [
+        [498.5, 104.5],
+        [498, 125],
+        [501, 168],
+        [498, 206],
+        [490, 237],
+        [465, 258],
+        [429, 280],
+        [392, 302],
+        [357, 317],
+        [314, 330],
+        [287, 334],
+        [263, 350],
+        [254, 370],
+        [236, 402],
+        [224, 431],
+        [206, 434],
+        [188, 442],
+        [179, 465],
+        [173, 508],
+        [173, 550],
+        [173, 580],
+        [173, 614],
+        [170, 643],
+        [178, 693],
+        [180, 725],
+        [178, 759],
+        [173, 787],
+        [163, 819],
+        [149, 867],
+        [139, 897],
+        [137, 922],
+        [139, 940],
+        [146, 955],
+        [153, 966],
+        [152, 985],
+        [145, 1003],
+        [141, 1017],
+        [138, 1049],
+      ]
+    },
   ]
 };
 
 // done up to edgedancer
+
+
+        
+        
+        
+        
+
+        
+        
