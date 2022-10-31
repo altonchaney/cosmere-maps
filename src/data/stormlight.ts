@@ -851,7 +851,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => wordsOfRadianceChapterList[i]),
         4: [
           35, 63, 94
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        6: [
+          2, 4, 5, 6, 7, 8
+        ].map(i => rhythmOfWarChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
       confirmed: true
@@ -885,7 +888,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => theWayOfKingsChapterList[i]),
         4: [
           5, 6, 7, 
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        6: [
+          1, 2, 3, 5, 6, 7, 8
+        ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Hearthstone is a large but remote town near the eastern border of the Sadeas princedom in Alethkar. The town serves as a focal point for the various farming communities in the region.`,
       confirmed: true
@@ -3850,10 +3856,122 @@ export const STORMLIGHT_DATA: DataBundle = {
         [138, 1049],
       ]
     },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[4],
+      chapter: dawnshardChapterList[20],
+      confirmed: false,
+      coordinates: [
+        [138, 1049],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[1],
+      confirmed: false,
+      coordinates: [
+        [417, 1317],
+        [424.5, 1314],
+        [440, 1309.5],
+        [469, 1302],
+        [491, 1298],
+        [523.5, 1294.5],
+        [555, 1288],
+        [593, 1285],
+        [630.5, 1284.5],
+        [649, 1289.5],
+        [664, 1306.5],
+        [669.5, 1336],
+        [657.5, 1345.5],
+        [648, 1348],
+        [639, 1349.5],
+        [628.5, 1351.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[2],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [259.5, 1423]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[3],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [628.5, 1351.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[3],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [628.5, 1351.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lift],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[3],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [628.5, 1351.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[3],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [628.5, 1351.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[6],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [259.5, 1423]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[6],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [526.5, 1368],
+        [535, 1367.5],
+        [553, 1369.5],
+        [564, 1374.5],
+        [582, 1374.5],
+        [602.5, 1369],
+        [617, 1362],
+        [622, 1358.5],
+        [628.5, 1351.5]
+      ]
+    },
   ]
 };
 
-// done up to edgedancer
+// done up to rhythm of war chapter 8
 
 
         

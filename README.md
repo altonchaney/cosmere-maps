@@ -79,7 +79,7 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 - [x] Words of Radiance
 - [x] Edgedancer
 - [x] Oathbringer
-- [ ] Dawnshard
+- [x] Dawnshard
 - [ ] Rhythm of War
 
 
