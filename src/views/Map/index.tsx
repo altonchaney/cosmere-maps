@@ -73,7 +73,7 @@ const Map = (props: {name: AvailableSeries}) => {
         (
           latestVisibleBook > bookIndex ||
           marker.appearances[bookIndex + 1]
-            .some(chapter => visibleChapters.includes(chapter.chapter))
+            .some(chapter => chapter && visibleChapters.includes(chapter.chapter))
         )
       ))
       .map(marker => (
@@ -113,6 +113,7 @@ const Map = (props: {name: AvailableSeries}) => {
     return data.paths
       .filter(path => (
         visibleCharacters.includes(path.character.name) &&
+        path.book && data.books[bookIndex] &&
         path.book.title === data.books[bookIndex].title &&
         visibleBooks.includes(bookIndex) &&
         (

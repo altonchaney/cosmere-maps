@@ -853,14 +853,14 @@ export const STORMLIGHT_DATA: DataBundle = {
           35, 63, 94
         ].map(i => oathbringerChapterList[i]),
         6: [
-          2, 4, 5, 6, 7, 8
+          2, 4, 5, 6, 7, 8, 9
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
       confirmed: true
     },
     {
-      title: 'Stormseat',
+      title: 'Narak',
       coordinates: [259.5, 1429],
       type: 'city',
       image: 'https://coppermind.net/w/images/Narak_by_Connor_Chamberlain.jpg',
@@ -871,9 +871,12 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => wordsOfRadianceChapterList[i]),
         4: [
           49, 58
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        6: [
+          9
+        ].map(i => rhythmOfWarChapterList[i])
       },
-      description: `Stormseat was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning, it's called Narak, or Exile, and serves as the home of the listeners.`,
+      description: `Narak, also known historically as Stormseat, was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning it serves as the home of the listeners.`,
       confirmed: true
     },
     {
@@ -3966,6 +3969,121 @@ export const STORMLIGHT_DATA: DataBundle = {
         [617, 1362],
         [622, 1358.5],
         [628.5, 1351.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [628.5, 1351.5],
+        [609, 1372],
+        [589, 1386],
+        [556, 1401],
+        [517, 1409],
+        [478, 1414],
+        [437, 1418],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [628.5, 1351.5],
+        [609, 1372],
+        [589, 1386],
+        [556, 1401],
+        [517, 1409],
+        [478, 1414],
+        [437, 1418],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [628.5, 1351.5],
+        [609, 1372],
+        [589, 1386],
+        [556, 1401],
+        [517, 1409],
+        [478, 1414],
+        [437, 1418],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [437, 1418],
+        [403, 1421],
+        [366, 1425],
+        [334, 1425],
+        [309, 1425],
+        [282, 1424],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [437, 1418],
+        [403, 1421],
+        [366, 1425],
+        [334, 1425],
+        [309, 1425],
+        [282, 1424],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [437, 1418],
+        [403, 1421],
+        [366, 1425],
+        [334, 1425],
+        [309, 1425],
+        [282, 1424],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[11],
+      confirmed: false,
+      coordinates: [
+        [214, 846],
+        [210, 855],
+        [209.5, 865.5],
+        [207.5, 882.5],
+        [206, 897.5],
+        [203, 912],
+        [200, 927],
+        [194.5, 945.5],
+        [187.5, 969],
+        [181.5, 983],
+        [175.5, 993.5],
+        [169, 1012],
+        [164, 1026],
+        [161, 1038],
+        [157.5, 1045.5],
+        [151, 1050],
+        [145.5, 1050],
       ]
     },
   ]
