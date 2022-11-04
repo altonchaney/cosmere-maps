@@ -198,15 +198,18 @@ const Map = (props: {name: AvailableSeries}) => {
         selectedBooks={visibleBooks}
         visibleRange={visibleRange}
       />
-      <MapTimeline
-        book={data.books[Math.max(...visibleBooks)]}
-        initialValue={initialRange}
-        callback={(range) => {
-          range.sort();
-          setVisibleRange(range);
-          localStorage.setItem(`${name}-Range`, JSON.stringify(range));
-        }}
-      />
+      {
+        visibleBooks.length &&
+        <MapTimeline
+          book={data.books[Math.max(...visibleBooks)]}
+          initialValue={initialRange}
+          callback={(range) => {
+            range.sort();
+            setVisibleRange(range);
+            localStorage.setItem(`${name}-Range`, JSON.stringify(range));
+          }}
+        />
+      }
       {
         data.map.altImage &&
         <div className='realm-toggle'>
