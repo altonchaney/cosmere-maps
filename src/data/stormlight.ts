@@ -395,6 +395,7 @@ const dawnshardChapterList: Chapter[] = [
   { altName: 'Epilogue', chapter: 19.1 },
 ];
 
+
 const rhythmOfWarChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -788,7 +789,10 @@ export const STORMLIGHT_DATA: DataBundle = {
           39, 52, 66, 67, 68, 69, 73, 74, 75, 76,
           78, 79, 80, 83, 84, 85, 86, 87, 88, 89,
           90, 91, 93, 98, 99, 105, 116, 135, 137
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        6: [
+          11, 14, 21, 47
+        ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
       coppermindLink: 'Kholinar',
@@ -873,7 +877,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           49, 58
         ].map(i => oathbringerChapterList[i]),
         6: [
-          9
+          9, 10, 18
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Narak, also known historically as Stormseat, was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning it serves as the home of the listeners.`,
@@ -1102,7 +1106,12 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => oathbringerChapterList[i]),
         5: [
           2, 3
-        ].map(i => dawnshardChapterList[i])
+        ].map(i => dawnshardChapterList[i]),
+        6: [
+          12, 13, 15, 16, 17, 19, 20, 22, 23,
+          24, 25, 26, 28, 30, 31, 36, 40, 41,
+          42, 43, 44, 45, 46, 48
+        ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
       confirmed: true
@@ -1307,7 +1316,61 @@ export const STORMLIGHT_DATA: DataBundle = {
       description: `The Valley is the home of the Nightwatcher on Roshar. It is located in the mountains of Ur, near Urithiru itself. The area nearby is devoid of rockbuds, and the ground is covered in wrinkles about two or three inches deep.`,
       confirmed: true
     },
-    
+    {
+      title: 'Sea of Souls',
+      coordinates: [367, 863],
+      type: 'region',
+      image: 'https://coppermind.net/w/images/Sea_of_Souls.jpg',
+      appearances: {
+        6: [
+          25
+        ].map(i => rhythmOfWarChapterList[i])
+      },
+      coppermindLink: 'Sea_of_Souls',
+      description: `The Sea of Souls is a large sea on Roshar's subastral of the Cognitive Realm. The origin of its name is unknown. It contains the honorspren capital of Lasting Integrity.`,
+      confirmed: true
+    },
+    {
+      title: 'Nameless',
+      coordinates: [214, 738.5],
+      type: 'town',
+      image: 'https://coppermind.net/w/images/Nameless_Sea_of_Souls_map_crop.jpg',
+      appearances: {
+        6: [
+          32, 33
+        ].map(i => rhythmOfWarChapterList[i])
+      },
+      coppermindLink: 'Nameless',
+      description: `The town is located in the southern portion of the Sea of Souls in Shadesmar. It sits on the edge of the Radiant Depths and is near the peninsula that leads to Abiding Light. Nameless resides on free lands that are not owned or controlled by the Fused or the honorspren. The town sits on a barren obsidian field that is sparse in vegetation. A small cluster of crystalline plants can occasionally be seen.`,
+      confirmed: true
+    },
+    {
+      title: 'Lasting Integrity',
+      coordinates: [198.5, 629],
+      type: 'city',
+      image: 'https://coppermind.net/w/images/thumb/Lasting_Integrity_Interior.jpeg/400px-Lasting_Integrity_Interior.jpeg',
+      appearances: {
+        6: [
+          39
+        ].map(i => rhythmOfWarChapterList[i])
+      },
+      coppermindLink: 'Lasting_Integrity',
+      description: `Lasting Integrity is the honorspren capital in Shadesmar. The fortress is located in the southern section of the Sea of Souls, nearby to the Nexus of Imagination, the Expanse of Vibrance, and Brilliance Eternal. There is a known caravan path that runs from Nameless, past Lasting Integrity, and onwards towards the Expanse of Vibrance.`,
+      confirmed: true
+    },
+    {
+      title: 'Emul',
+      coordinates: [310, 697.5],
+      type: 'region',
+      appearances: {
+        6: [
+          22, 49
+        ].map(i => rhythmOfWarChapterList[i])
+      },
+      coppermindLink: 'Emul',
+      description: `Emul is a Makabaki kingdom located in southwestern Roshar during the Era of Solitude. The citizens of Emul are referred to as Emuli. Traditionally a rather independent kingdom, the Desolation and war with Tukar has greatly weakened Emul and left it dependent on others for aid.`,
+      confirmed: true
+    },
   ],
   paths: [
     {
@@ -4017,6 +4080,21 @@ export const STORMLIGHT_DATA: DataBundle = {
       ]
     },
     {
+      character: characters[CharacterIndex.Lift],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [628.5, 1351.5],
+        [609, 1372],
+        [589, 1386],
+        [556, 1401],
+        [517, 1409],
+        [478, 1414],
+        [437, 1418],
+      ]
+    },
+    {
       character: characters[CharacterIndex.Kaladin],
       book: books[5],
       chapter: rhythmOfWarChapterList[10],
@@ -4062,40 +4140,551 @@ export const STORMLIGHT_DATA: DataBundle = {
       ]
     },
     {
+      character: characters[CharacterIndex.Lift],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [437, 1418],
+        [403, 1421],
+        [366, 1425],
+        [334, 1425],
+        [309, 1425],
+        [282, 1424],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[10],
+      confirmed: true,
+      coordinates: [
+        [437, 1418],
+        [403, 1421],
+        [366, 1425],
+        [334, 1425],
+        [309, 1425],
+        [282, 1424],
+        [259.5, 1429]
+      ]
+    },
+    {
       character: characters[CharacterIndex.Venli],
       book: books[5],
       chapter: rhythmOfWarChapterList[11],
       confirmed: false,
       coordinates: [
-        [214, 846],
-        [210, 855],
-        [209.5, 865.5],
-        [207.5, 882.5],
-        [206, 897.5],
-        [203, 912],
-        [200, 927],
-        [194.5, 945.5],
-        [187.5, 969],
-        [181.5, 983],
-        [175.5, 993.5],
-        [169, 1012],
-        [164, 1026],
-        [161, 1038],
-        [157.5, 1045.5],
-        [151, 1050],
         [145.5, 1050],
+        [156, 1059],
+        [186, 1082],
+        [204, 1113],
+        [234, 1143],
+        [245, 1170],
+        [271, 1200],
+        [301, 1229],
+        [333, 1256],
+        [366, 1278],
+        [391, 1302],
+        [420, 1324],
+        [446, 1343],
+        [471, 1352],
+        [490, 1359],
+        [513, 1363.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[14],
+      confirmed: false,
+      coordinates: [
+        [628.5, 1351.5],
+        [622, 1358.5],
+        [617, 1362],
+        [602.5, 1369],
+        [582, 1374.5],
+        [564, 1374.5],
+        [553, 1369.5],
+        [535, 1367.5],
+        [526.5, 1368],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[15],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[15],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lift],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[15],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[18],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [259.5, 1429],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[20],
+      confirmed: false,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[27],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [347.5, 791],
+        [339.5, 785.5],
+        [323.5, 775.5], // pt1
+        // [310.5, 768],
+        // [292.5, 760.5],
+        // [279, 756],
+        // [270, 752.5],
+        // [260, 746.5], // pt2
+        // [251.5, 741.5],
+        // [237, 740.5],
+        // [224, 739.5],
+        // [214, 738.5], // nameless
+        // [203.5, 734.5],
+        // [198, 728.5],
+        // [191.5, 717.5],
+        // [188.5, 698.5],
+        // [190, 683],
+        // [189, 671.5],
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[27],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [347.5, 791],
+        [339.5, 785.5],
+        [323.5, 775.5], // pt1
+        // [310.5, 768],
+        // [292.5, 760.5],
+        // [279, 756],
+        // [270, 752.5],
+        // [260, 746.5], // pt2
+        // [251.5, 741.5],
+        // [237, 740.5],
+        // [224, 739.5],
+        // [214, 738.5], // nameless
+        // [203.5, 734.5],
+        // [198, 728.5],
+        // [191.5, 717.5],
+        // [188.5, 698.5],
+        // [190, 683],
+        // [189, 671.5],
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[29],
+      confirmed: true,
+      coordinates: [
+        [323.5, 775.5], // pt1
+        [310.5, 768],
+        [292.5, 760.5],
+        [279, 756],
+        [270, 752.5],
+        [260, 746.5], // pt2
+        // [251.5, 741.5],
+        // [237, 740.5],
+        // [224, 739.5],
+        // [214, 738.5], // nameless
+        // [203.5, 734.5],
+        // [198, 728.5],
+        // [191.5, 717.5],
+        // [188.5, 698.5],
+        // [190, 683],
+        // [189, 671.5],
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[29],
+      confirmed: true,
+      coordinates: [
+        [323.5, 775.5], // pt1
+        [310.5, 768],
+        [292.5, 760.5],
+        [279, 756],
+        [270, 752.5],
+        [260, 746.5], // pt2
+        // [251.5, 741.5],
+        // [237, 740.5],
+        // [224, 739.5],
+        // [214, 738.5], // nameless
+        // [203.5, 734.5],
+        // [198, 728.5],
+        // [191.5, 717.5],
+        // [188.5, 698.5],
+        // [190, 683],
+        // [189, 671.5],
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[32],
+      confirmed: true,
+      coordinates: [
+        [260, 746.5], // pt2
+        [251.5, 741.5],
+        [237, 740.5],
+        [224, 739.5],
+        [214, 738.5], // nameless
+        // [203.5, 734.5],
+        // [198, 728.5], // 35
+        // [191.5, 717.5],
+        // [188.5, 698.5], //37
+        // [190, 683],
+        // [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[32],
+      confirmed: true,
+      coordinates: [
+        [260, 746.5], // pt2
+        [251.5, 741.5],
+        [237, 740.5],
+        [224, 739.5],
+        [214, 738.5], // nameless
+        // [203.5, 734.5],
+        // [198, 728.5], // 35
+        // [191.5, 717.5],
+        // [188.5, 698.5], //37
+        // [190, 683],
+        // [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[35],
+      confirmed: true,
+      coordinates: [
+        [214, 738.5], // nameless
+        [203.5, 734.5],
+        [198, 728.5], // 35
+        // [191.5, 717.5],
+        // [188.5, 698.5], //37
+        // [190, 683],
+        // [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[35],
+      confirmed: true,
+      coordinates: [
+        [214, 738.5], // nameless
+        [203.5, 734.5],
+        [198, 728.5], // 35
+        // [191.5, 717.5],
+        // [188.5, 698.5], //37
+        // [190, 683],
+        // [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[37],
+      confirmed: true,
+      coordinates: [
+        [198, 728.5], // 35
+        [191.5, 717.5],
+        [188.5, 698.5], //37
+        // [190, 683],
+        // [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[37],
+      confirmed: true,
+      coordinates: [
+        [198, 728.5], // 35
+        [191.5, 717.5],
+        [188.5, 698.5], //37
+        // [190, 683],
+        // [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[38],
+      confirmed: true,
+      coordinates: [
+        [188.5, 698.5], //37
+        [190, 683],
+        [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[38],
+      confirmed: true,
+      coordinates: [
+        [188.5, 698.5], //37
+        [190, 683],
+        [189, 671.5], //38
+        // [187.5, 658],
+        // [190.5, 638.5],
+        // [198.5, 629], // lasting integrity / 39
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[39],
+      confirmed: true,
+      coordinates: [
+        [189, 671.5], //38
+        [187.5, 658],
+        [190.5, 638.5],
+        [198.5, 629], // lasting integrity / 39
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[39],
+      confirmed: true,
+      coordinates: [
+        [189, 671.5], //38
+        [187.5, 658],
+        [190.5, 638.5],
+        [198.5, 629], // lasting integrity / 39
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Venli],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[34],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [518, 1332],
+        [519, 1309],
+        [524, 1276],
+        [532, 1247],
+        [546, 1225],
+        [568, 1201],
+        [582, 1178],
+        [580, 1149],
+        [556, 1119],
+        [535, 1100],
+        [519, 1075],
+        [489, 1040],
+        [474, 1008],
+        [463, 970],
+        [452, 932],
+        [432, 889],
+        [421, 859],
+        [424, 834],
+        [413, 819],// 34
+        // [400, 810],
+        // [382, 805],
+        // [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[40],
+      confirmed: true,
+      coordinates: [
+        [413, 819],// 34
+        [400, 810],
+        [382, 805],
+        [362, 802]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Taravangian],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[22],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [361, 784],
+        [360, 775],
+        [355, 764],
+        [346, 751],
+        [335, 740],
+        [327, 729],
+        [318, 713],
+        [310, 697.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[22],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [361, 784],
+        [360, 775],
+        [355, 764],
+        [346, 751],
+        [335, 740],
+        [327, 729],
+        [318, 713],
+        [310, 697.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[22],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [361, 784],
+        [360, 775],
+        [355, 764],
+        [346, 751],
+        [335, 740],
+        [327, 729],
+        [318, 713],
+        [310, 697.5],
       ]
     },
   ]
 };
 
-// done up to rhythm of war chapter 8
+// done up to rhythm of war chapter 44
 
-
-        
-        
-        
-        
-
-        
         
