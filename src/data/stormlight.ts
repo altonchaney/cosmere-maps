@@ -717,7 +717,10 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'battle',
       image: 'https://coppermind.net/w/images/thumb/WoR_BG_cover_art.jpg/800px-WoR_BG_cover_art.jpg',
       appearances: {
-        2: [95, 96, 97, 98, 99, 100, 101].map(i => wordsOfRadianceChapterList[i])
+        2: [95, 96, 97, 98, 99, 100, 101].map(i => wordsOfRadianceChapterList[i]),
+        6: [
+          104, 129
+        ].map(i => rhythmOfWarChapterList[i])
       },
       description: `The Battle of Narak is a major event during the War of Reckoning on Roshar. The battle ended the war and ushered in the True Desolation.`,
       coppermindLink: 'Battle_of_Narak',
@@ -791,7 +794,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           90, 91, 93, 98, 99, 105, 116, 135, 137
         ].map(i => oathbringerChapterList[i]),
         6: [
-          11, 14, 21, 47
+          11, 14, 21, 47, 86
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
@@ -857,7 +860,8 @@ export const STORMLIGHT_DATA: DataBundle = {
           35, 63, 94
         ].map(i => oathbringerChapterList[i]),
         6: [
-          2, 4, 5, 6, 7, 8, 9
+          2, 4, 5, 6, 7, 8, 9, 54, 58, 63,
+          74, 90, 127, 130
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
@@ -877,7 +881,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           49, 58
         ].map(i => oathbringerChapterList[i]),
         6: [
-          9, 10, 18
+          9, 10, 18, 68, 82, 95, 97, 104, 126
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Narak, also known historically as Stormseat, was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning it serves as the home of the listeners.`,
@@ -1110,7 +1114,13 @@ export const STORMLIGHT_DATA: DataBundle = {
         6: [
           12, 13, 15, 16, 17, 19, 20, 22, 23,
           24, 25, 26, 28, 30, 31, 36, 40, 41,
-          42, 43, 44, 45, 46, 48
+          42, 43, 44, 45, 46, 48, 50, 52, 55,
+          57, 59, 61, 62, 64, 65, 66, 67, 69,
+          71, 73, 75, 76, 77, 78, 83, 85, 88,
+          89, 92, 93, 94, 98, 100, 101, 105,
+          106, 107, 108, 112, 114, 115, 116,
+          117, 118, 119, 120, 121, 122, 123,
+          125, 126, 128
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
@@ -1128,7 +1138,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => oathbringerChapterList[i]),
         5: [
           1, 20
-        ].map(i => dawnshardChapterList[i])
+        ].map(i => dawnshardChapterList[i]),
+        6: [
+          80
+        ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Thaylen City is located on the northwestern coast of the largest of the islands forming Thaylenah. It sits on the shores of Longbrow's Straits, a strip of ocean dividing Thaylenah from the Rosharan mainland. The city was built inside a massive natural lait to protect it from highstorms.`,
       confirmed: true
@@ -1351,7 +1364,8 @@ export const STORMLIGHT_DATA: DataBundle = {
       image: 'https://coppermind.net/w/images/thumb/Lasting_Integrity_Interior.jpeg/400px-Lasting_Integrity_Interior.jpeg',
       appearances: {
         6: [
-          39
+          39, 84, 87, 91, 96, 99, 102, 103,
+          127
         ].map(i => rhythmOfWarChapterList[i])
       },
       coppermindLink: 'Lasting_Integrity',
@@ -1364,12 +1378,39 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'region',
       appearances: {
         6: [
-          22, 49
+          22, 49, 53, 56, 60, 70, 72, 77, 79,
+          81, 109, 110, 111, 113, 119, 123
         ].map(i => rhythmOfWarChapterList[i])
       },
       coppermindLink: 'Emul',
       description: `Emul is a Makabaki kingdom located in southwestern Roshar during the Era of Solitude. The citizens of Emul are referred to as Emuli. Traditionally a rather independent kingdom, the Desolation and war with Tukar has greatly weakened Emul and left it dependent on others for aid.`,
       confirmed: true
+    },
+    {
+      title: 'Tukar',
+      coordinates: [226, 642],
+      type: 'region',
+      appearances: {
+        6: [
+          124
+        ].map(i => rhythmOfWarChapterList[i])
+      },
+      coppermindLink: 'Tukar',
+      description: `Tukar is a kingdom on Roshar. It's ruled by god-priest Tezim, who is actually the Herald Ishar in disguise. The people of Tukar are called the Tukari.`,
+      confirmed: true
+    },
+    {
+      title: 'Natanatan',
+      coordinates: [248, 1379],
+      type: 'region',
+      appearances: {
+        6: [
+          51
+        ].map(i => rhythmOfWarChapterList[i])
+      },
+      coppermindLink: 'Natanatan',
+      description: `Natanatan was one of the Silver Kingdoms on Roshar during the Heraldic Epochs. In current-day Roshar, the land that formerly comprised Natanatan now includes the Unclaimed Hills, the Shattered Plains, the Eastern Crownlands of Alethkar, and the eastern Frostlands.`,
+      confirmed: false
     },
   ],
   paths: [
@@ -4095,6 +4136,21 @@ export const STORMLIGHT_DATA: DataBundle = {
       ]
     },
     {
+      character: characters[CharacterIndex.Lopen],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [628.5, 1351.5],
+        [609, 1372],
+        [589, 1386],
+        [556, 1401],
+        [517, 1409],
+        [478, 1414],
+        [437, 1418],
+      ]
+    },
+    {
       character: characters[CharacterIndex.Kaladin],
       book: books[5],
       chapter: rhythmOfWarChapterList[10],
@@ -4254,7 +4310,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     {
       character: characters[CharacterIndex.Dalinar],
       book: books[5],
-      chapter: rhythmOfWarChapterList[15],
+      chapter: rhythmOfWarChapterList[16],
       confirmed: true,
       coordinates: [
         [259.5, 1429],
@@ -4264,7 +4320,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     {
       character: characters[CharacterIndex.Navani],
       book: books[5],
-      chapter: rhythmOfWarChapterList[15],
+      chapter: rhythmOfWarChapterList[16],
       confirmed: true,
       coordinates: [
         [259.5, 1429],
@@ -4274,7 +4330,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     {
       character: characters[CharacterIndex.Lift],
       book: books[5],
-      chapter: rhythmOfWarChapterList[15],
+      chapter: rhythmOfWarChapterList[16],
       confirmed: true,
       coordinates: [
         [259.5, 1429],
@@ -4682,9 +4738,218 @@ export const STORMLIGHT_DATA: DataBundle = {
         [310, 697.5],
       ]
     },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[22],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [361, 784],
+        [360, 775],
+        [355, 764],
+        [346, 751],
+        [335, 740],
+        [327, 729],
+        [318, 713],
+        [310, 697.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[64],
+      confirmed: false,
+      coordinates: [
+        [174, 1443],
+        [184, 1425],
+        [202, 1415],
+        [220, 1417],
+        [242, 1423],
+        [259.5, 1423]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[86],
+      confirmed: false,
+      coordinates: [
+        [259.5, 1429],
+        [279, 1404],
+        [295, 1396],
+        [319, 1391],
+        [352, 1385],
+        [390, 1384],
+        [431, 1386],
+        [475, 1384],
+        [497, 1376],
+        [513, 1363.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[90],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [497, 1376],
+        [475, 1384],
+        [431, 1386],
+        [390, 1384],
+        [352, 1385],
+        [319, 1391],
+        [295, 1396],
+        [279, 1404],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[114],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [517, 1332],
+        [516, 1305],
+        [512, 1271],
+        [507, 1242],
+        [493, 1211],
+        [482, 1183],
+        [472, 1156],
+        [460, 1114],
+        [445, 1078],
+        [439, 1049],
+        [423, 1008],
+        [418, 979],
+        [409, 934],
+        [396, 908],
+        [394, 882],
+        [391, 847],
+        [386, 825],
+        [375, 812],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[126],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[123],
+      confirmed: false,
+      coordinates: [
+        [310, 697.5],
+        [288, 683],
+        [263, 676],
+        [237, 659],
+        [226, 642],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[123],
+      confirmed: false,
+      coordinates: [
+        [310, 697.5],
+        [288, 683],
+        [263, 676],
+        [237, 659],
+        [226, 642],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[124],
+      confirmed: false,
+      coordinates: [
+        [226, 642],
+        [232, 669],
+        [246, 693],
+        [266, 723],
+        [285, 746],
+        [319, 768],
+        [343, 786],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[124],
+      confirmed: false,
+      coordinates: [
+        [226, 642],
+        [232, 669],
+        [246, 693],
+        [266, 723],
+        [285, 746],
+        [319, 768],
+        [343, 786],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[124],
+      confirmed: false,
+      coordinates: [
+        [310, 697.5],
+        [318, 713],
+        [327, 729],
+        [335, 740],
+        [346, 751],
+        [355, 764],
+        [360, 775],
+        [361, 784],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[124],
+      confirmed: false,
+      coordinates: [
+        [310, 697.5],
+        [318, 713],
+        [327, 729],
+        [335, 740],
+        [346, 751],
+        [355, 764],
+        [360, 775],
+        [361, 784],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      book: books[5],
+      chapter: rhythmOfWarChapterList[123],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [395, 808]
+      ]
+    },
+
+    
   ]
 };
 
-// done up to rhythm of war chapter 44
+// done up to rhythm of war chapter 73
 
         
