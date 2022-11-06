@@ -4668,10 +4668,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         [432, 889],
         [421, 859],
         [424, 834],
-        [413, 819],// 34
-        // [400, 810],
-        // [382, 805],
-        // [362, 802]
+        [413, 819],
       ]
     },
     {
@@ -4948,8 +4945,4 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     
   ]
-};
-
-// done up to rhythm of war chapter 73
-
-        
+}; 
