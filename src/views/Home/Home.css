@@ -26,7 +26,7 @@ footer {
   background-image: url('../../assets/background.jpg');
   background-size: cover;
   background-position: center;
-  filter: saturate(0) opacity(0.02);
+  filter: saturate(0) opacity(0.015);
 }
 
 .series-list {

@@ -10,7 +10,7 @@ const Home = () => {
       <header>
         <h1>Cosmere Maps</h1>
         <p className='alt'>An Interactive Journey Map</p>
-        <p>Follow along with the primary characters in various Cosmere series and see where they are at specific parts of these stories. You can select character and books individually and are able to specify which chapters you’d like to see visible. These selections are saved if you leave and come back.</p>
+        <p>Follow along with the primary characters in various Cosmere series and see where they are at specific parts of these stories. You can select character and books individually and are able to specify which chapters you’d like to see visible.</p>
         <label className='desktop-warning'>For the best experience, use a tablet or desktop.</label>
       </header>
       <div className='series-list'>

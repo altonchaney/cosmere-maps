@@ -7,7 +7,7 @@ import colors from '../../assets/colors';
 import './ListItem.css';
 
 
-const ListItem = (props: { selected: boolean, image: string, title: string, color?: string, callback: () => void }) => {
+const ListItem = (props: { selected: boolean, image: string, title?: string, color?: string, callback?: () => void }) => {
   const { selected, image, title, color, callback } = props;
   const [hovered, setHovered] = useState<boolean>(false);
 

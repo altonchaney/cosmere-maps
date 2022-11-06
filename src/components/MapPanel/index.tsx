@@ -99,8 +99,37 @@ const MapPanel = (
       <div className={`panel-control ${ open ? 'open' : '' }`} onClick={() => setOpen(!open)}>
         <p className='alt'>{ open ? 'Close' : 'Menu' }</p>
       </div>
+      <div className={`CharacterList ${ open ? '' : 'visible' }`}>
+        {
+          characters
+            .filter(character => (
+              selectedCharacters.includes(character.name) &&
+              (
+                !character.firstAppearance ||
+                (
+                  Math.max(...selectedBooks) >
+                  (Number(Object.keys(character.firstAppearance)[0]) - 1) ||
+                  (
+                    character.firstAppearance[Math.max(...selectedBooks) + 1] &&
+                    (
+                      books[Math.max(...selectedBooks)].chapters[visibleRange[1]].chapter >=
+                      character.firstAppearance[Math.max(...selectedBooks) + 1].chapter
+                    )
+                  )
+                )
+              )
+            ))
+            .map(character => (
+              <ListItem
+                key={`character-condensed-item-${character.name}`}
+                selected={selectedCharacters.includes(character.name)}
+                image={character.image}
+                color={character.color}
+              />
+            ))
+        }
+      </div>
     </div>
-    
   );
 }
 

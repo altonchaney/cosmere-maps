@@ -96,12 +96,13 @@ const Map = (props: {name: AvailableSeries}) => {
           }
           position={marker.coordinates}
         >
-          <Tooltip>
-            <div className='tooltip'>
+          <Tooltip opacity={1}>
+            <div className='tooltip' style={{ bottom: marker.coordinates[0] < 200 ? 0 : 'initial' }}>
               {marker.image && <img src={marker.image} alt={marker.type} />}
               <p className='alt'>{ marker.type }</p>
               <h2>{ marker.title }</h2>
               {marker.description && <p>{ marker.description }</p>}
+              <label>{ marker.confirmed ? 'Confirmed' : 'Unconfirmed' }</label>
             </div>
           </Tooltip>
         </Marker>
