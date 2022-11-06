@@ -11,6 +11,7 @@ import colors from '../../assets/colors';
 const MapPanel = (
   props: {
     title: string,
+    details?: { planet: string, description: string }
     characters: Character[],
     books: Book[],
     visibleRange: number[],
@@ -20,11 +21,12 @@ const MapPanel = (
   }
 ) => {
   const {
-    title, characters, books, visibleRange,
+    title, details, characters, books, visibleRange,
     selectedCharacters, selectedBooks,
     selectCharacter, selectBook
   } = props;
   const [open, setOpen] = useState<boolean>(true);
+  const [detailsVisible, setDetailsVisible] = useState<boolean>(false);
 
   return (
     <div className='container'>
@@ -32,6 +34,23 @@ const MapPanel = (
         <Link className='exit' to={'/'}><GiExitDoor size={15} color={colors.primary.whiteTransparent}/></Link>
         <Link to={'/'}><h1 className='alt'>Cosmere Maps</h1></Link>
         <Title title={title} subtitle='Series'/>
+        {
+          details &&
+          <div
+            className={`details-container ${ detailsVisible ? 'open' : '' }`}
+            onClick={() => setDetailsVisible(!detailsVisible)}
+          >
+            <Title subtitle={detailsVisible ? 'Details' : 'See Details'}/>
+            <ul>
+              {
+                Object.keys(details).map((key) => (
+                  <li key={(details as any)[key]}><i>{ key[0].toUpperCase() + key.slice(1) }:</i> { (details as any)[key] }</li>
+                ))
+              }
+            </ul>
+          </div>
+        }
+        
         <Title subtitle='Characters'/>
         <div className='list-container'>
           {

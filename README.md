@@ -52,11 +52,9 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 ## To-Do List
 
 ### Functionality
-
 - [ ] Draw paths progressively from start to end points
 - [ ] Unconfirmed marker indicators
 - [ ] Render character icons where they are on the map
-
 
 ### Series Data
 
@@ -66,13 +64,11 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 - [x] The Hero of Ages
 - [ ] Secret History
 
-
 **Mistborn Era 2**
 - [x] The Allow of Law
 - [x] Shadows of Self
 - [x] The Bands of Mourning
 - [ ] The Lost Metal
-
 
 **The Stormlight Archive**
 - [x] The Way of Kings
@@ -80,18 +76,15 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 - [x] Edgedancer
 - [x] Oathbringer
 - [x] Dawnshard
-- [ ] Rhythm of War
-
+- [x] Rhythm of War
 
 **White Sand**
 - [ ] White Sand Vol. 1
 - [ ] White Sand Vol. 2
 - [ ] White Sand Vol. 3
 
-
 **Elantris**
 - [ ] Elantris
-
 
 **Warbreaker**
 - [ ] Warbreaker

@@ -197,6 +197,13 @@ const Map = (props: {name: AvailableSeries}) => {
         selectedCharacters={visibleCharacters}
         selectedBooks={visibleBooks}
         visibleRange={visibleRange}
+        details={
+          data.planetName && data.description ?
+          {
+            planet: data.planetName,
+            description: data.description
+          }: undefined
+        }
       />
       {
         visibleBooks.length &&

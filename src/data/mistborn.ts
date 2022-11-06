@@ -277,6 +277,8 @@ export const seriesData: Series = {
   title: 'Mistborn (Era 1)',
   stub: 'mistborn',
   image: 'https://coppermind.net/w/images/MB_Era_1_BR_full_cover_art.jpg',
+  planetName: 'Scadrial',
+  description: `The first Mistborn trilogy chronicles the efforts of a secret group of Allomancers who attempt to overthrow a dystopian empire and establish themselves in a world covered by ash.`,
   color: 'rgb(153,64,105)',
   backgroundColor: 'rgb(206,200,187)',
   books: books,

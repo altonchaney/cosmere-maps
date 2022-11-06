@@ -686,6 +686,8 @@ export const seriesData: Series = {
   title: 'The Stormlight Archive',
   stub: 'stormlight',
   image: 'https://coppermind.net/w/images/TWoK_US_Cover_art.jpg',
+  planetName: 'Roshar',
+  description: `Set on the planet Roshar, the series forms a core part of the cosmere sequence, and centers around Odium's efforts to escape the ties that bind him to the Rosharan system. The series is estimated to require ten books to complete.`,
   color: 'rgb(194,94,73)',
   backgroundColor: 'rgb(1,15,42)',
   books: books,

@@ -9,8 +9,9 @@ const Home = () => {
     <div className='Home'>
       <header>
         <h1>Cosmere Maps</h1>
-        <label>Last Updated 10/30</label>
-        <p>Follow along the character journeys in your favorite Cosmere series and see exactly where they were at specific parts of these stories. You can select character and books individually and are able to specify which chapters you’d like to see visible. For the best experience, use a tablet or desktop.</p>
+        <p className='alt'>An Interactive Journey Map</p>
+        <p>Follow along with the primary characters in various Cosmere series and see where they are at specific parts of these stories. You can select character and books individually and are able to specify which chapters you’d like to see visible. These selections are saved if you leave and come back.</p>
+        <label className='desktop-warning'>For the best experience, use a tablet or desktop.</label>
       </header>
       <div className='series-list'>
         {
@@ -21,12 +22,13 @@ const Home = () => {
         }
       </div>
       <footer>
-        <a href='https://github.com/altonchaney/cosmere-maps' target='_blank' rel='noreferrer noopener'>
+        <a href='https://github.com/altonchaney/cosmere-maps/issues' target='_blank' rel='noreferrer noopener'>
           <p className='alt'>
-            View Source on Github
+            Having issues? Submit them here.
           </p>
         </a>
       </footer>
+      <div className='background'/>
     </div>
   );
 }

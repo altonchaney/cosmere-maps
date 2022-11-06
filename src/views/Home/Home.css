@@ -8,11 +8,25 @@
 
 header {
   max-width: 640px;
-  margin: 0 auto 10px;
+  margin: 0 auto 20px;
+}
+
+header > p.alt {
+  margin: -6px auto -8px;
 }
 
 footer {
   margin-top: 6px;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: url('../../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: saturate(0) opacity(0.02);
 }
 
 .series-list {
@@ -29,4 +43,15 @@ footer {
 
 .series-list .series-tile {
   margin: 0 10px;
+}
+
+.desktop-warning {
+  display: none;
+  transform: translateY(-20px);
+}
+
+@media screen and (max-width: 699px) {
+  .desktop-warning {
+    display: initial;
+  }
 }

@@ -44,3 +44,29 @@
 .panel-control p {
   margin-top: 20px;
 }
+
+.details-container {
+  height: 20px;
+}
+
+.details-container {
+  height: 60px;
+  overflow: hidden;
+  margin: -24px 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.details-container hr {
+  display: none;
+}
+
+.details-container.open {
+  height: auto;
+  margin: 0 0 -20px;
+  opacity: 1;
+}
+
+.details-container.open hr {
+  display: initial;
+}

@@ -72,6 +72,21 @@ p.alt {
   font-style: italic;
 }
 
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li > i {
+  color: var(--lightGray);
+}
+
 .title {
   margin: 20px 0 0;
 }
@@ -87,6 +102,7 @@ p.alt {
 .subtitle p {
   padding-right: 12px;
   padding-left: 12px;
+  white-space: nowrap;
 }
 
 hr {

@@ -154,6 +154,8 @@ export const seriesData: Series = {
   title: 'Mistborn (Era 2)',
   stub: 'mistborn2',
   image: 'https://coppermind.net/w/images/MB_Era_2_BR_cover_art.jpg',
+  planetName: 'Scadrial',
+  description: `Set about 300 years after Era 1, the Wax and Wayne series is about the exploits of Waxillium Ladrian, a "wild-west Deputy" forced to move into the big city, and starts investigating kidnappings and robberies.`,
   color: 'rgb(85,105,73)',
   backgroundColor: 'rgb(255,255,255)',
   books: books,

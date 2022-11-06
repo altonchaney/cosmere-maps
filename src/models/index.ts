@@ -15,6 +15,8 @@ export type Series = {
   backgroundColor: string;
   books: Book[];
   characters: Character[];
+  planetName?: string;
+  description?: string;
 };
 
 export type Book = {
