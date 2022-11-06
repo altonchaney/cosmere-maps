@@ -5,7 +5,8 @@ import cognitiveRealmMap from '../assets/shadesmar.webp';
 const mapData: Map = {
   image: physicalRealmMap,
   altImage: cognitiveRealmMap,
-  dimensions: [1000,1720]
+  dimensions: [1000,1720],
+  source: 'https://www.deviantart.com/stoneward13/art/Roshar-Reimagined-813353564'
 };
 
 const theWayOfKingsChapterList: Chapter[] = [

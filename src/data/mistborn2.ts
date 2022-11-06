@@ -3,7 +3,8 @@ import map from '../assets/mistborn2.png';
 
 const mapData: Map = {
   image: map,
-  dimensions: [1200,795]
+  dimensions: [1200,795],
+  source: 'https://coppermind.net/wiki/File:Elendel_Basin.png'
 };
 
 const theAlloyOfLawChapterList: Chapter[] = [

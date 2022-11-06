@@ -44,7 +44,8 @@ export type Character = {
 export type Map = {
   image: any;
   altImage?: any;
-  dimensions: LatLngTuple
+  source?: string;
+  dimensions: LatLngTuple;
 };
 
 export type Marker = {

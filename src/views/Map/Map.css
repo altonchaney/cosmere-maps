@@ -101,3 +101,19 @@
 .realm-toggle > .active {
   background-color: var(--white);
 }
+
+.source-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 60px;
+  height: 22px;
+  left: calc(50% - 30px);
+}
+
+.source-link p {
+  text-align: center;
+  color: var(--white);
+}

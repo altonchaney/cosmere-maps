@@ -249,6 +249,14 @@ const Map = (props: {name: AvailableSeries}) => {
           </div>
         </div>
       }
+      {
+        data.map.source &&
+        <a className='source-link' href={data.map.source} target='_blank' rel='noreferrer noopener'>
+          <p className='alt'>
+            Map Source
+          </p>
+        </a>
+      }
     </div>
   );
 }

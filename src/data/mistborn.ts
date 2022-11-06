@@ -3,7 +3,8 @@ import map from '../assets/mistborn1.webp';
 
 const mapData: Map = {
   image: map,
-  dimensions: [1000,1333]
+  dimensions: [1000,1333],
+  source: 'https://www.deviantart.com/mapeffects/art/Mistborn-The-Final-Empire-Map-Brandon-Sanderson-907741466'
 };
 
 const theFinalEmpireChapterList: Chapter[] = [
