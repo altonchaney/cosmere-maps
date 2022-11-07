@@ -14,14 +14,15 @@ import MapTimeline from '../../components/MapTimeline';
 import MapMarker from '../../components/MapMarker';
 import colors from '../../assets/colors';
 
-const Coordinates = () => {
-  const map = useMapEvents({
-    click(e) {
-      console.log([e.latlng.lat, e.latlng.lng])
-    }
-  });
-  return <></>
-};
+// MAPPING TOOL - ONLY USED LOCALLY
+// const Coordinates = () => {
+//   const map = useMapEvents({
+//     click(e) {
+//       console.log([e.latlng.lat, e.latlng.lng])
+//     }
+//   });
+//   return <></>
+// };
 
 const Map = (props: {name: AvailableSeries}) => {
   const { name } = props;
@@ -53,6 +54,7 @@ const Map = (props: {name: AvailableSeries}) => {
       visibleBooks.filter(i => (i !== bookIndex)) : [...visibleBooks, bookIndex];
     setVisibleBooks(newVisibleBooks);
     localStorage.setItem(`${name}-Books`, JSON.stringify(newVisibleBooks));
+    setInitialRange([0,0]);
   };
 
   const renderMarkers = useCallback((bookIndex: number) => {
@@ -120,6 +122,7 @@ const Map = (props: {name: AvailableSeries}) => {
         (
           latestVisibleBook > bookIndex ||
           (
+            data.books[bookIndex].chapters[visibleRange[0]] && data.books[bookIndex].chapters[visibleRange[1]] &&
             data.books[bookIndex].chapters[visibleRange[0]].chapter <= path.chapter.chapter &&
             data.books[bookIndex].chapters[visibleRange[1]].chapter >= path.chapter.chapter
           )
@@ -133,6 +136,7 @@ const Map = (props: {name: AvailableSeries}) => {
           pathOptions={{
             color: path.character.color, 
             weight: latestVisibleBook === bookIndex &&
+              data.books[bookIndex].chapters[visibleRange[1]] &&
               data.books[bookIndex].chapters[visibleRange[1]].chapter === path.chapter.chapter ?
               8 : 4,
             dashArray: path.confirmed ? [0] : [10, 10, 1, 10],
@@ -187,7 +191,8 @@ const Map = (props: {name: AvailableSeries}) => {
         />
         { visibleBooks.map(i => renderMarkers(i)) }
         { visibleBooks.map(i => renderPaths(i)) }
-        <Coordinates />
+        {/* MAPPING TOOL - ONLY USED LOCALLY */}
+        {/* <Coordinates /> */}
       </MapContainer>
       <MapPanel
         title={data.title}

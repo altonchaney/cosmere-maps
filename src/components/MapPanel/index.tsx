@@ -63,6 +63,7 @@ const MapPanel = (
                   (
                     character.firstAppearance[Math.max(...selectedBooks) + 1] &&
                     (
+                      books[Math.max(...selectedBooks)].chapters[visibleRange[1]] &&
                       books[Math.max(...selectedBooks)].chapters[visibleRange[1]].chapter >=
                       character.firstAppearance[Math.max(...selectedBooks) + 1].chapter
                     )
@@ -111,6 +112,7 @@ const MapPanel = (
                   (Number(Object.keys(character.firstAppearance)[0]) - 1) ||
                   (
                     character.firstAppearance[Math.max(...selectedBooks) + 1] &&
+                    books[Math.max(...selectedBooks)].chapters[visibleRange[1]] &&
                     (
                       books[Math.max(...selectedBooks)].chapters[visibleRange[1]].chapter >=
                       character.firstAppearance[Math.max(...selectedBooks) + 1].chapter
