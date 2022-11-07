@@ -217,7 +217,7 @@ const Map = (props: {name: AvailableSeries}) => {
           book={data.books[Math.max(...visibleBooks)]}
           initialValue={initialRange}
           callback={(range) => {
-            range.sort();
+            range.sort((a, b) => (a - b));
             setVisibleRange(range);
             localStorage.setItem(`${name}-Range`, JSON.stringify(range));
           }}
