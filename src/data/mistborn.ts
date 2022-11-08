@@ -1,4 +1,4 @@
-import { Book, Chapter, Character, DataBundle, Map, Series } from "../models";
+import { Installment, Chapter, Character, DataBundle, Map, Series, MediaType } from "character-journey-map/models";
 import map from '../assets/mistborn1.webp';
 
 const mapData: Map = {
@@ -205,43 +205,43 @@ export const characters: Character[] =[
     name: 'Vin',
     image: 'https://coppermind.net/w/images/thumb/The_Ascendant_Warrior.jpg/400px-The_Ascendant_Warrior.jpg',
     color: 'rgb(76,47,74)',
-    coppermindLink: 'Vin'
+    wikiLink: 'Vin'
   },
   {
     name: 'Kelsier',
     image: 'https://coppermind.net/w/images/thumb/Cognitive_Shadow_Kelsier.jpg/400px-Cognitive_Shadow_Kelsier.jpg',
     color: 'rgb(119,162,119)',
-    coppermindLink: 'Kelsier'
+    wikiLink: 'Kelsier'
   },
   {
     name: 'Elend',
     image: 'https://coppermind.net/w/images/thumb/Elend_Shuravf.jpg/400px-Elend_Shuravf.jpg',
     color: 'rgb(98,117,230)',
-    coppermindLink: 'Elend_Venture'
+    wikiLink: 'Elend_Venture'
   },
   {
     name: 'Sazed',
     image: 'https://coppermind.net/w/images/thumb/Sazed_portrait.jpg/442px-Sazed_portrait.jpg',
     color: 'rgb(195,156,76)',
-    coppermindLink: 'Sazed'
+    wikiLink: 'Sazed'
   },
   {
     name: 'Spook',
     image: 'https://coppermind.net/w/images/thumb/Spook_by_clarinking.jpg/500px-Spook_by_clarinking.jpg',
     color: 'rgb(82,90,138)',
-    coppermindLink: 'Spook'
+    wikiLink: 'Spook'
   },
   {
     name: 'Marsh',
     image: 'https://coppermind.net/w/images/thumb/Marsh_by_eyeronis.png/400px-Marsh_by_eyeronis.png',
     color: 'rgb(58,68,75)',
-    coppermindLink: 'Marsh'
+    wikiLink: 'Marsh'
   },
   {
     name: 'TenSoon',
     image: 'https://coppermind.net/w/images/thumb/Tensoon_portrait_paint.png/1024px-Tensoon_portrait_paint.png',
     color: 'rgb(198,99,36)',
-    coppermindLink: 'TenSoon',
+    wikiLink: 'TenSoon',
     firstAppearance: { 2: wellOfAscensionChapterList[46] }
   },
 ];
@@ -256,7 +256,7 @@ enum CharacterIndex {
   'TenSoon' = 6
 }
 
-export const books: Book[] = [
+export const books: Installment[] = [
   {
     title: 'The Final Empire',
     image: 'https://coppermind.net/w/images/thumb/Mistborn_Final_Empire.jpg/400px-Mistborn_Final_Empire.jpg',
@@ -276,13 +276,14 @@ export const books: Book[] = [
 
 export const seriesData: Series = {
   title: 'Mistborn (Era 1)',
+  type: MediaType.Book,
   stub: 'mistborn',
   image: 'https://coppermind.net/w/images/MB_Era_1_BR_full_cover_art.jpg',
   planetName: 'Scadrial',
   description: `The first Mistborn trilogy chronicles the efforts of a secret group of Allomancers who attempt to overthrow a dystopian empire and establish themselves in a world covered by ash.`,
   color: 'rgb(153,64,105)',
   backgroundColor: 'rgb(206,200,187)',
-  books: books,
+  installments: books,
   characters: characters
 };
 
@@ -301,7 +302,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ]
       },
       description: `Tresting plantation is located in the Central Dominance north-west of Luthadel.`,
-      coppermindLink: 'Tresting_plantation',
+      wikiLink: 'Tresting_plantation',
       confirmed: true
     },
     {
@@ -329,7 +330,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `Luthadel is the capital city of the Final Empire on Scadrial.`,
-      coppermindLink: 'Luthadel',
+      wikiLink: 'Luthadel',
       confirmed: true
     },
     {
@@ -342,7 +343,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theFinalEmpireChapterList[i]))
       },
       description: `Fellise was a small, suburban town in the Central Dominance, relatively close to Luthadel. It was a prosperous city with a reputation for being less crowded, cleaner, and less strict in enforcing the imperial laws than the capital.`,
-      coppermindLink: 'Fellise',
+      wikiLink: 'Fellise',
       confirmed: true
     },
     {
@@ -356,7 +357,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theFinalEmpireChapterList[i]))
       },
       description: `The Arguois caverns is a natural system of caves in the Central Dominance of the Final Empire on Scadrial. They can be found north of Luthadel, placed between the city and the Pits of Hathsin.`,
-      coppermindLink: 'Arguois_caverns',
+      wikiLink: 'Arguois_caverns',
       confirmed: false
     },
     {
@@ -373,7 +374,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `The Pits of Hathsin are a system of caves near Luthadel on Scadrial at the time of the Final Empire in which atium geodes grow.`,
-      coppermindLink: 'Pits_of_Hathsin',
+      wikiLink: 'Pits_of_Hathsin',
       confirmed: true
     },
     {
@@ -390,7 +391,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (wellOfAscensionChapterList[i]))
       },
       description: `The armies of Straff Venture, Ashweather Cett, and the Koloss army of Jastes Lekal besieged Luthadel, King Elend Venture's throne.`,
-      coppermindLink: 'Siege_of_Luthadel',
+      wikiLink: 'Siege_of_Luthadel',
       confirmed: true
     },
     {
@@ -404,7 +405,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (wellOfAscensionChapterList[i]))
       },
       description: `The Battle of Luthadel is a major event in the history of Scadrial. It is a battle following the Siege of Luthadel.`,
-      coppermindLink: 'Battle_of_Luthadel',
+      wikiLink: 'Battle_of_Luthadel',
       confirmed: true
     },
     {
@@ -417,7 +418,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (wellOfAscensionChapterList[i]))
       },
       description: `The Conventical of Seran is a fortress of the Canton of Inquisition on Scadrial. It is where new Inquisitors were made, and Kwaan's inscription is kept there.`,
-      coppermindLink: 'Conventical_of_Seran',
+      wikiLink: 'Conventical_of_Seran',
       confirmed: true
     },
     {
@@ -430,7 +431,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (wellOfAscensionChapterList[i]))
       },
       description: `The village consisted of ten large wooden hovels built in a loose circle with a well in the center, and a nobleman's manor a little farther up the valley. The skaa of Urbene were herdsmen. The village itself lay in a quiet hollow amid the rising landscape. It was described as picturesque.`,
-      coppermindLink: 'Urbene',
+      wikiLink: 'Urbene',
       confirmed: true
     },
     {
@@ -443,7 +444,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `With a population of around seven thousand, Vetitan is fairly large for a farming community. Most houses are one-story buildings, but it is more urban than a plantation. The presence of nearby ore deposits make it both a farming and mining town.`,
-      coppermindLink: 'Vetitan',
+      wikiLink: 'Vetitan',
       confirmed: true
     },
     {
@@ -456,7 +457,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `Tathingdwen is the capital of the Terris Dominance of the Final Empire on Scadrial.`,
-      coppermindLink: 'Tathingdwen',
+      wikiLink: 'Tathingdwen',
       confirmed: true
     },
     {
@@ -471,7 +472,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `The Homeland was the secret, underground nation of the kandra on Scadrial during the Final Empire.`,
-      coppermindLink: 'Kandra_Homeland',
+      wikiLink: 'Kandra_Homeland',
       confirmed: false
     },
     {
@@ -484,7 +485,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `Lekal City was a country estate, with a manor house but lacked a true palace.`,
-      coppermindLink: 'Lekal_City',
+      wikiLink: 'Lekal_City',
       confirmed: true
     },
     {
@@ -500,7 +501,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `Located northeast of Luthadel near the Kalling Ashmount, Urteau was the largest city in the Northern Dominance and was the hereditary home of House Venture.`,
-      coppermindLink: 'Urteau',
+      wikiLink: 'Urteau',
       confirmed: true
     },
     {
@@ -516,7 +517,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `Fadrex City is a major trade hub in the Western Dominance of the Final Empire, several month's journey from Urteau. It is located near Chardees.`,
-      coppermindLink: 'Fadrex_City',
+      wikiLink: 'Fadrex_City',
       confirmed: true
     },
     {
@@ -530,14 +531,14 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
         ].map(i => (theHeroOfAgesChapterList[i]))
       },
       description: `Mount Tyrian was one of the seven Ashmounts in the Final Empire. These enormous volcanoes continuously emit ash which clouds the skies.`,
-      coppermindLink: 'Ashmounts',
+      wikiLink: 'Ashmounts',
       confirmed: true
     },
   ],
   paths: [
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[8],
       confirmed: true,
       coordinates: [
@@ -547,7 +548,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[8],
       confirmed: true,
       coordinates: [
@@ -557,7 +558,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[8],
       confirmed: true,
       coordinates: [
@@ -567,7 +568,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[10],
       confirmed: true,
       coordinates: [
@@ -577,7 +578,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[10],
       confirmed: true,
       coordinates: [
@@ -587,7 +588,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[10],
       confirmed: true,
       coordinates: [
@@ -597,7 +598,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[15],
       confirmed: true,
       coordinates: [
@@ -607,7 +608,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[16],
       confirmed: true,
       coordinates: [
@@ -617,7 +618,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[16],
       confirmed: true,
       coordinates: [
@@ -627,7 +628,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[18],
       confirmed: true,
       coordinates: [
@@ -637,7 +638,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[19],
       confirmed: true,
       coordinates: [
@@ -648,7 +649,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[20],
       confirmed: true,
       coordinates: [
@@ -658,7 +659,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[20],
       confirmed: true,
       coordinates: [
@@ -668,7 +669,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[21],
       confirmed: true,
       coordinates: [
@@ -690,7 +691,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[23],
       confirmed: true,
       coordinates: [
@@ -700,7 +701,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[23],
       confirmed: true,
       coordinates: [
@@ -721,7 +722,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[25],
       confirmed: true,
       coordinates: [
@@ -743,7 +744,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[25],
       confirmed: true,
       coordinates: [
@@ -765,7 +766,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[26],
       confirmed: true,
       coordinates: [
@@ -786,7 +787,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[26],
       confirmed: true,
       coordinates: [
@@ -807,7 +808,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[29],
       confirmed: true,
       coordinates: [
@@ -817,7 +818,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[29],
       confirmed: true,
       coordinates: [
@@ -827,7 +828,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[29],
       confirmed: true,
       coordinates: [
@@ -837,7 +838,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[30],
       confirmed: true,
       coordinates: [
@@ -847,7 +848,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[30],
       confirmed: true,
       coordinates: [
@@ -857,7 +858,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[32],
       confirmed: true,
       coordinates: [
@@ -871,7 +872,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kelsier],
-      book: books[0],
+      installment: books[0],
       chapter: theFinalEmpireChapterList[33],
       confirmed: true,
       coordinates: [
@@ -886,7 +887,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     // well of ascension paths
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[3],
       confirmed: false,
       coordinates: [
@@ -901,7 +902,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[6],
       confirmed: false,
       coordinates: [
@@ -916,7 +917,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[8],
       confirmed: true,
       coordinates: [
@@ -931,7 +932,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[8],
       confirmed: true,
       coordinates: [
@@ -946,7 +947,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[11],
       confirmed: true,
       coordinates: [
@@ -959,7 +960,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[11],
       confirmed: true,
       coordinates: [
@@ -972,7 +973,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[14],
       confirmed: true,
       coordinates: [
@@ -982,7 +983,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[18],
       confirmed: true,
       coordinates: [
@@ -993,7 +994,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[21],
       confirmed: true,
       coordinates: [
@@ -1003,7 +1004,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[25],
       confirmed: true,
       coordinates: [
@@ -1013,7 +1014,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[25],
       confirmed: true,
       coordinates: [
@@ -1023,7 +1024,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[26],
       confirmed: true,
       coordinates: [
@@ -1033,7 +1034,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[26],
       confirmed: true,
       coordinates: [
@@ -1043,7 +1044,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[48],
       confirmed: true,
       coordinates: [
@@ -1060,7 +1061,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[48],
       confirmed: true,
       coordinates: [
@@ -1077,7 +1078,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Spook],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[48],
       confirmed: true,
       coordinates: [
@@ -1094,7 +1095,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[51],
       confirmed: true,
       coordinates: [
@@ -1110,7 +1111,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[52],
       confirmed: true,
       coordinates: [
@@ -1120,7 +1121,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[55],
       confirmed: true,
       coordinates: [
@@ -1135,7 +1136,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Spook],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[55],
       confirmed: true,
       coordinates: [
@@ -1150,7 +1151,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[56],
       confirmed: true,
       coordinates: [
@@ -1161,7 +1162,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Spook],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[56],
       confirmed: true,
       coordinates: [
@@ -1172,7 +1173,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[1],
+      installment: books[1],
       chapter: wellOfAscensionChapterList[59],
       confirmed: true,
       coordinates: [
@@ -1198,7 +1199,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     // hero of ages paths
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[1],
       confirmed: true,
       coordinates: [
@@ -1208,7 +1209,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[3],
       confirmed: true,
       coordinates: [
@@ -1218,7 +1219,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[6],
       confirmed: false,
       coordinates: [
@@ -1232,7 +1233,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[8],
       confirmed: true,
       coordinates: [
@@ -1244,7 +1245,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[8],
       confirmed: true,
       coordinates: [
@@ -1256,7 +1257,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[10],
       confirmed: true,
       coordinates: [
@@ -1270,7 +1271,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[15],
       confirmed: true,
       coordinates: [
@@ -1284,7 +1285,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[15],
       confirmed: true,
       coordinates: [
@@ -1298,7 +1299,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[18],
       confirmed: true,
       coordinates: [
@@ -1318,7 +1319,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[21],
       confirmed: true,
       coordinates: [
@@ -1333,7 +1334,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[21],
       confirmed: true,
       coordinates: [
@@ -1348,7 +1349,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[25],
       confirmed: true,
       coordinates: [
@@ -1363,7 +1364,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[25],
       confirmed: true,
       coordinates: [
@@ -1378,7 +1379,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[29],
       confirmed: true,
       coordinates: [
@@ -1398,7 +1399,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[34],
       confirmed: false,
       coordinates: [
@@ -1419,7 +1420,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.TenSoon],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[39],
       confirmed: true,
       coordinates: [
@@ -1431,7 +1432,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[42],
       confirmed: false,
       coordinates: [
@@ -1447,7 +1448,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.TenSoon],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[52],
       confirmed: true,
       coordinates: [
@@ -1464,7 +1465,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.TenSoon],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[59],
       confirmed: true,
       coordinates: [
@@ -1481,7 +1482,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[63],
       confirmed: true,
       coordinates: [
@@ -1498,7 +1499,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.TenSoon],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[66],
       confirmed: true,
       coordinates: [
@@ -1516,7 +1517,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Sazed],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[66],
       confirmed: true,
       coordinates: [
@@ -1534,7 +1535,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[69],
       confirmed: true,
       coordinates: [
@@ -1547,7 +1548,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.TenSoon],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[71],
       confirmed: true,
       coordinates: [
@@ -1563,7 +1564,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[72],
       confirmed: true,
       coordinates: [
@@ -1576,7 +1577,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[72],
       confirmed: true,
       coordinates: [
@@ -1593,7 +1594,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.TenSoon],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[73],
       confirmed: true,
       coordinates: [
@@ -1613,7 +1614,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[74],
       confirmed: true,
       coordinates: [
@@ -1630,7 +1631,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[76],
       confirmed: true,
       coordinates: [
@@ -1642,7 +1643,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[77],
       confirmed: true,
       coordinates: [
@@ -1654,7 +1655,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.TenSoon],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[78],
       confirmed: true,
       coordinates: [
@@ -1666,7 +1667,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Vin],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[79],
       confirmed: true,
       coordinates: [
@@ -1679,7 +1680,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Elend],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[79],
       confirmed: true,
       coordinates: [
@@ -1692,7 +1693,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Marsh],
-      book: books[2],
+      installment: books[2],
       chapter: theHeroOfAgesChapterList[81],
       confirmed: true,
       coordinates: [

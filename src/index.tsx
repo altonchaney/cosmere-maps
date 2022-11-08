@@ -5,18 +5,18 @@ import {
   RouterProvider,
   Route,
 } from 'react-router-dom';
+import { Map } from 'character-journey-map';
 
 import './index.css';
 import Home from './views/Home';
-import Map from './views/Map';
+
 import reportWebVitals from './reportWebVitals';
-import { AvailableSeries } from './models';
-import { DATA } from './data';
+import { AvailableSeries, DATA } from './data';
 
 const routes = Object.keys(DATA)
     .map((key: string) => ({
       path: `/${ DATA[key as AvailableSeries].stub }`,
-      element: <Map name={key as AvailableSeries} />
+      element: <Map data={DATA[key as AvailableSeries]} name={key as AvailableSeries} />
     }))
 
 const router = createBrowserRouter([

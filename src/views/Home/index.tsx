@@ -1,7 +1,6 @@
 import React from 'react';
-import SeriesCard from '../../components/SeriesCard';
-import { DATA} from '../../data';
-import { AvailableSeries } from '../../models';
+import { SeriesCard } from 'character-journey-map';
+import { AvailableSeries, DATA } from '../../data';
 import './Home.css';
 
 const Home = () => {
@@ -17,7 +16,7 @@ const Home = () => {
         {
           Object.keys(DATA)
             .map((key: string) => (
-              <SeriesCard key={(DATA[key as AvailableSeries]).title} series={DATA[key as AvailableSeries]} />
+              <SeriesCard series={DATA[key as AvailableSeries]} />
             ))
         }
       </div>
