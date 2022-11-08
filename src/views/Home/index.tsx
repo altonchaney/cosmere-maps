@@ -16,7 +16,7 @@ const Home = () => {
         {
           Object.keys(DATA)
             .map((key: string) => (
-              <SeriesCard series={DATA[key as AvailableSeries]} />
+              <SeriesCard key={`series-card-${ key }`} series={DATA[key as AvailableSeries]} />
             ))
         }
       </div>
