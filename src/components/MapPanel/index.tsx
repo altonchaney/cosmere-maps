@@ -96,6 +96,15 @@ const MapPanel = (
             ))
           }
         </div>
+        <Title subtitle='Legend'/>
+        <div className='legend-container'>
+          <div className='indicator confirmed'>
+            <p className='alt'>Confirmed Path</p>
+          </div>
+          <div className='indicator unconfirmed'>
+            <p className='alt'>Unconfirmed Path</p>
+          </div>
+        </div>
       </div>
       <div className={`panel-control ${ open ? 'open' : '' }`} onClick={() => setOpen(!open)}>
         <p className='alt'>{ open ? 'Close' : 'Menu' }</p>

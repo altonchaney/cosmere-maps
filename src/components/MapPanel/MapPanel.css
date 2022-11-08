@@ -88,3 +88,17 @@
 .details-container.open hr {
   display: initial;
 }
+
+.legend-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.legend-container .indicator {
+  border-top: 2px solid var(--white);
+}
+
+.legend-container .indicator.unconfirmed {
+  border-top-style: dotted;
+}

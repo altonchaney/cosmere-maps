@@ -139,7 +139,7 @@ const Map = (props: {name: AvailableSeries}) => {
               data.books[bookIndex].chapters[visibleRange[1]] &&
               data.books[bookIndex].chapters[visibleRange[1]].chapter === path.chapter.chapter ?
               8 : 4,
-            dashArray: path.confirmed ? [0] : [10, 10, 1, 10],
+            dashArray: path.confirmed ? [0] : [1, 6],
             opacity: latestVisibleBook === bookIndex ? 1 : 0.5
           }}
         />

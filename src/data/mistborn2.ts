@@ -188,7 +188,7 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       appearances: {
         1: [
           1, 2, 3, 4, 5, 6, 7, 8, 9,
-          10, 11, 12, 13, 14, 15, 16,
+          10, 11, 12, 13, 14, 15, 
           17, 18, 19, 20, 21
         ].map(i => (theAlloyOfLawChapterList[i])),
         2: [
@@ -368,6 +368,206 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [405, 273],
       ],
     },
+    {
+      character: characters[CharacterIndex.Wax],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [390, 280.5]
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [390, 280.5]
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Marasi],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[12],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [390, 280.5],
+        // [379, 287]
+      ],
+    },
+
+    {
+      character: characters[CharacterIndex.Wax],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [390, 280.5],
+        [379, 287],
+        [405, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [390, 280.5],
+        [379, 287],
+        [405, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Marasi],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [390, 280.5],
+        [379, 287],
+        [405, 273],
+      ],
+    },
+
+    {
+      character: characters[CharacterIndex.Wax],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[16],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [389.5, 277.5],
+        [379.5, 280],
+        [371.5, 280.5],
+        [363.5, 279.5],
+        [357, 276],
+        [351.5, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[16],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [389.5, 277.5],
+        [379.5, 280],
+        [371.5, 280.5],
+        [363.5, 279.5],
+        [357, 276],
+        [351.5, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Marasi],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[16],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [389.5, 277.5],
+        [379.5, 280],
+        [371.5, 280.5],
+        [363.5, 279.5],
+        [357, 276],
+        [351.5, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wax],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[16],
+      confirmed: true,
+      coordinates: [
+        [351.5, 273],
+        [341.5, 275.5],
+        [330, 271]
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[16],
+      confirmed: true,
+      coordinates: [
+        [351.5, 273],
+        [341.5, 275.5],
+        [330, 271]
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Marasi],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[16],
+      confirmed: true,
+      coordinates: [
+        [351.5, 273],
+        [341.5, 275.5],
+        [330, 271]
+      ],
+    },
+    
+    {
+      character: characters[CharacterIndex.Wax],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[17],
+      confirmed: true,
+      coordinates: [
+        [330, 271],
+        [340, 270],
+        [335, 269],
+        [347, 268.5],
+        [351.5, 273],
+        [360.5, 273],
+        [367.5, 276],
+        [373, 275],
+        [382, 275],
+        [390.5, 272.5],
+        [395, 272.5],
+      ],
+    },
+
+    {
+      character: characters[CharacterIndex.Wayne],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[17],
+      confirmed: true,
+      coordinates: [
+        [330, 271],
+        [341.5, 275.5],
+        [351.5, 273],
+        [357, 276],
+        [363.5, 279.5],
+        [371.5, 280.5],
+        [379.5, 280],
+        [389.5, 277.5],
+        [405, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Marasi],
+      book: books[0],
+      chapter: theAlloyOfLawChapterList[17],
+      confirmed: true,
+      coordinates: [
+        [330, 271],
+        [341.5, 275.5],
+        [351.5, 273],
+        [357, 276],
+        [363.5, 279.5],
+        [371.5, 280.5],
+        [379.5, 280],
+        [389.5, 277.5],
+        [405, 273],
+      ],
+    },
+    
     {
       character: characters[CharacterIndex.Wax],
       book: books[2],
