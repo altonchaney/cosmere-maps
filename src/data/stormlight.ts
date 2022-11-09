@@ -1,4 +1,4 @@
-import { Book, Chapter, Character, DataBundle, Map, Series } from "../models";
+import { Installment, Chapter, Character, DataBundle, Map, Series, MediaType } from "character-journey-map/models";
 import physicalRealmMap from '../assets/stormlight.webp';
 import cognitiveRealmMap from '../assets/shadesmar.webp';
 
@@ -536,95 +536,95 @@ export const characters: Character[] =[
     name: 'Kaladin',
     image: 'https://coppermind.net/w/images/Kaladin_and_Syl.jpg',
     color: 'rgb(44,66,128)',
-    coppermindLink: 'Kaladin'
+    wikiLink: 'Kaladin'
   },
   {
     name: 'Shallan',
     image: 'https://coppermind.net/w/images/Shallan_in_the_Palanaeum.jpg',
     color: 'rgb(150,36,42)',
-    coppermindLink: 'Shallan'
+    wikiLink: 'Shallan'
   },
   {
     name: 'Szeth',
     image: 'https://coppermind.net/w/images/Szeth.jpg',
     color: 'rgb(230,230,230)',
-    coppermindLink: 'Szeth'
+    wikiLink: 'Szeth'
   },
   {
     name: 'Dalinar',
     image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
     color: 'rgb(11,35,63)',
-    coppermindLink: 'Dalinar_Kholin',
+    wikiLink: 'Dalinar_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[16] }
   },
   {
     name: 'Jasnah',
     image: 'https://coppermind.net/w/images/thumb/Jasnah_Shuravf.jpg/400px-Jasnah_Shuravf.jpg',
     color: 'rgb(106,57,156)',
-    coppermindLink: 'Jasnah_Kholin',
+    wikiLink: 'Jasnah_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[6] }
   },
   {
     name: 'Adolin',
     image: 'https://coppermind.net/w/images/thumb/Adolin.jpg/400px-Adolin.jpg',
     color: 'rgb(100,150,200)',
-    coppermindLink: 'Adolin_Kholin',
+    wikiLink: 'Adolin_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[16] }
   },
   {
     name: 'Moash',
     image: 'https://coppermind.net/w/images/thumb/Moash_Shuravf.jpg/400px-Moash_Shuravf.jpg',
     color: 'rgb(216,57,71)',
-    coppermindLink: 'Moash',
+    wikiLink: 'Moash',
     firstAppearance: { 1: theWayOfKingsChapterList[18] }
   },
   {
     name: 'Taravangian',
     image: 'https://coppermind.net/w/images/thumb/Taravangian_Portrait_by_Marie_Seeberger.jpg/400px-Taravangian_Portrait_by_Marie_Seeberger.jpg',
     color: 'rgb(154,56,13)',
-    coppermindLink: 'Taravangian',
+    wikiLink: 'Taravangian',
     firstAppearance: { 1: theWayOfKingsChapterList[6] }
   },
   {
     name: 'Navani',
     image: 'https://coppermind.net/w/images/Navani.jpg',
     color: 'rgb(80,27,76)',
-    coppermindLink: 'Navani_Kholin',
+    wikiLink: 'Navani_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[26] }
   },
   {
     name: 'Lopen',
     image: 'https://coppermind.net/w/images/thumb/Lopen_Shuravf.png/400px-Lopen_Shuravf.png',
     color: 'rgb(77,62,55)',
-    coppermindLink: 'Lopen',
+    wikiLink: 'Lopen',
     firstAppearance: { 1: theWayOfKingsChapterList[39] }
   },
   {
     name: 'Rysn',
     image: 'https://coppermind.net/w/images/thumb/Rysn_by_paintweaver.jpg/400px-Rysn_by_paintweaver.jpg',
     color: 'rgb(21,49,12)',
-    coppermindLink: 'Rysn_Ftori',
+    wikiLink: 'Rysn_Ftori',
     firstAppearance: { 1: theWayOfKingsChapterList[33] }
   },
   {
     name: 'Eshonai',
     image: 'https://coppermind.net/w/images/thumb/Eshonai_portrait_large.png/400px-Eshonai_portrait_large.png',
     color: 'rgb(200,86,85)',
-    coppermindLink: 'Eshonai',
+    wikiLink: 'Eshonai',
     firstAppearance: { 1: theWayOfKingsChapterList[78] }
   },
   {
     name: 'Venli',
     image: 'https://coppermind.net/w/images/thumb/Venli.png/400px-Venli.png',
     color: 'rgb(232,150,125)',
-    coppermindLink: 'Venli',
+    wikiLink: 'Venli',
     firstAppearance: { 2: wordsOfRadianceChapterList[13] }
   },
   {
     name: 'Lift',
     image: 'https://coppermind.net/w/images/thumb/Lift_by_Katie_Payne.jpg/400px-Lift_by_Katie_Payne.jpg',
     color: 'rgb(129,180,184)',
-    coppermindLink: 'Lift',
+    wikiLink: 'Lift',
     firstAppearance: { 2: wordsOfRadianceChapterList[67] }
   },
 ];
@@ -650,7 +650,7 @@ enum CharacterIndex {
   'Lift' = 13, // bk2 int9
 };
 
-export const books: Book[] = [
+export const books: Installment[] = [
   {
     title: 'The Way of Kings',
     image: 'https://coppermind.net/w/images/thumb/TheWayOfKings.png/400px-TheWayOfKings.png',
@@ -685,13 +685,14 @@ export const books: Book[] = [
 
 export const seriesData: Series = {
   title: 'The Stormlight Archive',
+  type: MediaType.Book,
   stub: 'stormlight',
   image: 'https://coppermind.net/w/images/TWoK_US_Cover_art.jpg',
   planetName: 'Roshar',
   description: `Set on the planet Roshar, the series forms a core part of the cosmere sequence, and centers around Odium's efforts to escape the ties that bind him to the Rosharan system. The series is estimated to require ten books to complete.`,
   color: 'rgb(194,94,73)',
   backgroundColor: 'rgb(1,15,42)',
-  books: books,
+  installments: books,
   characters: characters
 };
 
@@ -711,7 +712,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         6: [0].map(i => rhythmOfWarChapterList[i])
       },
       description: `The Assassination of Gavilar was an assassination performed by Szeth-son-son-Vallano on orders from the Parshendi. It was a major turning point in Alethkar's history, leading to the War of Reckoning and most of the events in the Stormlight Archive.`,
-      coppermindLink: 'Assassination_of_Gavilar',
+      wikiLink: 'Assassination_of_Gavilar',
       confirmed: true
     },
     {
@@ -726,7 +727,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `The Battle of Narak is a major event during the War of Reckoning on Roshar. The battle ended the war and ushered in the True Desolation.`,
-      coppermindLink: 'Battle_of_Narak',
+      wikiLink: 'Battle_of_Narak',
       confirmed: true
     },
     {
@@ -738,7 +739,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         4: [129, 130, 131, 132, 133, 134].map(i => oathbringerChapterList[i])
       },
       description: `The Battle of Thaylen Field is one of the first major engagements in the True Desolation. It's fought between the human armies, led by Dalinar Kholin, and the Voidbringers, mainly Fused, under direct command of Odium.`,
-      coppermindLink: 'Battle_of_Thaylen_Field',
+      wikiLink: 'Battle_of_Thaylen_Field',
       confirmed: true
     },
     {
@@ -750,7 +751,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         1: [75, 76, 77, 78].map(i => theWayOfKingsChapterList[i])
       },
       description: `The Battle of the Tower is a major engagement during the War of Reckoning fought by the combined armies of the Alethi Highprinces Dalinar Kholin and Torol Sadeas against the Parshendi forces led by Eshonai.`,
-      coppermindLink: 'Battle_of_the_Tower',
+      wikiLink: 'Battle_of_the_Tower',
       confirmed: true
     },
     {
@@ -762,7 +763,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         5: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
       },
       description: `The Wandersail's expedition to Akinah in late 1174 led to the discovery of a Dawnshard, several Soulcasters, and Shardplate.`,
-      coppermindLink: 'Expedition_to_Akinah',
+      wikiLink: 'Expedition_to_Akinah',
       confirmed: true
     },
     {
@@ -776,7 +777,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       ].map(i => oathbringerChapterList[i])
       },
       description: `The Siege of Kholinar, and the ensuing battle inside Kholinar Palace, is a major event that occurs during the True Desolation. The battle resulted in a Voidbringer victory and occupation of the city, the death of King Elhokar, and several of the modern Knights Radiant being transported to the Cognitive Realm.`,
-      coppermindLink: 'Siege_of_Kholinar',
+      wikiLink: 'Siege_of_Kholinar',
       confirmed: true
     },
     {
@@ -801,7 +802,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => rhythmOfWarChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
-      coppermindLink: 'Kholinar',
+      wikiLink: 'Kholinar',
       confirmed: true
     },
     {
@@ -1050,7 +1051,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         5: [13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
       },
       description: `Akinah is the ancient capital of the Silver Kingdom of Aimia on Roshar. In more modern times, it is also known as The Rock of Secrets and The Void's Playground. The city itself was destroyed long ago, and during the Era of Solitude it exists only as a ruin. It is the location of an apparently functional Oathgate and its underwater caverns formerly contained a Dawnshard.`,
-      coppermindLink: 'Akinah',
+      wikiLink: 'Akinah',
       confirmed: true
     },
     {
@@ -1061,7 +1062,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         2: [14].map(i => wordsOfRadianceChapterList[i])
       },
       description: `Iri is a kingdom in northwestern Roshar. Prior to the Recreance, it was one of the Silver Kingdoms. People from Iri are called Iriali. Iri is ruled by three monarchs, currently two kings and a queen. The Iriali queen has authority over foreign policy.`,
-      coppermindLink: 'Iri',
+      wikiLink: 'Iri',
       confirmed: true
     },
     {
@@ -1073,7 +1074,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         2: [15].map(i => wordsOfRadianceChapterList[i])
       },
       description: `Relu-na is a Tai-na in the Reshi Sea on Roshar. A greatshell the size of an island, she is worshiped as a god by her inhabitants.`,
-      coppermindLink: 'Relu-na',
+      wikiLink: 'Relu-na',
       confirmed: false
     },
     {
@@ -1248,7 +1249,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => oathbringerChapterList[i])
       },
       description: `Herdaz is a coastal nation in the north-east of Roshar, covering approximately one million square kilometres of land. Most of its jagged coastline lies on the Reshi Sea, while a small part of it faces Steamwater Ocean and the Bay of Elibath.`,
-      coppermindLink: 'Herdaz',
+      wikiLink: 'Herdaz',
       confirmed: true
     },
     {
@@ -1261,7 +1262,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           93, 100, 102, 104
         ].map(i => oathbringerChapterList[i])
       },
-      coppermindLink: 'Sea_of_Lost_Lights',
+      wikiLink: 'Sea_of_Lost_Lights',
       description: `The Sea of Lost Lights lies in the region of Shadesmar corresponding to the Physical nations of Alethkar, Jah Keved, and Herdaz, as well as the Frostlands, Unclaimed Hills, and Thaylenah.`,
       confirmed: true
     },
@@ -1274,7 +1275,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           101, 103, 109
         ].map(i => oathbringerChapterList[i])
       },
-      coppermindLink: 'Order_of_Skybreakers',
+      wikiLink: 'Order_of_Skybreakers',
       description: `A small fortress in Marabethia that overlooks the Purelake. Hopefuls are brought to the fortress for testing, and squires and Masters reside there while training (unless they are away on a mission).`,
       confirmed: true
     },
@@ -1288,7 +1289,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           106, 108
         ].map(i => oathbringerChapterList[i])
       },
-      coppermindLink: 'Riino%27s_lighthouse',
+      wikiLink: 'Riino%27s_lighthouse',
       description: `The lighthouse functions as a waypoint in which passing ships can restock their supplies, as well as signalling that there is land nearby. The dwelling is also used by Riino to conduct readings of the future for passing travellers.`,
       confirmed: false
     },
@@ -1302,7 +1303,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           112, 113
         ].map(i => oathbringerChapterList[i])
       },
-      coppermindLink: 'Celebrant',
+      wikiLink: 'Celebrant',
       description: `Celebrant is a city in the Sea of Lost Lights in Roshar's subastral of the Cognitive Realm. Celebrant is a prominent population center and major trading port.`,
       confirmed: true
     },
@@ -1315,7 +1316,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           117
         ].map(i => oathbringerChapterList[i])
       },
-      coppermindLink: 'Marat',
+      wikiLink: 'Marat',
       description: `Marat is a small kingdom in southern Roshar. It is part of the Makabaki region.`,
       confirmed: true
     },
@@ -1328,7 +1329,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           128
         ].map(i => oathbringerChapterList[i])
       },
-      coppermindLink: 'Valley',
+      wikiLink: 'Valley',
       description: `The Valley is the home of the Nightwatcher on Roshar. It is located in the mountains of Ur, near Urithiru itself. The area nearby is devoid of rockbuds, and the ground is covered in wrinkles about two or three inches deep.`,
       confirmed: true
     },
@@ -1342,7 +1343,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           25
         ].map(i => rhythmOfWarChapterList[i])
       },
-      coppermindLink: 'Sea_of_Souls',
+      wikiLink: 'Sea_of_Souls',
       description: `The Sea of Souls is a large sea on Roshar's subastral of the Cognitive Realm. The origin of its name is unknown. It contains the honorspren capital of Lasting Integrity.`,
       confirmed: true
     },
@@ -1356,7 +1357,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           32, 33
         ].map(i => rhythmOfWarChapterList[i])
       },
-      coppermindLink: 'Nameless',
+      wikiLink: 'Nameless',
       description: `The town is located in the southern portion of the Sea of Souls in Shadesmar. It sits on the edge of the Radiant Depths and is near the peninsula that leads to Abiding Light. Nameless resides on free lands that are not owned or controlled by the Fused or the honorspren. The town sits on a barren obsidian field that is sparse in vegetation. A small cluster of crystalline plants can occasionally be seen.`,
       confirmed: true
     },
@@ -1371,7 +1372,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           127
         ].map(i => rhythmOfWarChapterList[i])
       },
-      coppermindLink: 'Lasting_Integrity',
+      wikiLink: 'Lasting_Integrity',
       description: `Lasting Integrity is the honorspren capital in Shadesmar. The fortress is located in the southern section of the Sea of Souls, nearby to the Nexus of Imagination, the Expanse of Vibrance, and Brilliance Eternal. There is a known caravan path that runs from Nameless, past Lasting Integrity, and onwards towards the Expanse of Vibrance.`,
       confirmed: true
     },
@@ -1385,7 +1386,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           81, 109, 110, 111, 113, 119, 123
         ].map(i => rhythmOfWarChapterList[i])
       },
-      coppermindLink: 'Emul',
+      wikiLink: 'Emul',
       description: `Emul is a Makabaki kingdom located in southwestern Roshar during the Era of Solitude. The citizens of Emul are referred to as Emuli. Traditionally a rather independent kingdom, the Desolation and war with Tukar has greatly weakened Emul and left it dependent on others for aid.`,
       confirmed: true
     },
@@ -1398,7 +1399,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           124
         ].map(i => rhythmOfWarChapterList[i])
       },
-      coppermindLink: 'Tukar',
+      wikiLink: 'Tukar',
       description: `Tukar is a kingdom on Roshar. It's ruled by god-priest Tezim, who is actually the Herald Ishar in disguise. The people of Tukar are called the Tukari.`,
       confirmed: true
     },
@@ -1411,7 +1412,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           51
         ].map(i => rhythmOfWarChapterList[i])
       },
-      coppermindLink: 'Natanatan',
+      wikiLink: 'Natanatan',
       description: `Natanatan was one of the Silver Kingdoms on Roshar during the Heraldic Epochs. In current-day Roshar, the land that formerly comprised Natanatan now includes the Unclaimed Hills, the Shattered Plains, the Eastern Crownlands of Alethkar, and the eastern Frostlands.`,
       confirmed: false
     },
@@ -1419,7 +1420,7 @@ export const STORMLIGHT_DATA: DataBundle = {
   paths: [
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[3],
       confirmed: false,
       coordinates: [
@@ -1432,7 +1433,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[4],
       confirmed: true,
       coordinates: [
@@ -1444,7 +1445,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[5],
       confirmed: true,
       coordinates: [
@@ -1458,7 +1459,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[7],
       confirmed: true,
       coordinates: [
@@ -1468,7 +1469,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[15],
       confirmed: false,
       coordinates: [
@@ -1488,7 +1489,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[35],
       confirmed: false,
       coordinates: [
@@ -1498,7 +1499,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[61],
       confirmed: false,
       coordinates: [
@@ -1516,7 +1517,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[0],
+      installment: books[0],
       chapter: theWayOfKingsChapterList[81],
       confirmed: false,
       coordinates: [
@@ -1538,7 +1539,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[1],
       confirmed: false,
       coordinates: [
@@ -1567,7 +1568,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[1],
       confirmed: false,
       coordinates: [
@@ -1596,7 +1597,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[3],
       confirmed: true,
       coordinates: [
@@ -1608,7 +1609,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[3],
       confirmed: true,
       coordinates: [
@@ -1620,7 +1621,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[6],
       confirmed: true,
       coordinates: [
@@ -1632,7 +1633,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[6],
       confirmed: true,
       coordinates: [
@@ -1644,7 +1645,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[7],
       confirmed: true,
       coordinates: [
@@ -1654,7 +1655,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[7],
       confirmed: true,
       coordinates: [
@@ -1664,7 +1665,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[11],
       confirmed: true,
       coordinates: [
@@ -1675,7 +1676,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[17],
       confirmed: true,
       coordinates: [
@@ -1686,7 +1687,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[19],
       confirmed: true,
       coordinates: [
@@ -1696,7 +1697,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[21],
       confirmed: true,
       coordinates: [
@@ -1706,7 +1707,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[24],
       confirmed: true,
       coordinates: [
@@ -1716,7 +1717,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[28],
       confirmed: true,
       coordinates: [
@@ -1726,7 +1727,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[32],
       confirmed: true,
       coordinates: [
@@ -1736,7 +1737,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[34],
       confirmed: true,
       coordinates: [
@@ -1747,7 +1748,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[34],
       confirmed: true,
       coordinates: [
@@ -1758,7 +1759,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[34],
       confirmed: true,
       coordinates: [
@@ -1769,7 +1770,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[35],
       confirmed: true,
       coordinates: [
@@ -1779,7 +1780,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[35],
       confirmed: true,
       coordinates: [
@@ -1789,7 +1790,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[35],
       confirmed: true,
       coordinates: [
@@ -1799,7 +1800,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[44],
       confirmed: true,
       coordinates: [
@@ -1809,7 +1810,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[62],
       confirmed: true,
       coordinates: [
@@ -1826,7 +1827,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[36],
       confirmed: false,
       coordinates: [
@@ -1856,7 +1857,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[68],
       confirmed: false,
       coordinates: [
@@ -1896,7 +1897,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[89],
       confirmed: true,
       coordinates: [
@@ -1914,7 +1915,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[89],
       confirmed: false,
       coordinates: [
@@ -1936,7 +1937,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[100],
       confirmed: true,
       coordinates: [
@@ -1946,7 +1947,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[100],
       confirmed: true,
       coordinates: [
@@ -1956,7 +1957,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[100],
       confirmed: true,
       coordinates: [
@@ -1966,7 +1967,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[101],
       confirmed: true,
       coordinates: [
@@ -1976,7 +1977,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[101],
       confirmed: true,
       coordinates: [
@@ -1988,7 +1989,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[104],
       confirmed: false,
       coordinates: [
@@ -2000,7 +2001,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[1],
+      installment: books[1],
       chapter: wordsOfRadianceChapterList[98],
       confirmed: false,
       coordinates: [
@@ -2025,7 +2026,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[2],
+      installment: books[2],
       chapter: edgedancerChapterList[1],
       confirmed: true,
       coordinates: [
@@ -2035,7 +2036,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[2],
+      installment: books[2],
       chapter: edgedancerChapterList[2],
       confirmed: true,
       coordinates: [
@@ -2045,7 +2046,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[2],
+      installment: books[2],
       chapter: edgedancerChapterList[9],
       confirmed: false,
       coordinates: [
@@ -2083,7 +2084,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[2],
+      installment: books[2],
       chapter: edgedancerChapterList[20],
       confirmed: true,
       coordinates: [
@@ -2093,7 +2094,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[5],
       confirmed: true,
       coordinates: [
@@ -2119,7 +2120,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[10],
       confirmed: true,
       coordinates: [
@@ -2129,7 +2130,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[11],
       confirmed: false,
       coordinates: [
@@ -2139,7 +2140,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[17],
       confirmed: true,
       coordinates: [
@@ -2149,7 +2150,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[19],
       confirmed: false,
       coordinates: [
@@ -2163,7 +2164,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[20],
       confirmed: true,
       coordinates: [
@@ -2174,7 +2175,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[23],
       confirmed: true,
       coordinates: [
@@ -2186,7 +2187,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[24],
       confirmed: true,
       coordinates: [
@@ -2196,7 +2197,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[26],
       confirmed: false,
       coordinates: [
@@ -2206,7 +2207,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[31],
       confirmed: true,
       coordinates: [
@@ -2227,7 +2228,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[32],
       confirmed: true,
       coordinates: [
@@ -2242,7 +2243,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[32],
       confirmed: false,
       coordinates: [
@@ -2276,7 +2277,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[39],
       confirmed: false,
       coordinates: [
@@ -2286,7 +2287,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[40],
       confirmed: true,
       coordinates: [
@@ -2296,7 +2297,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[40],
       confirmed: true,
       coordinates: [
@@ -2306,7 +2307,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[42],
       confirmed: true,
       coordinates: [
@@ -2316,7 +2317,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[48],
       confirmed: true,
       coordinates: [
@@ -2342,7 +2343,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[49],
       confirmed: true,
       coordinates: [
@@ -2352,7 +2353,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[51],
       confirmed: true,
       coordinates: [
@@ -2370,7 +2371,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[53],
       confirmed: true,
       coordinates: [
@@ -2380,7 +2381,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[54],
       confirmed: true,
       coordinates: [
@@ -2398,7 +2399,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[55],
       confirmed: false,
       coordinates: [
@@ -2424,7 +2425,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[57],
       confirmed: true,
       coordinates: [
@@ -2442,7 +2443,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[58],
       confirmed: true,
       coordinates: [
@@ -2452,7 +2453,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: false,
       coordinates: [
@@ -2462,7 +2463,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: false,
       coordinates: [
@@ -2472,7 +2473,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: false,
       coordinates: [
@@ -2482,7 +2483,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: true,
       coordinates: [
@@ -2492,7 +2493,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: true,
       coordinates: [
@@ -2502,7 +2503,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: true,
       coordinates: [
@@ -2512,7 +2513,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: true,
       coordinates: [
@@ -2522,7 +2523,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[64],
       confirmed: true,
       coordinates: [
@@ -2532,7 +2533,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[66],
       confirmed: false,
       coordinates: [
@@ -2542,7 +2543,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[66],
       confirmed: false,
       coordinates: [
@@ -2552,7 +2553,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[66],
       confirmed: false,
       coordinates: [
@@ -2562,7 +2563,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[66],
       confirmed: true,
       coordinates: [
@@ -2587,7 +2588,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[66],
       confirmed: true,
       coordinates: [
@@ -2610,7 +2611,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[66],
       confirmed: true,
       coordinates: [
@@ -2633,7 +2634,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[67],
       confirmed: true,
       coordinates: [
@@ -2643,7 +2644,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[67],
       confirmed: true,
       coordinates: [
@@ -2653,7 +2654,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[67],
       confirmed: true,
       coordinates: [
@@ -2663,7 +2664,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[70],
       confirmed: false,
       coordinates: [
@@ -2673,7 +2674,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[70],
       confirmed: false,
       coordinates: [
@@ -2683,7 +2684,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[71],
       confirmed: true,
       coordinates: [
@@ -2694,7 +2695,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[72],
       confirmed: false,
       coordinates: [
@@ -2708,7 +2709,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[77],
       confirmed: false,
       coordinates: [
@@ -2733,7 +2734,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[84],
       confirmed: true,
       coordinates: [
@@ -2751,7 +2752,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[96],
       confirmed: true,
       coordinates: [
@@ -2761,7 +2762,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[99],
       confirmed: false,
       coordinates: [
@@ -2771,7 +2772,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[101],
       confirmed: false,
       coordinates: [
@@ -2798,7 +2799,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[106],
       confirmed: true,
       coordinates: [
@@ -2811,7 +2812,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[106],
       confirmed: true,
       coordinates: [
@@ -2824,7 +2825,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[106],
       confirmed: true,
       coordinates: [
@@ -2837,7 +2838,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[107],
       confirmed: true,
       coordinates: [
@@ -2858,7 +2859,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[110],
       confirmed: true,
       coordinates: [
@@ -2887,7 +2888,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[110],
       confirmed: true,
       coordinates: [
@@ -2916,7 +2917,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[110],
       confirmed: true,
       coordinates: [
@@ -2946,7 +2947,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Navani],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[111],
       confirmed: true,
       coordinates: [
@@ -2957,7 +2958,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[111],
       confirmed: true,
       coordinates: [
@@ -2968,7 +2969,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[111],
       confirmed: true,
       coordinates: [
@@ -2979,7 +2980,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[112],
       confirmed: true,
       coordinates: [
@@ -3008,7 +3009,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[112],
       confirmed: true,
       coordinates: [
@@ -3037,7 +3038,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[112],
       confirmed: true,
       coordinates: [
@@ -3066,7 +3067,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[117],
       confirmed: false,
       coordinates: [
@@ -3085,7 +3086,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[119],
       confirmed: true,
       coordinates: [
@@ -3109,7 +3110,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[119],
       confirmed: true,
       coordinates: [
@@ -3133,7 +3134,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[119],
       confirmed: true,
       coordinates: [
@@ -3157,7 +3158,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[120],
       confirmed: false,
       coordinates: [
@@ -3185,7 +3186,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[121],
       confirmed: true,
       coordinates: [
@@ -3202,7 +3203,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[121],
       confirmed: true,
       coordinates: [
@@ -3219,7 +3220,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[121],
       confirmed: true,
       coordinates: [
@@ -3237,7 +3238,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[122],
       confirmed: true,
       coordinates: [
@@ -3247,7 +3248,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[122],
       confirmed: true,
       coordinates: [
@@ -3257,7 +3258,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[122],
       confirmed: true,
       coordinates: [
@@ -3267,7 +3268,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[122],
       confirmed: true,
       coordinates: [
@@ -3277,7 +3278,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[122],
       confirmed: true,
       coordinates: [
@@ -3288,7 +3289,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[123],
       confirmed: true,
       coordinates: [
@@ -3303,7 +3304,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[123],
       confirmed: true,
       coordinates: [
@@ -3318,7 +3319,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[123],
       confirmed: true,
       coordinates: [
@@ -3333,7 +3334,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[124],
       confirmed: true,
       coordinates: [
@@ -3343,7 +3344,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[128],
       confirmed: false,
       coordinates: [
@@ -3370,7 +3371,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[129],
       confirmed: true,
       coordinates: [
@@ -3395,7 +3396,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[130],
       confirmed: true,
       coordinates: [
@@ -3428,7 +3429,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[130],
       confirmed: true,
       coordinates: [
@@ -3447,7 +3448,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[134],
       confirmed: true,
       coordinates: [
@@ -3457,7 +3458,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: false,
       coordinates: [
@@ -3479,7 +3480,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3496,7 +3497,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3506,7 +3507,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3516,7 +3517,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3526,7 +3527,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3536,7 +3537,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3546,7 +3547,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3556,7 +3557,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3566,7 +3567,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[3],
+      installment: books[3],
       chapter: oathbringerChapterList[136],
       confirmed: true,
       coordinates: [
@@ -3576,7 +3577,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[2],
       confirmed: true,
       coordinates: [
@@ -3586,7 +3587,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[4],
       confirmed: true,
       coordinates: [
@@ -3596,7 +3597,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[4],
       confirmed: true,
       coordinates: [
@@ -3606,7 +3607,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[5],
       confirmed: true,
       coordinates: [
@@ -3622,7 +3623,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[5],
       confirmed: true,
       coordinates: [
@@ -3638,7 +3639,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[6],
       confirmed: true,
       coordinates: [
@@ -3653,7 +3654,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[6],
       confirmed: true,
       coordinates: [
@@ -3668,7 +3669,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[7],
       confirmed: true,
       coordinates: [
@@ -3683,7 +3684,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[7],
       confirmed: true,
       coordinates: [
@@ -3698,7 +3699,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[8],
       confirmed: true,
       coordinates: [
@@ -3713,7 +3714,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[8],
       confirmed: true,
       coordinates: [
@@ -3728,7 +3729,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[9],
       confirmed: true,
       coordinates: [
@@ -3743,7 +3744,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[9],
       confirmed: true,
       coordinates: [
@@ -3758,7 +3759,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[10],
       confirmed: true,
       coordinates: [
@@ -3773,7 +3774,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[10],
       confirmed: true,
       coordinates: [
@@ -3788,7 +3789,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[11],
       confirmed: true,
       coordinates: [
@@ -3803,7 +3804,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[11],
       confirmed: true,
       coordinates: [
@@ -3818,7 +3819,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[12],
       confirmed: true,
       coordinates: [
@@ -3833,7 +3834,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[12],
       confirmed: true,
       coordinates: [
@@ -3848,7 +3849,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[13],
       confirmed: true,
       coordinates: [
@@ -3862,7 +3863,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[13],
       confirmed: true,
       coordinates: [
@@ -3876,7 +3877,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Rysn],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[20],
       confirmed: true,
       coordinates: [
@@ -3922,7 +3923,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[20],
       confirmed: true,
       coordinates: [
@@ -3968,7 +3969,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[4],
+      installment: books[4],
       chapter: dawnshardChapterList[20],
       confirmed: false,
       coordinates: [
@@ -3978,7 +3979,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[1],
       confirmed: false,
       coordinates: [
@@ -4002,7 +4003,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[2],
       confirmed: false,
       coordinates: [
@@ -4012,7 +4013,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[3],
       confirmed: true,
       coordinates: [
@@ -4022,7 +4023,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[3],
       confirmed: true,
       coordinates: [
@@ -4032,7 +4033,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[3],
       confirmed: true,
       coordinates: [
@@ -4042,7 +4043,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[3],
       confirmed: true,
       coordinates: [
@@ -4052,7 +4053,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[6],
       confirmed: false,
       coordinates: [
@@ -4062,7 +4063,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[6],
       confirmed: false,
       coordinates: [
@@ -4080,7 +4081,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[9],
       confirmed: true,
       coordinates: [
@@ -4095,7 +4096,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[9],
       confirmed: true,
       coordinates: [
@@ -4110,7 +4111,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[9],
       confirmed: true,
       coordinates: [
@@ -4125,7 +4126,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[9],
       confirmed: true,
       coordinates: [
@@ -4140,7 +4141,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[9],
       confirmed: true,
       coordinates: [
@@ -4155,7 +4156,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[10],
       confirmed: true,
       coordinates: [
@@ -4170,7 +4171,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[10],
       confirmed: true,
       coordinates: [
@@ -4185,7 +4186,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[10],
       confirmed: true,
       coordinates: [
@@ -4200,7 +4201,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[10],
       confirmed: true,
       coordinates: [
@@ -4215,7 +4216,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[10],
       confirmed: true,
       coordinates: [
@@ -4230,7 +4231,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[11],
       confirmed: false,
       coordinates: [
@@ -4254,7 +4255,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[12],
       confirmed: true,
       coordinates: [
@@ -4264,7 +4265,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[12],
       confirmed: true,
       coordinates: [
@@ -4274,7 +4275,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[12],
       confirmed: true,
       coordinates: [
@@ -4284,7 +4285,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lopen],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[12],
       confirmed: true,
       coordinates: [
@@ -4294,7 +4295,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[14],
       confirmed: false,
       coordinates: [
@@ -4312,7 +4313,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[16],
       confirmed: true,
       coordinates: [
@@ -4322,7 +4323,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Navani],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[16],
       confirmed: true,
       coordinates: [
@@ -4332,7 +4333,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Lift],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[16],
       confirmed: true,
       coordinates: [
@@ -4342,7 +4343,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[18],
       confirmed: true,
       coordinates: [
@@ -4352,7 +4353,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Kaladin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[20],
       confirmed: false,
       coordinates: [
@@ -4363,7 +4364,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[27],
       confirmed: true,
       coordinates: [
@@ -4393,7 +4394,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[27],
       confirmed: true,
       coordinates: [
@@ -4424,7 +4425,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[29],
       confirmed: true,
       coordinates: [
@@ -4451,7 +4452,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[29],
       confirmed: true,
       coordinates: [
@@ -4479,7 +4480,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[32],
       confirmed: true,
       coordinates: [
@@ -4501,7 +4502,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[32],
       confirmed: true,
       coordinates: [
@@ -4524,7 +4525,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[35],
       confirmed: true,
       coordinates: [
@@ -4542,7 +4543,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[35],
       confirmed: true,
       coordinates: [
@@ -4561,7 +4562,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[37],
       confirmed: true,
       coordinates: [
@@ -4577,7 +4578,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[37],
       confirmed: true,
       coordinates: [
@@ -4594,7 +4595,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[38],
       confirmed: true,
       coordinates: [
@@ -4608,7 +4609,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[38],
       confirmed: true,
       coordinates: [
@@ -4623,7 +4624,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Shallan],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[39],
       confirmed: true,
       coordinates: [
@@ -4635,7 +4636,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Adolin],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[39],
       confirmed: true,
       coordinates: [
@@ -4648,7 +4649,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Venli],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[34],
       confirmed: false,
       coordinates: [
@@ -4676,7 +4677,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[40],
       confirmed: true,
       coordinates: [
@@ -4689,7 +4690,7 @@ export const STORMLIGHT_DATA: DataBundle = {
 
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[22],
       confirmed: false,
       coordinates: [
@@ -4706,7 +4707,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[22],
       confirmed: false,
       coordinates: [
@@ -4723,7 +4724,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[22],
       confirmed: false,
       coordinates: [
@@ -4740,7 +4741,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[22],
       confirmed: false,
       coordinates: [
@@ -4757,7 +4758,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[64],
       confirmed: false,
       coordinates: [
@@ -4771,7 +4772,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[86],
       confirmed: false,
       coordinates: [
@@ -4789,7 +4790,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[90],
       confirmed: false,
       coordinates: [
@@ -4807,7 +4808,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[114],
       confirmed: false,
       coordinates: [
@@ -4835,7 +4836,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Venli],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[126],
       confirmed: true,
       coordinates: [
@@ -4845,7 +4846,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[123],
       confirmed: false,
       coordinates: [
@@ -4858,7 +4859,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[123],
       confirmed: false,
       coordinates: [
@@ -4871,7 +4872,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Dalinar],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[124],
       confirmed: false,
       coordinates: [
@@ -4887,7 +4888,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Szeth],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[124],
       confirmed: false,
       coordinates: [
@@ -4903,7 +4904,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Taravangian],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[124],
       confirmed: false,
       coordinates: [
@@ -4920,7 +4921,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Jasnah],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[124],
       confirmed: false,
       coordinates: [
@@ -4937,7 +4938,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
     {
       character: characters[CharacterIndex.Moash],
-      book: books[5],
+      installment: books[5],
       chapter: rhythmOfWarChapterList[123],
       confirmed: false,
       coordinates: [
