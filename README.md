@@ -1,6 +1,6 @@
 # Cosmere Maps
 
-A Webapp built to provide a clear visual for the various journeys characters take in Brandon Sanderson's Cosmere books. As of 10/28/2022, three Cosmere series have data included for them, with more coming in the future. You can view the currently deployed site @ https://cosmeremaps.com/
+A Webapp built to provide a clear visual for the various journeys characters take in Brandon Sanderson's Cosmere books. As of November 2022, three Cosmere series have data included for them, with more coming in the future. You can view the currently deployed site @ https://cosmeremaps.com/
 
 ---
 
@@ -49,14 +49,7 @@ If you run into any issues that you cannot resolve please open a GitHub issue an
 
 ---
 
-## To-Do List
-
-### Functionality
-- [ ] Draw paths progressively from start to end points
-- [ ] Unconfirmed marker indicators
-- [ ] Render character icons where they are on the map
-
-### Series Data
+## Series Data
 
 **Mistborn Era 1**
 - [x] The Final Empire
