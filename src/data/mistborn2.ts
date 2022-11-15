@@ -227,6 +227,11 @@ export const books: Installment[] = [
     title: 'The Bands of Mourning',
     image: 'https://coppermind.net/w/images/thumb/Bands_of_Mourning_US_Hardcover.jpg/400px-Bands_of_Mourning_US_Hardcover.jpg',
     chapters: theBandsOfMourningChapterList
+  },
+  {
+    title: 'The Lost Metal',
+    image: 'https://coppermind.net/w/images/thumb/TLM_US_Cover.jpg/200px-TLM_US_Cover.jpg',
+    chapters: theLostMetalChapterList
   }
 ];
 
@@ -379,7 +384,7 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       },
       description: `Tinweight settlement is a mining town located in the roughs north of the Elendil Basin`,
       // wikiLink: 'Ironstand',
-      confirmed: false
+      confirmed: true
     },
   ],
   paths: [
