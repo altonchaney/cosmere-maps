@@ -7,7 +7,6 @@ const mapData: Map = {
   dimensions: [1200,795],
   source: 'https://coppermind.net/wiki/File:Elendel_Basin.png'
 };
-
 const theAlloyOfLawChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0 },
   { chapter: 1 },
@@ -32,7 +31,6 @@ const theAlloyOfLawChapterList: Chapter[] = [
   { chapter: 20 },
   { altName: 'Epilogue', chapter: 20.1 }
 ];
-
 const shadowsOfSelfChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -63,7 +61,6 @@ const shadowsOfSelfChapterList: Chapter[] = [
   { chapter: 26, part: 3 },
   { altName: 'Epilogue', chapter: 26.1, part: 3 }
 ];
-
 const theBandsOfMourningChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -98,6 +95,94 @@ const theBandsOfMourningChapterList: Chapter[] = [
   { chapter: 30, part: 3 },
   { chapter: 31, part: 3 },
   { altName: 'Epilogue', chapter: 31.1, part: 3 }
+];
+const theLostMetalChapterList: Chapter[] = [
+  { altName: 'Prologue', chapter: 0, part: 0 }, // Wayne is next to a mine (tynwade or tinwade?)
+  { chapter: 1, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
+  { chapter: 2, part: 1 }, // Wax is in Elendel
+  { altName: 'Broadsheet 1', chapter: 2.1, part: 1 },
+  { chapter: 3, part: 1 }, // Wax is in Elendel
+  { chapter: 4, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
+  { chapter: 5, part: 1 }, // Wax is in Elendel
+  { chapter: 6, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
+  { chapter: 7, part: 1 }, // Wax is in Elendel
+  { chapter: 8, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
+  { chapter: 9, part: 1 }, // Wax is in Elendel
+  { chapter: 10, part: 1 },
+  { chapter: 11, part: 1 },
+  { chapter: 12, part: 1 },
+  { chapter: 13, part: 1 },
+  { chapter: 14, part: 1 },
+  { chapter: 15, part: 1 },
+  { chapter: 16, part: 1 },
+  { chapter: 17, part: 1 },
+  { chapter: 18, part: 1 },
+  { chapter: 19, part: 1 },
+  { altName: 'Broadsheet 2', chapter: 19.1, part: 1 },
+  { chapter: 20, part: 2 },
+  { chapter: 21, part: 2 },
+  { chapter: 22, part: 2 },
+  { chapter: 23, part: 2 },
+  { chapter: 24, part: 2 },
+  { chapter: 25, part: 2 },
+  { chapter: 26, part: 2 },
+  { chapter: 27, part: 2 },
+  { altName: 'Broadsheet 3', chapter: 27.1, part: 2 },
+  { chapter: 28, part: 2 },
+  { chapter: 29, part: 2 },
+  { chapter: 30, part: 2 },
+  { chapter: 31, part: 2 },
+  { chapter: 32, part: 2 },
+  { chapter: 33, part: 2 },
+  { chapter: 34, part: 2 },
+  { chapter: 35, part: 3 },
+  { chapter: 36, part: 3 },
+  { chapter: 37, part: 3 },
+  { chapter: 38, part: 3 },
+  { chapter: 39, part: 3 },
+  { chapter: 40, part: 3 },
+  { chapter: 41, part: 3 },
+  { chapter: 42, part: 3 },
+  { chapter: 43, part: 3 },
+  { altName: 'Broadsheet 4', chapter: 43.1, part: 3 },
+  { chapter: 44, part: 3 },
+  { chapter: 45, part: 3 },
+  { chapter: 46, part: 3 },
+  { chapter: 47, part: 3 },
+  { chapter: 48, part: 3 },
+  { chapter: 49, part: 3 },
+  { chapter: 50, part: 3 },
+  { chapter: 51, part: 3 },
+  { chapter: 52, part: 3 },
+  { chapter: 53, part: 3 },
+  { chapter: 54, part: 3 },
+  { chapter: 55, part: 3 },
+  { chapter: 56, part: 3 },
+  { chapter: 57, part: 3 },
+  { chapter: 58, part: 3 },
+  { chapter: 59, part: 3 },
+  { chapter: 60, part: 3 },
+  { chapter: 61, part: 3 },
+  { chapter: 62, part: 3 },
+  { chapter: 63, part: 3 },
+  { chapter: 64, part: 3 },
+  { chapter: 65, part: 3 },
+  { chapter: 66, part: 3 },
+  { chapter: 67, part: 3 },
+  { chapter: 68, part: 3 },
+  { chapter: 69, part: 3 },
+  { chapter: 70, part: 3 },
+  { chapter: 71, part: 3 },
+  { chapter: 72, part: 3 },
+  { chapter: 73, part: 3 },
+  { chapter: 74, part: 3 },
+  { altName: 'Marasi', chapter: 74.1, part: 4 },
+  { altName: 'Steris', chapter: 74.2, part: 4 },
+  { altName: 'Allriandre', chapter: 74.3, part: 4 },
+  { altName: 'Kelsier', chapter: 74.4, part: 4 },
+  { altName: 'Ranette', chapter: 74.5, part: 4 },
+  { altName: 'Melaan', chapter: 74.6, part: 4 },
+  { altName: 'Waxillium', chapter: 74.7, part: 4 },
 ];
 
 export const characters: Character[] =[
@@ -195,6 +280,9 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         3: [
           0, 1, 2, 3, 4, 31, 32
         ].map(i => (theBandsOfMourningChapterList[i])),
+        4: [
+          1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12
+        ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Elendel is the largest city in the Elendel Basin on Scadrial and in the cosmere at large. Named by The Lord Mistborn, Spook, for Elend Venture, it is located at the mouth of the Irongate river where it flows into Hammondar Bay. Though no accurate estimate exists for population size, there are certainly millions of residents, and estimates top out at around five million.`,
       wikiLink: 'Elendel',
@@ -278,6 +366,19 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       },
       description: `The Sovereign's temple is a building in the Seran Range of Elendel Basin. It was built by the Sovereign and his priests to house the Bands of Mourning.`,
       wikiLink: 'Sovereign%27s_temple',
+      confirmed: false
+    },
+    {
+      title: 'Tinweight Settlement',
+      coordinates: [919, 210],
+      type: 'town',
+      appearances: {
+        4: [
+          0
+        ].map(i => (theLostMetalChapterList[i])),
+      },
+      description: `Tinweight settlement is a mining town located in the roughs north of the Elendil Basin`,
+      // wikiLink: 'Ironstand',
       confirmed: false
     },
   ],
