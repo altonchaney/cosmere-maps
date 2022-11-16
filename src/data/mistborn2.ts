@@ -97,17 +97,17 @@ const theBandsOfMourningChapterList: Chapter[] = [
   { altName: 'Epilogue', chapter: 31.1, part: 3 }
 ];
 const theLostMetalChapterList: Chapter[] = [
-  { altName: 'Prologue', chapter: 0, part: 0 }, // Wayne is next to a mine (tynwade or tinwade?)
-  { chapter: 1, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
-  { chapter: 2, part: 1 }, // Wax is in Elendel
+  { altName: 'Prologue', chapter: 0, part: 0 },
+  { chapter: 1, part: 1 },
+  { chapter: 2, part: 1 },
   { altName: 'Broadsheet 1', chapter: 2.1, part: 1 },
-  { chapter: 3, part: 1 }, // Wax is in Elendel
-  { chapter: 4, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
-  { chapter: 5, part: 1 }, // Wax is in Elendel
-  { chapter: 6, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
-  { chapter: 7, part: 1 }, // Wax is in Elendel
-  { chapter: 8, part: 1 }, // Marasi and Wayne are in a sewer beneath Elendel
-  { chapter: 9, part: 1 }, // Wax is in Elendel
+  { chapter: 3, part: 1 },
+  { chapter: 4, part: 1 },
+  { chapter: 5, part: 1 },
+  { chapter: 6, part: 1 },
+  { chapter: 7, part: 1 },
+  { chapter: 8, part: 1 },
+  { chapter: 9, part: 1 },
   { chapter: 10, part: 1 },
   { chapter: 11, part: 1 },
   { chapter: 12, part: 1 },
@@ -286,7 +286,8 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
           0, 1, 2, 3, 4, 31, 32
         ].map(i => (theBandsOfMourningChapterList[i])),
         4: [
-          1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12
+          1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+          13, 14, 15, 16, 17, 18, 19, 20
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Elendel is the largest city in the Elendel Basin on Scadrial and in the cosmere at large. Named by The Lord Mistborn, Spook, for Elend Venture, it is located at the mouth of the Irongate river where it flows into Hammondar Bay. Though no accurate estimate exists for population size, there are certainly millions of residents, and estimates top out at around five million.`,
