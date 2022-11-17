@@ -100,7 +100,6 @@ const theLostMetalChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
   { chapter: 2, part: 1 },
-  { altName: 'Broadsheet 1', chapter: 2.1, part: 1 },
   { chapter: 3, part: 1 },
   { chapter: 4, part: 1 },
   { chapter: 5, part: 1 },
@@ -118,16 +117,14 @@ const theLostMetalChapterList: Chapter[] = [
   { chapter: 17, part: 1 },
   { chapter: 18, part: 1 },
   { chapter: 19, part: 1 },
-  { altName: 'Broadsheet 2', chapter: 19.1, part: 1 },
   { chapter: 20, part: 2 },
   { chapter: 21, part: 2 },
   { chapter: 22, part: 2 },
-  { chapter: 23, part: 2 },
+  { chapter: 23, part: 2 }, //
   { chapter: 24, part: 2 },
   { chapter: 25, part: 2 },
   { chapter: 26, part: 2 },
   { chapter: 27, part: 2 },
-  { altName: 'Broadsheet 3', chapter: 27.1, part: 2 },
   { chapter: 28, part: 2 },
   { chapter: 29, part: 2 },
   { chapter: 30, part: 2 },
@@ -144,7 +141,6 @@ const theLostMetalChapterList: Chapter[] = [
   { chapter: 41, part: 3 },
   { chapter: 42, part: 3 },
   { chapter: 43, part: 3 },
-  { altName: 'Broadsheet 4', chapter: 43.1, part: 3 },
   { chapter: 44, part: 3 },
   { chapter: 45, part: 3 },
   { chapter: 46, part: 3 },
@@ -286,8 +282,8 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
           0, 1, 2, 3, 4, 31, 32
         ].map(i => (theBandsOfMourningChapterList[i])),
         4: [
-          1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12,
-          13, 14, 15, 16, 17, 18, 19, 20
+          1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+          13, 14, 15, 16, 17, 18, 19
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Elendel is the largest city in the Elendel Basin on Scadrial and in the cosmere at large. Named by The Lord Mistborn, Spook, for Elend Venture, it is located at the mouth of the Irongate river where it flows into Hammondar Bay. Though no accurate estimate exists for population size, there are certainly millions of residents, and estimates top out at around five million.`,
@@ -385,6 +381,19 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       },
       description: `Tinweight settlement is a mining town located in the roughs north of the Elendil Basin`,
       // wikiLink: 'Ironstand',
+      confirmed: true
+    },
+    {
+      title: 'Bilming',
+      coordinates: [351, 134],
+      type: 'city',
+      appearances: {
+        4: [
+          21, 22, 23, 24, 25, 26, 27, 28, 29
+        ].map(i => (theLostMetalChapterList[i])),
+      },
+      description: `Bilming is a port city in the Elendel Basin on Scadrial. It is the only major port city in the Basin other than Elendel, and it is a center of industry. The city's symbol is a tortoise.`,
+      wikiLink: 'Bilming',
       confirmed: true
     },
   ],
@@ -501,7 +510,6 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         // [379, 287]
       ],
     },
-
     {
       character: characters[CharacterIndex.Wax],
       installment: books[0],
@@ -535,7 +543,6 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [405, 273],
       ],
     },
-
     {
       character: characters[CharacterIndex.Wax],
       installment: books[0],
@@ -614,7 +621,6 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [330, 271]
       ],
     },
-    
     {
       character: characters[CharacterIndex.Wax],
       installment: books[0],
@@ -634,7 +640,6 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [395, 272.5],
       ],
     },
-
     {
       character: characters[CharacterIndex.Wayne],
       installment: books[0],
@@ -669,7 +674,6 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [405, 273],
       ],
     },
-    
     {
       character: characters[CharacterIndex.Wax],
       installment: books[2],
@@ -999,6 +1003,78 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       coordinates: [
         [131.5, 637.5],
         [405, 273]
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Marasi],
+      installment: books[3],
+      chapter: theLostMetalChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [376, 261.5],
+        [351, 253.5],
+        [331.5, 247.5],
+        [319, 239.5],
+        [309, 233.5],
+        [302.5, 222.5],
+        [297.5, 209.5],
+        [296, 196.5],
+        [298, 182],
+        [301.5, 169.5],
+        [308, 159],
+        [317.5, 148],
+        [327, 141.5],
+        [337, 136.5],
+        [351, 134]
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      installment: books[3],
+      chapter: theLostMetalChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [376, 261.5],
+        [351, 253.5],
+        [331.5, 247.5],
+        [319, 239.5],
+        [309, 233.5],
+        [302.5, 222.5],
+        [297.5, 209.5],
+        [296, 196.5],
+        [298, 182],
+        [301.5, 169.5],
+        [308, 159],
+        [317.5, 148],
+        [327, 141.5],
+        [337, 136.5],
+        [351, 134]
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wax],
+      installment: books[3],
+      chapter: theLostMetalChapterList[23],
+      confirmed: true,
+      coordinates: [
+        [405, 273],
+        [376, 261.5],
+        [351, 253.5],
+        [331.5, 247.5],
+        [319, 239.5],
+        [309, 233.5],
+        [302.5, 222.5],
+        [297.5, 209.5],
+        [296, 196.5],
+        [298, 182],
+        [301.5, 169.5],
+        [308, 159],
+        [317.5, 148],
+        [327, 141.5],
+        [337, 136.5],
+        [351, 134]
       ],
     },
   ]
