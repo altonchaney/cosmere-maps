@@ -283,7 +283,8 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         ].map(i => (theBandsOfMourningChapterList[i])),
         4: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
-          13, 14, 15, 16, 17, 18, 19, 31
+          13, 14, 15, 16, 17, 18, 19, 31, 38,
+          43
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Elendel is the largest city in the Elendel Basin on Scadrial and in the cosmere at large. Named by The Lord Mistborn, Spook, for Elend Venture, it is located at the mouth of the Irongate river where it flows into Hammondar Bay. Though no accurate estimate exists for population size, there are certainly millions of residents, and estimates top out at around five million.`,
@@ -390,7 +391,8 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       appearances: {
         4: [
           21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-          
+          32, 33, 34, 35, 36, 37, 39, 40, 41, 42,
+          44, 45, 46
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Bilming is a port city in the Elendel Basin on Scadrial. It is the only major port city in the Basin other than Elendel, and it is a center of industry. The city's symbol is a tortoise.`,
