@@ -402,12 +402,12 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
     },
     {
       title: 'Wayfarer', // The Set's Underground 'Sanctuary'
-      coordinates: [351, 134],
+      coordinates: [351, 139],
       type: 'town',
       appearances: {
         4: [56, 57, 59, 60, 64, 68].map(i => (theLostMetalChapterList[i])),
       },
-      description: `Wayfarer is a Set town set up inside a cavern underneath the city of Bilming, where several of their abductees are housed. These `,
+      description: `Wayfarer is a Set town set up inside a cavern underneath the city of Bilming, where their abductees are kept hidden from the outside world.`,
       // wikiLink: 'Bilming',
       confirmed: true
     },
