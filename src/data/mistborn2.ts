@@ -284,7 +284,7 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         4: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
           13, 14, 15, 16, 17, 18, 19, 31, 38,
-          43
+          43, 48, 67, 70
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Elendel is the largest city in the Elendel Basin on Scadrial and in the cosmere at large. Named by The Lord Mistborn, Spook, for Elend Venture, it is located at the mouth of the Irongate river where it flows into Hammondar Bay. Though no accurate estimate exists for population size, there are certainly millions of residents, and estimates top out at around five million.`,
@@ -392,11 +392,23 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         4: [
           21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
           32, 33, 34, 35, 36, 37, 39, 40, 41, 42,
-          44, 45, 46
+          44, 45, 46, 47, 49, 50, 51, 52, 53, 54,
+          55, 58, 61, 62, 63, 64, 65, 66, 67, 68,
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Bilming is a port city in the Elendel Basin on Scadrial. It is the only major port city in the Basin other than Elendel, and it is a center of industry. The city's symbol is a tortoise.`,
       wikiLink: 'Bilming',
+      confirmed: true
+    },
+    {
+      title: 'Wayfarer', // The Set's Underground 'Sanctuary'
+      coordinates: [351, 134],
+      type: 'town',
+      appearances: {
+        4: [56, 57, 59, 60, 64, 68].map(i => (theLostMetalChapterList[i])),
+      },
+      description: `Wayfarer is a Set town set up inside a cavern underneath the city of Bilming, where several of their abductees are housed. These `,
+      // wikiLink: 'Bilming',
       confirmed: true
     },
   ],
@@ -1080,6 +1092,63 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [351, 134]
       ],
     },
+    {
+      character: characters[CharacterIndex.Wax],
+      installment: books[3],
+      chapter: theLostMetalChapterList[69],
+      confirmed: true,
+      coordinates: [
+        [351, 134],
+        [358.5, 145.5],
+        [365, 154.5],
+        [370, 165],
+        // [374.5, 173],
+        // [380.5, 185.5],
+        // [385.5, 197.5],
+        // [392.5, 212.5],
+        // [397.5, 227.5],
+        // [400, 239],
+        // [402.5, 251.5],
+        // [405, 259.5],
+        // [405, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      installment: books[3],
+      chapter: theLostMetalChapterList[69],
+      confirmed: true,
+      coordinates: [
+        [351, 134],
+        [358.5, 145.5],
+        [365, 154.5],
+        [370, 165],
+        // [374.5, 173],
+        // [380.5, 185.5],
+        // [385.5, 197.5],
+        // [392.5, 212.5],
+        // [397.5, 227.5],
+        // [400, 239],
+        // [402.5, 251.5],
+        // [405, 259.5],
+        // [405, 273],
+      ],
+    },
+    
   ]
 };
 
+// ship from bilming to elendel
+// [351, 134],
+// [358.5, 145.5],
+// [365, 154.5],
+// [370, 165],
+// [374.5, 173],
+// [380.5, 185.5],
+// [385.5, 197.5],
+// [392.5, 212.5],
+// [397.5, 227.5],
+// [400, 239],
+// [402.5, 251.5],
+// [405, 259.5],
+// [405, 273],
