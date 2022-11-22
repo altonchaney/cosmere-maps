@@ -7,6 +7,7 @@ const mapData: Map = {
   dimensions: [1200,795],
   source: 'https://coppermind.net/wiki/File:Elendel_Basin.png'
 };
+
 const theAlloyOfLawChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0 },
   { chapter: 1 },
@@ -31,6 +32,7 @@ const theAlloyOfLawChapterList: Chapter[] = [
   { chapter: 20 },
   { altName: 'Epilogue', chapter: 20.1 }
 ];
+
 const shadowsOfSelfChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -61,6 +63,7 @@ const shadowsOfSelfChapterList: Chapter[] = [
   { chapter: 26, part: 3 },
   { altName: 'Epilogue', chapter: 26.1, part: 3 }
 ];
+
 const theBandsOfMourningChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -96,6 +99,7 @@ const theBandsOfMourningChapterList: Chapter[] = [
   { chapter: 31, part: 3 },
   { altName: 'Epilogue', chapter: 31.1, part: 3 }
 ];
+
 const theLostMetalChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -284,7 +288,8 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         4: [
           1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
           13, 14, 15, 16, 17, 18, 19, 31, 38,
-          43, 48, 67, 70
+          43, 48, 67, 70, 72, 73, 75, 76, 77,
+          78, 79, 81
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Elendel is the largest city in the Elendel Basin on Scadrial and in the cosmere at large. Named by The Lord Mistborn, Spook, for Elend Venture, it is located at the mouth of the Irongate river where it flows into Hammondar Bay. Though no accurate estimate exists for population size, there are certainly millions of residents, and estimates top out at around five million.`,
@@ -394,6 +399,7 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
           32, 33, 34, 35, 36, 37, 39, 40, 41, 42,
           44, 45, 46, 47, 49, 50, 51, 52, 53, 54,
           55, 58, 61, 62, 63, 64, 65, 66, 67, 68,
+          72, 
         ].map(i => (theLostMetalChapterList[i])),
       },
       description: `Bilming is a port city in the Elendel Basin on Scadrial. It is the only major port city in the Basin other than Elendel, and it is a center of industry. The city's symbol is a tortoise.`,
@@ -1102,15 +1108,6 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [358.5, 145.5],
         [365, 154.5],
         [370, 165],
-        // [374.5, 173],
-        // [380.5, 185.5],
-        // [385.5, 197.5],
-        // [392.5, 212.5],
-        // [397.5, 227.5],
-        // [400, 239],
-        // [402.5, 251.5],
-        // [405, 259.5],
-        // [405, 273],
       ],
     },
     {
@@ -1123,32 +1120,81 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
         [358.5, 145.5],
         [365, 154.5],
         [370, 165],
-        // [374.5, 173],
-        // [380.5, 185.5],
-        // [385.5, 197.5],
-        // [392.5, 212.5],
-        // [397.5, 227.5],
-        // [400, 239],
-        // [402.5, 251.5],
-        // [405, 259.5],
-        // [405, 273],
       ],
     },
-    
+    {
+      character: characters[CharacterIndex.Wax],
+      installment: books[3],
+      chapter: theLostMetalChapterList[71],
+      confirmed: true,
+      coordinates: [
+        [370, 165],
+        [374.5, 173],
+        [380.5, 185.5],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      installment: books[3],
+      chapter: theLostMetalChapterList[71],
+      confirmed: true,
+      coordinates: [
+        [370, 165],
+        [374.5, 173],
+        [380.5, 185.5],
+        [385.5, 197.5],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wayne],
+      installment: books[3],
+      chapter: theLostMetalChapterList[73],
+      confirmed: true,
+      coordinates: [
+        [385.5, 197.5],
+        [392.5, 212.5],
+        [397.5, 227.5],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Marasi],
+      installment: books[3],
+      chapter: theLostMetalChapterList[75],
+      confirmed: true,
+      coordinates: [
+        [351, 134],
+        [337, 136.5],
+        [327, 141.5],
+        [317.5, 148],
+        [308, 159],
+        [301.5, 169.5],
+        [298, 182],
+        [296, 196.5],
+        [297.5, 209.5],
+        [302.5, 222.5],
+        [309, 233.5],
+        [319, 239.5],
+        [331.5, 247.5],
+        [351, 253.5],
+        [376, 261.5],
+        [405, 273],
+      ],
+    },
+    {
+      character: characters[CharacterIndex.Wax],
+      installment: books[3],
+      chapter: theLostMetalChapterList[76],
+      confirmed: true,
+      coordinates: [
+        [380.5, 185.5],
+        [385.5, 197.5],
+        [392.5, 212.5],
+        [397.5, 227.5],
+        [400, 239],
+        [402.5, 251.5],
+        [405, 259.5],
+        [405, 273],
+      ],
+    },
   ]
 };
-
-// ship from bilming to elendel
-// [351, 134],
-// [358.5, 145.5],
-// [365, 154.5],
-// [370, 165],
-// [374.5, 173],
-// [380.5, 185.5],
-// [385.5, 197.5],
-// [392.5, 212.5],
-// [397.5, 227.5],
-// [400, 239],
-// [402.5, 251.5],
-// [405, 259.5],
-// [405, 273],
