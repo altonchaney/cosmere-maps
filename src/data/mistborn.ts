@@ -259,16 +259,19 @@ enum CharacterIndex {
 export const books: Installment[] = [
   {
     title: 'The Final Empire',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/Mistborn_Final_Empire.jpg/400px-Mistborn_Final_Empire.jpg',
     chapters: theFinalEmpireChapterList
   },
   {
     title: 'The Well of Ascension',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/Mistborn_2.jpg/400px-Mistborn_2.jpg',
     chapters: wellOfAscensionChapterList
   },
   {
     title: 'The Hero of Ages',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/The_Hero_of_Ages_Cover.jpeg/400px-The_Hero_of_Ages_Cover.jpeg',
     chapters: theHeroOfAgesChapterList
   }
@@ -276,7 +279,6 @@ export const books: Installment[] = [
 
 export const seriesData: Series = {
   title: 'Mistborn (Era 1)',
-  type: MediaType.Book,
   stub: 'mistborn',
   image: 'https://coppermind.net/w/images/MB_Era_1_BR_full_cover_art.jpg',
   planetName: 'Scadrial',

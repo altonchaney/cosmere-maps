@@ -653,31 +653,37 @@ enum CharacterIndex {
 export const books: Installment[] = [
   {
     title: 'The Way of Kings',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/TheWayOfKings.png/400px-TheWayOfKings.png',
     chapters: theWayOfKingsChapterList
   },
   {
     title: 'Words of Radiance',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/Words_of_Radiance.jpg/400px-Words_of_Radiance.jpg',
     chapters: wordsOfRadianceChapterList
   },
   {
     title: 'Edgedancer',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/Edgedancer_Cover.jpg/400px-Edgedancer_Cover.jpg',
     chapters: edgedancerChapterList
   },
   {
     title: 'Oathbringer',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/Oathbringer_US_Hardcover.jpg/400px-Oathbringer_US_Hardcover.jpg',
     chapters: oathbringerChapterList
   },
   {
     title: 'Dawnshard',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/Dawnshard_cover.jpg',
     chapters: dawnshardChapterList
   },
   {
     title: 'Rhythm of War',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/RoW_US_cover.jpg/400px-RoW_US_cover.jpg',
     chapters: rhythmOfWarChapterList
   }
@@ -685,7 +691,6 @@ export const books: Installment[] = [
 
 export const seriesData: Series = {
   title: 'The Stormlight Archive',
-  type: MediaType.Book,
   stub: 'stormlight',
   image: 'https://coppermind.net/w/images/TWoK_US_Cover_art.jpg',
   planetName: 'Roshar',

@@ -215,21 +215,25 @@ enum CharacterIndex {
 export const books: Installment[] = [
   {
     title: 'The Alloy of Law',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/The_Alloy_of_Law_Cover.jpg/400px-The_Alloy_of_Law_Cover.jpg',
     chapters: theAlloyOfLawChapterList
   },
   {
     title: 'Shadows of Self',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/Shadows_of_Self_US_Hardcover.jpg/400px-Shadows_of_Self_US_Hardcover.jpg',
     chapters: shadowsOfSelfChapterList
   },
   {
     title: 'The Bands of Mourning',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/Bands_of_Mourning_US_Hardcover.jpg/400px-Bands_of_Mourning_US_Hardcover.jpg',
     chapters: theBandsOfMourningChapterList
   },
   {
     title: 'The Lost Metal',
+    type: MediaType.Book,
     image: 'https://coppermind.net/w/images/thumb/TLM_US_Cover.jpg/200px-TLM_US_Cover.jpg',
     chapters: theLostMetalChapterList
   }
@@ -237,7 +241,6 @@ export const books: Installment[] = [
 
 export const seriesData: Series = {
   title: 'Mistborn (Era 2)',
-  type: MediaType.Book,
   stub: 'mistborn2',
   image: 'https://coppermind.net/w/images/MB_Era_2_BR_cover_art.jpg',
   planetName: 'Scadrial',
