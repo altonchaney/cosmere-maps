@@ -534,95 +534,95 @@ const rhythmOfWarChapterList: Chapter[] = [
 export const characters: Character[] =[
   {
     name: 'Kaladin',
-    image: 'https://coppermind.net/w/images/Kaladin_and_Syl.jpg',
+    image: 'https://uploads.coppermind.net/Kaladin_and_Syl.jpg',
     color: 'rgb(44,66,128)',
     wikiLink: 'Kaladin'
   },
   {
     name: 'Shallan',
-    image: 'https://coppermind.net/w/images/Shallan_in_the_Palanaeum.jpg',
+    image: 'https://uploads.coppermind.net/Shallan_in_the_Palanaeum.jpg',
     color: 'rgb(150,36,42)',
     wikiLink: 'Shallan'
   },
   {
     name: 'Szeth',
-    image: 'https://coppermind.net/w/images/Szeth.jpg',
+    image: 'https://uploads.coppermind.net/Szeth.jpg',
     color: 'rgb(230,230,230)',
     wikiLink: 'Szeth'
   },
   {
     name: 'Dalinar',
-    image: 'https://coppermind.net/w/images/thumb/Dalinar.jpg/400px-Dalinar.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Dalinar.jpg/400px-Dalinar.jpg',
     color: 'rgb(11,35,63)',
     wikiLink: 'Dalinar_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[16] }
   },
   {
     name: 'Jasnah',
-    image: 'https://coppermind.net/w/images/thumb/Jasnah_Shuravf.jpg/400px-Jasnah_Shuravf.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Jasnah_Shuravf.jpg/400px-Jasnah_Shuravf.jpg',
     color: 'rgb(106,57,156)',
     wikiLink: 'Jasnah_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[6] }
   },
   {
     name: 'Adolin',
-    image: 'https://coppermind.net/w/images/thumb/Adolin.jpg/400px-Adolin.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Adolin.jpg/400px-Adolin.jpg',
     color: 'rgb(100,150,200)',
     wikiLink: 'Adolin_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[16] }
   },
   {
     name: 'Moash',
-    image: 'https://coppermind.net/w/images/thumb/Moash_Shuravf.jpg/400px-Moash_Shuravf.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Moash_Shuravf.jpg/400px-Moash_Shuravf.jpg',
     color: 'rgb(216,57,71)',
     wikiLink: 'Moash',
     firstAppearance: { 1: theWayOfKingsChapterList[18] }
   },
   {
     name: 'Taravangian',
-    image: 'https://coppermind.net/w/images/thumb/Taravangian_Portrait_by_Marie_Seeberger.jpg/400px-Taravangian_Portrait_by_Marie_Seeberger.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Taravangian_Portrait_by_Marie_Seeberger.jpg/400px-Taravangian_Portrait_by_Marie_Seeberger.jpg',
     color: 'rgb(154,56,13)',
     wikiLink: 'Taravangian',
     firstAppearance: { 1: theWayOfKingsChapterList[6] }
   },
   {
     name: 'Navani',
-    image: 'https://coppermind.net/w/images/Navani.jpg',
+    image: 'https://uploads.coppermind.net/Navani.jpg',
     color: 'rgb(80,27,76)',
     wikiLink: 'Navani_Kholin',
     firstAppearance: { 1: theWayOfKingsChapterList[26] }
   },
   {
     name: 'Lopen',
-    image: 'https://coppermind.net/w/images/thumb/Lopen_Shuravf.png/400px-Lopen_Shuravf.png',
+    image: 'https://uploads.coppermind.net/thumb/Lopen_Shuravf.png/400px-Lopen_Shuravf.png',
     color: 'rgb(77,62,55)',
     wikiLink: 'Lopen',
     firstAppearance: { 1: theWayOfKingsChapterList[39] }
   },
   {
     name: 'Rysn',
-    image: 'https://coppermind.net/w/images/thumb/Rysn_by_paintweaver.jpg/400px-Rysn_by_paintweaver.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Rysn_by_paintweaver.jpg/400px-Rysn_by_paintweaver.jpg',
     color: 'rgb(21,49,12)',
     wikiLink: 'Rysn_Ftori',
     firstAppearance: { 1: theWayOfKingsChapterList[33] }
   },
   {
     name: 'Eshonai',
-    image: 'https://coppermind.net/w/images/thumb/Eshonai_portrait_large.png/400px-Eshonai_portrait_large.png',
+    image: 'https://uploads.coppermind.net/thumb/Eshonai_portrait_large.png/400px-Eshonai_portrait_large.png',
     color: 'rgb(200,86,85)',
     wikiLink: 'Eshonai',
     firstAppearance: { 1: theWayOfKingsChapterList[78] }
   },
   {
     name: 'Venli',
-    image: 'https://coppermind.net/w/images/thumb/Venli.png/400px-Venli.png',
+    image: 'https://uploads.coppermind.net/thumb/Venli.png/400px-Venli.png',
     color: 'rgb(232,150,125)',
     wikiLink: 'Venli',
     firstAppearance: { 2: wordsOfRadianceChapterList[13] }
   },
   {
     name: 'Lift',
-    image: 'https://coppermind.net/w/images/thumb/Lift_by_Katie_Payne.jpg/400px-Lift_by_Katie_Payne.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Lift_by_Katie_Payne.jpg/400px-Lift_by_Katie_Payne.jpg',
     color: 'rgb(129,180,184)',
     wikiLink: 'Lift',
     firstAppearance: { 2: wordsOfRadianceChapterList[67] }
@@ -654,37 +654,37 @@ export const books: Installment[] = [
   {
     title: 'The Way of Kings',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/TheWayOfKings.png/400px-TheWayOfKings.png',
+    image: 'https://uploads.coppermind.net/thumb/TheWayOfKings.png/400px-TheWayOfKings.png',
     chapters: theWayOfKingsChapterList
   },
   {
     title: 'Words of Radiance',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/Words_of_Radiance.jpg/400px-Words_of_Radiance.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Words_of_Radiance.jpg/400px-Words_of_Radiance.jpg',
     chapters: wordsOfRadianceChapterList
   },
   {
     title: 'Edgedancer',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/Edgedancer_Cover.jpg/400px-Edgedancer_Cover.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Edgedancer_Cover.jpg/400px-Edgedancer_Cover.jpg',
     chapters: edgedancerChapterList
   },
   {
     title: 'Oathbringer',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/Oathbringer_US_Hardcover.jpg/400px-Oathbringer_US_Hardcover.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Oathbringer_US_Hardcover.jpg/400px-Oathbringer_US_Hardcover.jpg',
     chapters: oathbringerChapterList
   },
   {
     title: 'Dawnshard',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/Dawnshard_cover.jpg',
+    image: 'https://uploads.coppermind.net/Dawnshard_cover.jpg',
     chapters: dawnshardChapterList
   },
   {
     title: 'Rhythm of War',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/RoW_US_cover.jpg/400px-RoW_US_cover.jpg',
+    image: 'https://uploads.coppermind.net/thumb/RoW_US_cover.jpg/400px-RoW_US_cover.jpg',
     chapters: rhythmOfWarChapterList
   }
 ];
@@ -692,7 +692,7 @@ export const books: Installment[] = [
 export const seriesData: Series = {
   title: 'The Stormlight Archive',
   stub: 'stormlight',
-  image: 'https://coppermind.net/w/images/TWoK_US_Cover_art.jpg',
+  image: 'https://uploads.coppermind.net/TWoK_US_Cover_art.jpg',
   planetName: 'Roshar',
   description: `Set on the planet Roshar, the series forms a core part of the cosmere sequence, and centers around Odium's efforts to escape the ties that bind him to the Rosharan system. The series is estimated to require ten books to complete.`,
   color: 'rgb(194,94,73)',
@@ -709,7 +709,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Assassination of Gavilar',
       coordinates: [513, 1369],
       type: 'event',
-      image: 'https://coppermind.net/w/images/thumb/Reluctant_Villain_by_Art_Dem.jpg/400px-Reluctant_Villain_by_Art_Dem.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Reluctant_Villain_by_Art_Dem.jpg/400px-Reluctant_Villain_by_Art_Dem.jpg',
       appearances: {
         1: [1].map(i => theWayOfKingsChapterList[i]),
         2: [0].map(i => wordsOfRadianceChapterList[i]),
@@ -724,7 +724,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Battle of Narak',
       coordinates: [259.5, 1441],
       type: 'battle',
-      image: 'https://coppermind.net/w/images/thumb/WoR_BG_cover_art.jpg/800px-WoR_BG_cover_art.jpg',
+      image: 'https://uploads.coppermind.net/thumb/WoR_BG_cover_art.jpg/800px-WoR_BG_cover_art.jpg',
       appearances: {
         2: [95, 96, 97, 98, 99, 100, 101].map(i => wordsOfRadianceChapterList[i]),
         6: [
@@ -739,7 +739,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Battle of Thaylen Field',
       coordinates: [138, 1055],
       type: 'battle',
-      image: 'https://coppermind.net/w/images/thumb/Dalinar_Perpendicularity.png/420px-Dalinar_Perpendicularity.png',
+      image: 'https://uploads.coppermind.net/thumb/Dalinar_Perpendicularity.png/420px-Dalinar_Perpendicularity.png',
       appearances: {
         4: [129, 130, 131, 132, 133, 134].map(i => oathbringerChapterList[i])
       },
@@ -751,7 +751,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Battle of the Tower',
       coordinates: [259.5, 1435],
       type: 'battle',
-      image: 'https://coppermind.net/w/images/thumb/The_Leap_by_Grant_Hansen.jpg/600px-The_Leap_by_Grant_Hansen.jpg',
+      image: 'https://uploads.coppermind.net/thumb/The_Leap_by_Grant_Hansen.jpg/600px-The_Leap_by_Grant_Hansen.jpg',
       appearances: {
         1: [75, 76, 77, 78].map(i => theWayOfKingsChapterList[i])
       },
@@ -763,7 +763,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Expedition to Akinah',
       coordinates: [138, 1061],
       type: 'event',
-      image: 'https://coppermind.net/w/images/thumb/Aboard_the_Wandersail.jpg/400px-Aboard_the_Wandersail.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Aboard_the_Wandersail.jpg/400px-Aboard_the_Wandersail.jpg',
       appearances: {
         5: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
       },
@@ -775,7 +775,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Siege of Kholinar',
       coordinates: [513, 1375],
       type: 'battle',
-      image: 'https://coppermind.net/w/images/thumb/Attack_on_Roshar_by_Connor_Chamberlain.jpg/400px-Attack_on_Roshar_by_Connor_Chamberlain.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Attack_on_Roshar_by_Connor_Chamberlain.jpg/400px-Attack_on_Roshar_by_Connor_Chamberlain.jpg',
       appearances: {
         4: [
           84, 85, 86, 87, 88, 89, 90, 91, 93,
@@ -789,7 +789,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Kholinar',
       coordinates: [513, 1363.5],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Kholinar.jpg',
+      image: 'https://uploads.coppermind.net/Kholinar.jpg',
       appearances: {
         1: [
           1, 86
@@ -828,7 +828,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Kharbranth',
       coordinates: [235.5, 1006.5],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Kharbranth.jpg',
+      image: 'https://uploads.coppermind.net/Kharbranth.jpg',
       appearances: {
         1: [
           4, 6, 8, 9, 36, 40, 43, 46, 49,
@@ -845,7 +845,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Shattered Plains',
       coordinates: [259.5, 1423],
       type: 'region',
-      image: 'https://coppermind.net/w/images/Shattered_Plains_by_Noah_Bradley.jpg',
+      image: 'https://uploads.coppermind.net/Shattered_Plains_by_Noah_Bradley.jpg',
       appearances: {
         1: [
           7, 10, 12, 16, 17, 18, 19,
@@ -880,7 +880,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Narak',
       coordinates: [259.5, 1429],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Narak_by_Connor_Chamberlain.jpg',
+      image: 'https://uploads.coppermind.net/Narak_by_Connor_Chamberlain.jpg',
       appearances: {
         2: [
           13, 16, 39, 42, 69, 88, 97, 98, 99,
@@ -900,7 +900,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Hearthstone',
       coordinates: [628.5, 1351.5],
       type: 'town',
-      image: 'https://coppermind.net/w/images/Watcher_at_the_Rim_by_Marie_Seeberger.jpg',
+      image: 'https://uploads.coppermind.net/Watcher_at_the_Rim_by_Marie_Seeberger.jpg',
       appearances: {
         1: [
           11, 20, 24, 29, 38, 44, 48, 51,
@@ -920,7 +920,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Fu Abra',
       coordinates: [488.0, 803.0],
       type: 'town',
-      image: 'https://coppermind.net/w/images/Ishikk_Purelake_by_Connor_Chamberlain.jpg',
+      image: 'https://uploads.coppermind.net/Ishikk_Purelake_by_Connor_Chamberlain.jpg',
       appearances: {
         1: [
           theWayOfKingsChapterList[13]
@@ -933,7 +933,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Davar Estate',
       coordinates: [553, 1099],
       type: 'town',
-      image: 'https://coppermind.net/w/images/thumb/Davar_family_by_zoethatcher_art.jpg/600px-Davar_family_by_zoethatcher_art.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Davar_family_by_zoethatcher_art.jpg/600px-Davar_family_by_zoethatcher_art.jpg',
       appearances: {
         1: [
           theWayOfKingsChapterList[14]
@@ -961,7 +961,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Shinovar',
       coordinates: [498, 381],
       type: 'region',
-      image: 'https://coppermind.net/w/images/Farmer_by_Adam_J_Marin.png',
+      image: 'https://uploads.coppermind.net/Farmer_by_Adam_J_Marin.png',
       appearances: {
         1: [
           theWayOfKingsChapterList[33]
@@ -1022,7 +1022,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Vedenar',
       coordinates: [326, 1076.5],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Vedenar_city_map.jpg',
+      image: 'https://uploads.coppermind.net/Vedenar_city_map.jpg',
       appearances: {
         1: [
           61
@@ -1050,7 +1050,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Akinah',
       coordinates: [498.5, 104.5],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Akinah_city_map.jpg',
+      image: 'https://uploads.coppermind.net/Akinah_city_map.jpg',
       appearances: {
         4: [61].map(i => oathbringerChapterList[i]),
         5: [13, 14, 15, 16, 17, 18, 19].map(i => dawnshardChapterList[i])
@@ -1074,7 +1074,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Relu-na',
       coordinates: [739, 843],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/Tan-na_by_Marie_Seeberger.jpg/600px-Tan-na_by_Marie_Seeberger.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Tan-na_by_Marie_Seeberger.jpg/600px-Tan-na_by_Marie_Seeberger.jpg',
       appearances: {
         2: [15].map(i => wordsOfRadianceChapterList[i])
       },
@@ -1104,7 +1104,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Urithiru',
       coordinates: [362, 802],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/Urithiru3_by_Jacobo_Montoya.jpg/889px-Urithiru3_by_Jacobo_Montoya.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Urithiru3_by_Jacobo_Montoya.jpg/889px-Urithiru3_by_Jacobo_Montoya.jpg',
       appearances: {
         2: [
           68, 100, 101, 102, 103
@@ -1139,7 +1139,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Thaylen City',
       coordinates: [138, 1049],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/Thaylen_City_by_Connor_Chamberlain.jpg/400px-Thaylen_City_by_Connor_Chamberlain.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Thaylen_City_by_Connor_Chamberlain.jpg/400px-Thaylen_City_by_Connor_Chamberlain.jpg',
       appearances: {
         4: [
           64, 65, 122, 124, 126, 129, 130, 131,
@@ -1159,7 +1159,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Yeddaw',
       coordinates: [318, 611],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/Yeddaw.png/400px-Yeddaw.png',
+      image: 'https://uploads.coppermind.net/thumb/Yeddaw.png/400px-Yeddaw.png',
       appearances: {
         3: [
           2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
@@ -1173,7 +1173,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Alethkar',
       coordinates: [449, 1325],
       type: 'region',
-      image: 'https://coppermind.net/w/images/thumb/Alethkar_Color.jpg/500px-Alethkar_Color.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Alethkar_Color.jpg/500px-Alethkar_Color.jpg',
       appearances: {
         4: [
           3 
@@ -1198,7 +1198,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Rathalas',
       coordinates: [392, 1337.5],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/Rathalas_by_Connor_Chamberlain.jpg/400px-Rathalas_by_Connor_Chamberlain.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Rathalas_by_Connor_Chamberlain.jpg/400px-Rathalas_by_Connor_Chamberlain.jpg',
       appearances: {
         4: [
           11, 77, 81, 82
@@ -1247,7 +1247,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Herdaz',
       coordinates: [663, 1259],
       type: 'region',
-      image: 'https://coppermind.net/w/images/thumb/Rathalas_by_Connor_Chamberlain.jpg/400px-Rathalas_by_Connor_Chamberlain.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Rathalas_by_Connor_Chamberlain.jpg/400px-Rathalas_by_Connor_Chamberlain.jpg',
       appearances: {
         4: [
           97
@@ -1261,7 +1261,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Sea of Lost Lights',
       coordinates: [469, 1237],
       type: 'region',
-      image: 'https://coppermind.net/w/images/thumb/Sea_of_Lost_Lights.jpg/400px-Sea_of_Lost_Lights.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Sea_of_Lost_Lights.jpg/400px-Sea_of_Lost_Lights.jpg',
       appearances: {
         4: [
           93, 100, 102, 104
@@ -1288,7 +1288,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: `Riino's Lighthouse`,
       coordinates: [493.5, 1346.5],
       type: 'point of interest',
-      image: 'https://coppermind.net/w/images/thumb/Shadesmar_Travel_by_LittleGreyDragon.jpeg/400px-Shadesmar_Travel_by_LittleGreyDragon.jpeg',
+      image: 'https://uploads.coppermind.net/thumb/Shadesmar_Travel_by_LittleGreyDragon.jpeg/400px-Shadesmar_Travel_by_LittleGreyDragon.jpeg',
       appearances: {
         4: [
           106, 108
@@ -1302,7 +1302,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: `Celebrant`,
       coordinates: [355, 1298],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Celebrant.png',
+      image: 'https://uploads.coppermind.net/Celebrant.png',
       appearances: {
         4: [
           112, 113
@@ -1342,7 +1342,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Sea of Souls',
       coordinates: [367, 863],
       type: 'region',
-      image: 'https://coppermind.net/w/images/Sea_of_Souls.jpg',
+      image: 'https://uploads.coppermind.net/Sea_of_Souls.jpg',
       appearances: {
         6: [
           25
@@ -1356,7 +1356,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Nameless',
       coordinates: [214, 738.5],
       type: 'town',
-      image: 'https://coppermind.net/w/images/Nameless_Sea_of_Souls_map_crop.jpg',
+      image: 'https://uploads.coppermind.net/Nameless_Sea_of_Souls_map_crop.jpg',
       appearances: {
         6: [
           32, 33
@@ -1370,7 +1370,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       title: 'Lasting Integrity',
       coordinates: [198.5, 629],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/Lasting_Integrity_Interior.jpeg/400px-Lasting_Integrity_Interior.jpeg',
+      image: 'https://uploads.coppermind.net/thumb/Lasting_Integrity_Interior.jpeg/400px-Lasting_Integrity_Interior.jpeg',
       appearances: {
         6: [
           39, 84, 87, 91, 96, 99, 102, 103,
