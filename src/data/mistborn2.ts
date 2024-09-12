@@ -188,19 +188,19 @@ const theLostMetalChapterList: Chapter[] = [
 export const characters: Character[] =[
   {
     name: 'Wax',
-    image: 'https://coppermind.net/w/images/thumb/Waxillium_Ladrian.jpg/400px-Waxillium_Ladrian.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Waxillium_Ladrian.jpg/400px-Waxillium_Ladrian.jpg',
     color: 'rgb(248,203,86)',
     wikiLink: 'Waxillium_Ladrian'
   },
   {
     name: 'Wayne',
-    image: 'https://coppermind.net/w/images/thumb/Wayne_hatted_smile.jpg/400px-Wayne_hatted_smile.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Wayne_hatted_smile.jpg/400px-Wayne_hatted_smile.jpg',
     color: 'rgb(105,48,38)',
     wikiLink: 'Wayne'
   },
   {
     name: 'Marasi',
-    image: 'https://coppermind.net/w/images/thumb/Marasi_Colms_by_Dan_Watson.jpg/400px-Marasi_Colms_by_Dan_Watson.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Marasi_Colms_by_Dan_Watson.jpg/400px-Marasi_Colms_by_Dan_Watson.jpg',
     color: 'rgb(68,119,139)',
     wikiLink: 'Marasi_Colms'
   },
@@ -216,25 +216,25 @@ export const books: Installment[] = [
   {
     title: 'The Alloy of Law',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/The_Alloy_of_Law_Cover.jpg/400px-The_Alloy_of_Law_Cover.jpg',
+    image: 'https://uploads.coppermind.net/thumb/The_Alloy_of_Law_Cover.jpg/400px-The_Alloy_of_Law_Cover.jpg',
     chapters: theAlloyOfLawChapterList
   },
   {
     title: 'Shadows of Self',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/Shadows_of_Self_US_Hardcover.jpg/400px-Shadows_of_Self_US_Hardcover.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Shadows_of_Self_US_Hardcover.jpg/400px-Shadows_of_Self_US_Hardcover.jpg',
     chapters: shadowsOfSelfChapterList
   },
   {
     title: 'The Bands of Mourning',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/Bands_of_Mourning_US_Hardcover.jpg/400px-Bands_of_Mourning_US_Hardcover.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Bands_of_Mourning_US_Hardcover.jpg/400px-Bands_of_Mourning_US_Hardcover.jpg',
     chapters: theBandsOfMourningChapterList
   },
   {
     title: 'The Lost Metal',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/TLM_US_Cover.jpg/200px-TLM_US_Cover.jpg',
+    image: 'https://uploads.coppermind.net/thumb/TLM_US_Cover.jpg/200px-TLM_US_Cover.jpg',
     chapters: theLostMetalChapterList
   }
 ];
@@ -242,7 +242,7 @@ export const books: Installment[] = [
 export const seriesData: Series = {
   title: 'Mistborn (Era 2)',
   stub: 'mistborn2',
-  image: 'https://coppermind.net/w/images/MB_Era_2_BR_cover_art.jpg',
+  image: 'https://uploads.coppermind.net/MB_Era_2_BR_cover_art.jpg',
   planetName: 'Scadrial',
   description: `Set about 300 years after Era 1, the Wax and Wayne series is about the exploits of Waxillium Ladrian, a "wild-west Deputy" forced to move into the big city, and starts investigating kidnappings and robberies.`,
   color: 'rgb(85,105,73)',
@@ -272,7 +272,7 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       title: 'Elendel',
       coordinates: [405, 273],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Elendel.jpg',
+      image: 'https://uploads.coppermind.net/Elendel.jpg',
       appearances: {
         1: [
           1, 2, 3, 4, 5, 6, 7, 8, 9,
@@ -342,7 +342,7 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       title: 'New Seran',
       coordinates: [99, 581],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/New_Seran_by_Lyraina.jpeg/1920px-New_Seran_by_Lyraina.jpeg',
+      image: 'https://uploads.coppermind.net/thumb/New_Seran_by_Lyraina.jpeg/1920px-New_Seran_by_Lyraina.jpeg',
       appearances: {
         3: [
           10, 11, 12, 13, 14, 15, 16
@@ -369,7 +369,7 @@ export const MISTBORN_ERA2_DATA: DataBundle = {
       title: `Sovereign's temple`,
       coordinates: [131.5, 637.5],
       type: 'point of interest',
-      image: 'https://coppermind.net/w/images/thumb/Bands_of_Mourning_Mural_by_Shuravf.jpg/1024px-Bands_of_Mourning_Mural_by_Shuravf.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Bands_of_Mourning_Mural_by_Shuravf.jpg/1024px-Bands_of_Mourning_Mural_by_Shuravf.jpg',
       appearances: {
         3: [
           23, 24, 25, 26, 27, 28, 29, 30

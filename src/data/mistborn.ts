@@ -203,43 +203,43 @@ const theHeroOfAgesChapterList: Chapter[] = [
 export const characters: Character[] =[
   {
     name: 'Vin',
-    image: 'https://coppermind.net/w/images/thumb/The_Ascendant_Warrior.jpg/400px-The_Ascendant_Warrior.jpg',
+    image: 'https://uploads.coppermind.net/thumb/The_Ascendant_Warrior.jpg/400px-The_Ascendant_Warrior.jpg',
     color: 'rgb(76,47,74)',
     wikiLink: 'Vin'
   },
   {
     name: 'Kelsier',
-    image: 'https://coppermind.net/w/images/thumb/Cognitive_Shadow_Kelsier.jpg/400px-Cognitive_Shadow_Kelsier.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Cognitive_Shadow_Kelsier.jpg/400px-Cognitive_Shadow_Kelsier.jpg',
     color: 'rgb(119,162,119)',
     wikiLink: 'Kelsier'
   },
   {
     name: 'Elend',
-    image: 'https://coppermind.net/w/images/thumb/Elend_Shuravf.jpg/400px-Elend_Shuravf.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Elend_Shuravf.jpg/400px-Elend_Shuravf.jpg',
     color: 'rgb(98,117,230)',
     wikiLink: 'Elend_Venture'
   },
   {
     name: 'Sazed',
-    image: 'https://coppermind.net/w/images/thumb/Sazed_portrait.jpg/442px-Sazed_portrait.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Sazed_portrait.jpg/442px-Sazed_portrait.jpg',
     color: 'rgb(195,156,76)',
     wikiLink: 'Sazed'
   },
   {
     name: 'Spook',
-    image: 'https://coppermind.net/w/images/thumb/Spook_by_clarinking.jpg/500px-Spook_by_clarinking.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Spook_by_clarinking.jpg/500px-Spook_by_clarinking.jpg',
     color: 'rgb(82,90,138)',
     wikiLink: 'Spook'
   },
   {
     name: 'Marsh',
-    image: 'https://coppermind.net/w/images/thumb/Marsh_by_eyeronis.png/400px-Marsh_by_eyeronis.png',
+    image: 'https://uploads.coppermind.net/thumb/Marsh_by_eyeronis.png/400px-Marsh_by_eyeronis.png',
     color: 'rgb(58,68,75)',
     wikiLink: 'Marsh'
   },
   {
     name: 'TenSoon',
-    image: 'https://coppermind.net/w/images/thumb/Tensoon_portrait_paint.png/1024px-Tensoon_portrait_paint.png',
+    image: 'https://uploads.coppermind.net/thumb/Tensoon_portrait_paint.png/1024px-Tensoon_portrait_paint.png',
     color: 'rgb(198,99,36)',
     wikiLink: 'TenSoon',
     firstAppearance: { 2: wellOfAscensionChapterList[46] }
@@ -260,19 +260,19 @@ export const books: Installment[] = [
   {
     title: 'The Final Empire',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/Mistborn_Final_Empire.jpg/400px-Mistborn_Final_Empire.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Mistborn_Final_Empire.jpg/400px-Mistborn_Final_Empire.jpg',
     chapters: theFinalEmpireChapterList
   },
   {
     title: 'The Well of Ascension',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/Mistborn_2.jpg/400px-Mistborn_2.jpg',
+    image: 'https://uploads.coppermind.net/thumb/Mistborn_2.jpg/400px-Mistborn_2.jpg',
     chapters: wellOfAscensionChapterList
   },
   {
     title: 'The Hero of Ages',
     type: MediaType.Book,
-    image: 'https://coppermind.net/w/images/thumb/The_Hero_of_Ages_Cover.jpeg/400px-The_Hero_of_Ages_Cover.jpeg',
+    image: 'https://uploads.coppermind.net/thumb/The_Hero_of_Ages_Cover.jpeg/400px-The_Hero_of_Ages_Cover.jpeg',
     chapters: theHeroOfAgesChapterList
   }
 ];
@@ -280,7 +280,7 @@ export const books: Installment[] = [
 export const seriesData: Series = {
   title: 'Mistborn (Era 1)',
   stub: 'mistborn',
-  image: 'https://coppermind.net/w/images/MB_Era_1_BR_full_cover_art.jpg',
+  image: 'https://uploads.coppermind.net/MB_Era_1_BR_full_cover_art.jpg',
   planetName: 'Scadrial',
   description: `The first Mistborn trilogy chronicles the efforts of a secret group of Allomancers who attempt to overthrow a dystopian empire and establish themselves in a world covered by ash.`,
   color: 'rgb(153,64,105)',
@@ -297,7 +297,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Tresting',
       coordinates: [597.5, 718.5],
       type: 'town',
-      image: 'https://coppermind.net/w/images/Final_Empire_Opening_Scene.jpg',
+      image: 'https://uploads.coppermind.net/Final_Empire_Opening_Scene.jpg',
       appearances: {
         1: [
           theFinalEmpireChapterList[0]
@@ -311,7 +311,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Luthadel',
       coordinates: [532, 780.5],
       type: 'city',
-      image: 'https://coppermind.net/w/images/thumb/Luthadel_by_Ricky_Ho.jpg/1024px-Luthadel_by_Ricky_Ho.jpg',
+      image: 'https://uploads.coppermind.net/thumb/Luthadel_by_Ricky_Ho.jpg/1024px-Luthadel_by_Ricky_Ho.jpg',
       appearances: {
         1: [
           1, 2, 3, 4, 5, 6, 7, 8, 10,
@@ -352,7 +352,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Arguois caverns',
       coordinates: [619.5, 792.5],
       type: 'point of interest',
-      image: 'https://coppermind.net/w/images/Yeden%27s_Army_by_Kelly_Mai.jpg',
+      image: 'https://uploads.coppermind.net/Yeden%27s_Army_by_Kelly_Mai.jpg',
       appearances: {
         1: [
           21, 25
@@ -366,7 +366,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Pits of Hathsin',
       coordinates: [609, 750],
       type: 'point of interest',
-      image: 'https://coppermind.net/w/images/Atium_geode.jpg',
+      image: 'https://uploads.coppermind.net/Atium_geode.jpg',
       appearances: {
         1: [
           32
@@ -400,7 +400,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Battle of Luthadel',
       coordinates: [534, 790],
       type: 'battle',
-      image: 'https://coppermind.net/w/images/Sazed_vs._Koloss_by_Lara_Sarmiento.jpg',
+      image: 'https://uploads.coppermind.net/Sazed_vs._Koloss_by_Lara_Sarmiento.jpg',
       appearances: {
         2: [
           50, 51, 52, 53, 54
@@ -466,7 +466,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Kandra Homeland',
       coordinates: [601.5, 786],
       type: 'city',
-      image: 'https://coppermind.net/w/images/TenSoon%27s_Judgement_by_Marc_Mestre.jpg',
+      image: 'https://uploads.coppermind.net/TenSoon%27s_Judgement_by_Marc_Mestre.jpg',
       appearances: {
         3: [
           2, 7, 9, 11, 20, 24, 33, 66, 68,
@@ -494,7 +494,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Urteau',
       coordinates: [612.5, 952],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Urteau.jpg',
+      image: 'https://uploads.coppermind.net/Urteau.jpg',
       appearances: {
         3: [
           14, 16, 19, 23, 26, 29, 31, 35, 38,
@@ -510,7 +510,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Fadrex City',
       coordinates: [557.5, 500],
       type: 'city',
-      image: 'https://coppermind.net/w/images/Fadrex_City.jpg',
+      image: 'https://uploads.coppermind.net/Fadrex_City.jpg',
       appearances: {
         3: [
           25, 27, 28, 30, 32, 36, 37, 40, 43,
@@ -526,7 +526,7 @@ export const MISTBORN_ERA1_DATA: DataBundle = {
       title: 'Mount Tyrian',
       coordinates: [552.5, 680],
       type: 'point of interest',
-      image: 'https://coppermind.net/w/images/Ashmount.png',
+      image: 'https://uploads.coppermind.net/Ashmount.png',
       appearances: {
         3: [
           34
