@@ -531,6 +531,242 @@ const rhythmOfWarChapterList: Chapter[] = [
   { altName: 'Epilogue', chapter: 117.1, part: 5 },
 ];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const windAndTruthChapterList: Chapter[] = [
+  { altName: 'Prologue', chapter: 0, part: 0 },
+  { chapter: 1, part: 1 },
+  { chapter: 2, part: 1 },
+  { chapter: 3, part: 1 },
+  { chapter: 4, part: 1 },
+  { chapter: 5, part: 1 },
+  { chapter: 6, part: 1 },
+  { chapter: 7, part: 1 },
+  { chapter: 8, part: 1 },
+  { chapter: 9, part: 1 },
+  { chapter: 10, part: 1 },
+  { chapter: 11, part: 1 },
+  { chapter: 12, part: 1 },
+  { chapter: 13, part: 1 },
+  { altName: 'Interlude 1', chapter: 13.1, part: 1 },
+  { altName: 'Interlude 2', chapter: 13.2, part: 1 },
+  { chapter: 14, part: 2 },
+  { chapter: 15, part: 2 },
+  { chapter: 16, part: 2 },
+  { chapter: 17, part: 2 },
+  { chapter: 18, part: 2 },
+  { chapter: 19, part: 2 },
+  { chapter: 20, part: 2 },
+  { chapter: 21, part: 2 },
+  { chapter: 22, part: 2 },
+  { chapter: 23, part: 2 },
+  { chapter: 24, part: 2 },
+  { chapter: 25, part: 2 },
+  { chapter: 26, part: 2 },
+  { chapter: 27, part: 2 },
+  { chapter: 28, part: 2 },
+  { chapter: 29, part: 2 },
+  { chapter: 30, part: 2 },
+  { chapter: 31, part: 2 },
+  { chapter: 32, part: 2 },
+  { chapter: 33, part: 2 },
+  { altName: 'Interlude 3', chapter: 33.1, part: 2 },
+  { altName: 'Interlude 4', chapter: 33.2, part: 2 },
+  { chapter: 34, part: 3 },
+  { chapter: 35, part: 3 },
+  { chapter: 36, part: 3 },
+  { chapter: 37, part: 3 },
+  { chapter: 38, part: 3 },
+  { chapter: 39, part: 3 },
+  { chapter: 40, part: 3 },
+  { chapter: 41, part: 3 },
+  { chapter: 42, part: 3 },
+  { altName: 'Interlude 5', chapter: 42.1, part: 3 },
+  { altName: 'Interlude 6', chapter: 42.2, part: 3 },
+  { chapter: 43, part: 4 },
+  { chapter: 44, part: 4 },
+  { chapter: 45, part: 4 },
+  { chapter: 46, part: 4 },
+  { chapter: 47, part: 4 },
+  { chapter: 48, part: 4 },
+  { chapter: 49, part: 4 },
+  { chapter: 50, part: 4 },
+  { chapter: 51, part: 4 },
+  { chapter: 52, part: 4 },
+  { chapter: 53, part: 4 },
+  { chapter: 54, part: 4 },
+  { altName: 'Interlude 7', chapter: 54.1, part: 4 },
+  { altName: 'Interlude 8', chapter: 54.2, part: 4 },
+  { chapter: 55, part: 5 },
+  { chapter: 56, part: 5 },
+  { chapter: 57, part: 5 },
+  { chapter: 58, part: 5 },
+  { chapter: 59, part: 5 },
+  { chapter: 60, part: 5 },
+  { chapter: 61, part: 5 },
+  { chapter: 62, part: 5 },
+  { chapter: 63, part: 5 },
+  { chapter: 64, part: 5 },
+  { chapter: 65, part: 5 },
+  { chapter: 66, part: 5 },
+  { chapter: 67, part: 5 },
+  { chapter: 68, part: 5 },
+  { altName: 'Interlude 9', chapter: 68.1, part: 5 },
+  { altName: 'Interlude 10', chapter: 68.2, part: 5 },
+  { chapter: 69, part: 6 },
+  { chapter: 70, part: 6 },
+  { chapter: 71, part: 6 },
+  { chapter: 72, part: 6 },
+  { chapter: 73, part: 6 },
+  { chapter: 74, part: 6 },
+  { chapter: 75, part: 6 },
+  { chapter: 76, part: 6 },
+  { chapter: 77, part: 6 },
+  { altName: 'Interlude 11', chapter: 77.1, part: 6 },
+  { altName: 'Interlude 12', chapter: 77.2, part: 6 },
+  { chapter: 78, part: 7 },
+  { chapter: 79, part: 7 },
+  { chapter: 80, part: 7 },
+  { chapter: 81, part: 7 },
+  { chapter: 82, part: 7 },
+  { chapter: 83, part: 7 },
+  { chapter: 84, part: 7 },
+  { chapter: 85, part: 7 },
+  { chapter: 86, part: 7 },
+  { chapter: 87, part: 7 },
+  { altName: 'Interlude 13', chapter: 87.1, part: 7 },
+  { altName: 'Interlude 14', chapter: 87.2, part: 7 },
+  { chapter: 88, part: 8 },
+  { chapter: 89, part: 8 },
+  { chapter: 90, part: 8 },
+  { chapter: 91, part: 8 },
+  { chapter: 92, part: 8 },
+  { chapter: 93, part: 8 },
+  { chapter: 94, part: 8 },
+  { chapter: 95, part: 8 },
+  { chapter: 96, part: 8 },
+  { chapter: 97, part: 8 },
+  { chapter: 98, part: 8 },
+  { chapter: 99, part: 8 },
+  { altName: 'Interlude 15', chapter: 99.1, part: 8 },
+  { altName: 'Interlude 16', chapter: 99.2, part: 8 },
+  { chapter: 100, part: 9 },
+  { chapter: 101, part: 9 },
+  { chapter: 102, part: 9 },
+  { chapter: 103, part: 9 },
+  { chapter: 104, part: 9 },
+  { chapter: 105, part: 9 },
+  { chapter: 106, part: 9 },
+  { chapter: 107, part: 9 },
+  { chapter: 108, part: 9 },
+  { chapter: 109, part: 9 },
+  { chapter: 110, part: 9 },
+  { chapter: 111, part: 9 },
+  { chapter: 112, part: 9 },
+  { chapter: 113, part: 9 },
+  { chapter: 114, part: 9 },
+  { chapter: 115, part: 9 },
+  { chapter: 116, part: 9 },
+  { chapter: 117, part: 9 },
+  { chapter: 118, part: 9 },
+  { chapter: 119, part: 9 },
+  { chapter: 120, part: 9 },
+  { chapter: 121, part: 9 },
+  { chapter: 122, part: 9 },
+  { chapter: 123, part: 9 },
+  { chapter: 124, part: 9 },
+  { chapter: 125, part: 9 },
+  { altName: 'Interlude 17', chapter: 125.1, part: 9 },
+  { altName: 'Interlude 18', chapter: 125.2, part: 9 },
+  { chapter: 126, part: 10 },
+  { chapter: 127, part: 10 },
+  { chapter: 128, part: 10 },
+  { chapter: 129, part: 10 },
+  { chapter: 130, part: 10 },
+  { chapter: 131, part: 10 },
+  { chapter: 132, part: 10 },
+  { chapter: 133, part: 10 },
+  { chapter: 134, part: 10 },
+  { chapter: 135, part: 10 },
+  { chapter: 136, part: 10 },
+  { chapter: 137, part: 10 },
+  { chapter: 138, part: 10 },
+  { chapter: 139, part: 10 },
+  { chapter: 140, part: 10 },
+  { chapter: 141, part: 10 },
+  { chapter: 142, part: 10 },
+  { chapter: 143, part: 10 },
+  { chapter: 144, part: 10 },
+  { chapter: 145, part: 10 },
+  { chapter: 146, part: 10 },
+  { chapter: 147, part: 10 },
+  { altName: 'Epilogue', chapter: 147.1, part: 10 },
+  { altName: 'Postlude', chapter: 147.2, part: 10 },
+];
+
 export const characters: Character[] =[
   {
     name: 'Kaladin',
@@ -686,6 +922,12 @@ export const books: Installment[] = [
     type: MediaType.Book,
     image: 'https://uploads.coppermind.net/thumb/RoW_US_cover.jpg/400px-RoW_US_cover.jpg',
     chapters: rhythmOfWarChapterList
+  },
+  {
+    title: 'Wind and Truth',
+    type: MediaType.Book,
+    image: 'https://uploads.coppermind.net/thumb/WaT_US_Cover.jpg/400px-WaT_US_Cover.jpg',
+    chapters: windAndTruthChapterList
   }
 ];
 
@@ -714,7 +956,8 @@ export const STORMLIGHT_DATA: DataBundle = {
         1: [1].map(i => theWayOfKingsChapterList[i]),
         2: [0].map(i => wordsOfRadianceChapterList[i]),
         4: [0].map(i => oathbringerChapterList[i]),
-        6: [0].map(i => rhythmOfWarChapterList[i])
+        6: [0].map(i => rhythmOfWarChapterList[i]),
+        7: [0].map(i => windAndTruthChapterList[i])
       },
       description: `The Assassination of Gavilar was an assassination performed by Szeth-son-son-Vallano on orders from the Parshendi. It was a major turning point in Alethkar's history, leading to the War of Reckoning and most of the events in the Stormlight Archive.`,
       wikiLink: 'Assassination_of_Gavilar',
@@ -804,7 +1047,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => oathbringerChapterList[i]),
         6: [
           11, 14, 21, 47, 86
-        ].map(i => rhythmOfWarChapterList[i])
+        ].map(i => rhythmOfWarChapterList[i]),
+        7: [
+          0
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
       wikiLink: 'Kholinar',
@@ -1095,7 +1341,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => edgedancerChapterList[i]),
         4: [
           71, 
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        7: [
+          13,
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `Azimir is the capital city of Azir, and the seat of the Prime Aqasix, the leader of the Azish Empire.`,
       confirmed: true
@@ -1130,7 +1379,10 @@ export const STORMLIGHT_DATA: DataBundle = {
           106, 107, 108, 112, 114, 115, 116,
           117, 118, 119, 120, 121, 122, 123,
           125, 126, 128
-        ].map(i => rhythmOfWarChapterList[i])
+        ].map(i => rhythmOfWarChapterList[i]),
+        7: [
+          1, 2, 4, 6, 8, 9, 10, 12, 13
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
       confirmed: true
@@ -1375,7 +1627,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         6: [
           39, 84, 87, 91, 96, 99, 102, 103,
           127
-        ].map(i => rhythmOfWarChapterList[i])
+        ].map(i => rhythmOfWarChapterList[i]),
+        7: [
+          1, 3, 5, 14
+        ].map(i => windAndTruthChapterList[i])
       },
       wikiLink: 'Lasting_Integrity',
       description: `Lasting Integrity is the honorspren capital in Shadesmar. The fortress is located in the southern section of the Sea of Souls, nearby to the Nexus of Imagination, the Expanse of Vibrance, and Brilliance Eternal. There is a known caravan path that runs from Nameless, past Lasting Integrity, and onwards towards the Expanse of Vibrance.`,
@@ -1393,6 +1648,19 @@ export const STORMLIGHT_DATA: DataBundle = {
       },
       wikiLink: 'Emul',
       description: `Emul is a Makabaki kingdom located in southwestern Roshar during the Era of Solitude. The citizens of Emul are referred to as Emuli. Traditionally a rather independent kingdom, the Desolation and war with Tukar has greatly weakened Emul and left it dependent on others for aid.`,
+      confirmed: true
+    },
+    {
+      title: 'Tu Bayla',
+      coordinates: [496.5, 920.5],
+      type: 'region',
+      appearances: {
+        7: [
+          15
+        ].map(i => windAndTruthChapterList[i])
+      },
+      wikiLink: 'Tu_Bayla',
+      description: `Tu Bayla was formed from parts of the Silver Kingdoms of Sela Tales and Valhav.`,
       confirmed: true
     },
     {
@@ -4925,6 +5193,168 @@ export const STORMLIGHT_DATA: DataBundle = {
       ]
     },
 
-    
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[6],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [381, 802],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[6],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [381, 802],
+        [362, 802]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[7],
+      confirmed: true,
+      coordinates: [
+        [198.5, 629],
+        [227, 631]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[7],
+      confirmed: true,
+      coordinates: [
+        [198.5, 629],
+        [227, 631]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [227, 631],
+        [290, 645.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[8],
+      confirmed: true,
+      coordinates: [
+        [227, 631],
+        [290, 645.5]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [290, 645.5],
+        [291, 645.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[9],
+      confirmed: true,
+      coordinates: [
+        [290, 645.5],
+        [291, 645.5]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[11],
+      confirmed: true,
+      coordinates: [
+        [291, 645.5],
+        [313.5, 640]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[11],
+      confirmed: true,
+      coordinates: [
+        [291, 645.5],
+        [313.5, 640]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [313.5, 640],
+        [332.5, 643],
+        [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Adolin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [313.5, 640],
+        [332.5, 643],
+        [362, 802]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [332.5, 643],
+        [337, 629.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[13],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [332.5, 643],
+        [337, 629.5]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[15],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [496.5, 920.5]
+      ]
+    },
   ]
 }; 
