@@ -1137,7 +1137,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => oathbringerChapterList[i]),
         6: [
           9, 10, 18, 68, 82, 95, 97, 104, 126
-        ].map(i => rhythmOfWarChapterList[i])
+        ].map(i => rhythmOfWarChapterList[i]),
+        7: [
+          23, 25, 27
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `Narak, also known historically as Stormseat, was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning it serves as the home of the listeners.`,
       confirmed: true
@@ -1211,10 +1214,25 @@ export const STORMLIGHT_DATA: DataBundle = {
       appearances: {
         1: [
           theWayOfKingsChapterList[33]
-        ]
+        ],
+        7: [
+          21, 24
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `Shinovar is a nation on the western mainland of Roshar. Due to the mountains separating it from the rest of the continent, Shinovar is distinct both ecologically and culturally from the rest of Roshar. Shinovar natives are known as the Shin.`,
       confirmed: true
+    },
+    {
+      title: 'Clearmount',
+      coordinates: [401, 388],
+      type: 'town',
+      appearances: {
+        7: [
+          26
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `Clearmount is a coastal farming town in Shinovar on Roshar and the home of Szeth.`,
+      confirmed: false
     },
     {
       title: 'Kasitor',
@@ -1343,7 +1361,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           71, 
         ].map(i => oathbringerChapterList[i]),
         7: [
-          13,
+          13, 16
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Azimir is the capital city of Azir, and the seat of the Prime Aqasix, the leader of the Azish Empire.`,
@@ -1381,7 +1399,8 @@ export const STORMLIGHT_DATA: DataBundle = {
           125, 126, 128
         ].map(i => rhythmOfWarChapterList[i]),
         7: [
-          1, 2, 4, 6, 8, 9, 10, 12, 13
+          1, 2, 4, 6, 8, 9, 10, 12, 13, 16,
+          17, 18, 19, 20, 22, 23, 24, 23
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
@@ -1402,7 +1421,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => dawnshardChapterList[i]),
         6: [
           80
-        ].map(i => rhythmOfWarChapterList[i])
+        ].map(i => rhythmOfWarChapterList[i]),
+        7: [
+          16
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `Thaylen City is located on the northwestern coast of the largest of the islands forming Thaylenah. It sits on the shores of Longbrow's Straits, a strip of ocean dividing Thaylenah from the Rosharan mainland. The city was built inside a massive natural lait to protect it from highstorms.`,
       confirmed: true
@@ -5324,6 +5346,17 @@ export const STORMLIGHT_DATA: DataBundle = {
     },
 
     {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[23],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [259.5, 1429]
+      ]
+    },
+
+    {
       character: characters[CharacterIndex.Kaladin],
       installment: books[6],
       chapter: windAndTruthChapterList[13],
@@ -5354,6 +5387,71 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [
         [362, 802],
         [496.5, 920.5]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [337, 629.5],
+        [341.5, 603],
+        [345, 579.5],
+        [343, 556],
+        [345, 524.5],
+        [344.5, 507.5],
+        [346.5, 489],
+        [349, 473],
+        [351.5, 462],
+        [359.5, 444.5],
+        [368.5, 430],
+        [376, 419.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[21],
+      confirmed: true,
+      coordinates: [
+        [337, 629.5],
+        [341.5, 603],
+        [345, 579.5],
+        [343, 556],
+        [345, 524.5],
+        [344.5, 507.5],
+        [346.5, 489],
+        [349, 473],
+        [351.5, 462],
+        [359.5, 444.5],
+        [368.5, 430],
+        [376, 419.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[24],
+      confirmed: true,
+      coordinates: [
+        [376, 419.5],
+        [379.5, 413.5],
+        [383.5, 405],
+        // [393, 393.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[24],
+      confirmed: true,
+      coordinates: [
+        [376, 419.5],
+        [379.5, 413.5],
+        [383.5, 405],
+        // [393, 393.5]
       ]
     },
   ]
