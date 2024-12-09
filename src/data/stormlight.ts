@@ -1082,7 +1082,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         ].map(i => theWayOfKingsChapterList[i]),
         4: [
           136
-        ].map(i => oathbringerChapterList[i])
+        ].map(i => oathbringerChapterList[i]),
+        7: [
+          48
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `Kharbranth, the City of Bells, is an independent city-state on Roshar, ruled by Queen Savrahalidem. It is one of the five Vorin nations and home to the Palanaeum, the largest library on Roshar. Kharbranth is known for the quality of its hospitals, and people come from all over the world to study medicine from Kharbranth's surgeons.`,
       confirmed: true
@@ -1521,7 +1524,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           71, 
         ].map(i => oathbringerChapterList[i]),
         7: [
-          13, 16, 38, 41, 43, 44, 45, 46
+          13, 16, 38, 41, 43, 44, 45, 46, 47
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Azimir is the capital city of Azir, and the seat of the Prime Aqasix, the leader of the Azish Empire.`,
@@ -5580,6 +5583,17 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [
         [496.5, 920.5],
         [513, 1363.5]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[48],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [235.5, 1006.5]
       ]
     },
 
