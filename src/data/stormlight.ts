@@ -1240,7 +1240,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'point of interest',
       appearances: {
         7: [
-          44, 45
+          44, 45, 46
         ].map(i => windAndTruthChapterList[i])
       },
       description: `The Stoneward Monastery is a Shinovar monastery dedicated to the Herald Talmut, or Taln.`,
@@ -1373,7 +1373,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           71, 
         ].map(i => oathbringerChapterList[i]),
         7: [
-          13, 16, 38, 41, 43, 44, 45
+          13, 16, 38, 41, 43, 44, 45, 46
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Azimir is the capital city of Azir, and the seat of the Prime Aqasix, the leader of the Azish Empire.`,
