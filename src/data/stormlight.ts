@@ -1247,6 +1247,154 @@ export const STORMLIGHT_DATA: DataBundle = {
       confirmed: true
     },
     {
+      title: 'Willshaper Monastery',
+      coordinates: [474.5, 427],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Willshaper Monastery is a Shinovar monastery dedicated to the Herald Kalak.`,
+      confirmed: true
+    },
+    {
+      title: 'Koring',
+      coordinates: [473.5, 426],
+      type: 'town',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      // description: `Koring is a town in Shinovar on Roshar.`,
+      confirmed: true
+    },
+
+    {
+      title: 'Elsecaller Monastery',
+      coordinates: [458.5, 368.5],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Elsecaller Monastery is a Shinovar monastery dedicated to the Herald Battar.`,
+      confirmed: true
+    },
+    {
+      title: 'Mokdown',
+      coordinates: [457.5, 367.5],
+      type: 'town',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      // description: `Mokdown is a town in Shinovar on Roshar.`,
+      confirmed: true
+    },
+
+    {
+      title: 'Lightweaver Monastery',
+      coordinates: [496, 316],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Lightweaver Monastery is a Shinovar monastery dedicated to the Herald Shalash.`,
+      confirmed: true
+    },
+    {
+      title: 'Edgedancer Monastery',
+      coordinates: [507.5, 386],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Edgedancer Monastery is a Shinovar monastery dedicated to the Herald Vedel.`,
+      confirmed: true
+    },
+    {
+      title: 'Dustbringer Monastery',
+      coordinates: [529.5, 438.5],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Dustbringer Monastery is a Shinovar monastery dedicated to the Herald Nale.`,
+      confirmed: true
+    },
+    {
+      title: 'Skybreaker Monastery',
+      coordinates: [559.5, 420],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Skybreaker Monastery is a Shinovar monastery dedicated to the Herald Jezrien.`,
+      confirmed: true
+    },
+    {
+      title: 'Truthwatcher Monastery',
+      coordinates: [547.5, 314.5],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Truthwatcher Monastery is a Shinovar monastery dedicated to the Herald Paliah.`,
+      confirmed: true
+    },
+    {
+      title: 'Windrunner Monastery',
+      coordinates: [583.5, 393.5],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Windrunner Monastery is a Shinovar monastery dedicated to the Herald Jezrien.`,
+      confirmed: true
+    },
+    {
+      title: 'Bondsmith Monastery',
+      coordinates: [602, 407],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      description: `The Bondsmith Monastery is a Shinovar monastery dedicated to the Herald Ishar.`,
+      confirmed: true
+    },
+
+    {
+      title: 'Ayabiza',
+      coordinates: [595.5, 378.5],
+      type: 'city',
+      appearances: {
+        7: [
+          
+        ].map(i => windAndTruthChapterList[i])
+      },
+      // description: `Ayabiza is a city in Shinovar on Roshar.`,
+      confirmed: true
+    },
+
+    {
       title: 'Kasitor',
       coordinates: [725, 442.5],
       type: 'city',
