@@ -1049,12 +1049,23 @@ export const STORMLIGHT_DATA: DataBundle = {
           11, 14, 21, 47, 86
         ].map(i => rhythmOfWarChapterList[i]),
         7: [
-          0, 36, 37
+          0, 36, 37, 50, 55, 61, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Kholinar is the capital city of the Kholin princedom in Alethkar, Roshar. It's symmetrical in shape, built around enormous stone formations known as the windblades for their unmistakable shape.`,
       wikiLink: 'Kholinar',
       confirmed: true
+    },
+    {
+      title: 'Oathpact',
+      coordinates: [415.5, 499.5],
+      type: 'event',
+      appearances: {
+        7: [
+          70, 71, 72, 73,
+        ].map(i => windAndTruthChapterList[i])
+      },
+      confirmed: false
     },
     {
       title: `Amaram's Border Skirmish`,
@@ -1084,7 +1095,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           136
         ].map(i => oathbringerChapterList[i]),
         7: [
-          48
+          48, 62, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Kharbranth, the City of Bells, is an independent city-state on Roshar, ruled by Queen Savrahalidem. It is one of the five Vorin nations and home to the Palanaeum, the largest library on Roshar. Kharbranth is known for the quality of its hospitals, and people come from all over the world to study medicine from Kharbranth's surgeons.`,
@@ -1120,7 +1131,10 @@ export const STORMLIGHT_DATA: DataBundle = {
         6: [
           2, 4, 5, 6, 7, 8, 9, 54, 58, 63,
           74, 90, 127, 130
-        ].map(i => rhythmOfWarChapterList[i])
+        ].map(i => rhythmOfWarChapterList[i]),
+        7: [
+          60, 80, 82
+        ].map(i => windAndTruthChapterList[i])
       },
       description: `The Shattered Plains are a region of Roshar located on the border of the Frostlands and Unclaimed Hills, in the former territory of the Silver Kingdom of Natanatan. They are named for their topography, consisting of a huge number of plateaus of various sizes surrounded on all sides by deep chasms.`,
       confirmed: true
@@ -1142,7 +1156,8 @@ export const STORMLIGHT_DATA: DataBundle = {
           9, 10, 18, 68, 82, 95, 97, 104, 126
         ].map(i => rhythmOfWarChapterList[i]),
         7: [
-          23, 25, 27, 28, 30, 31
+          23, 25, 27, 28, 30, 31, 53, 64, 69, 
+          71, 75, 84, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Narak, also known historically as Stormseat, was the capital city of the historic Silver Kingdom of Natanatan on Roshar. During the War of Reckoning it serves as the home of the listeners.`,
@@ -1219,7 +1234,8 @@ export const STORMLIGHT_DATA: DataBundle = {
           theWayOfKingsChapterList[33]
         ],
         7: [
-          21, 24, 30, 35
+          21, 24, 30, 35, 49, 52, 55, 56, 58,
+          59, 63, 66, 67, 78, 84, 86
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Shinovar is a nation on the western mainland of Roshar. Due to the mountains separating it from the rest of the continent, Shinovar is distinct both ecologically and culturally from the rest of Roshar. Shinovar natives are known as the Shin.`,
@@ -1231,7 +1247,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'town',
       appearances: {
         7: [
-          26, 29, 39, 40, 42
+          26, 29, 39, 40, 42, 54, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Clearmount is a coastal farming town in Shinovar on Roshar and the home of Szeth.`,
@@ -1243,7 +1259,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'point of interest',
       appearances: {
         7: [
-          44, 45, 46
+          44, 45, 46, 57, 65, 76, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `The Stoneward Monastery is a Shinovar monastery dedicated to the Herald Talmut, or Taln.`,
@@ -1255,7 +1271,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'point of interest',
       appearances: {
         7: [
-          
+          51, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `The Willshaper Monastery is a Shinovar monastery dedicated to the Herald Kalak.`,
@@ -1267,7 +1283,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'town',
       appearances: {
         7: [
-          
+          51, 
         ].map(i => windAndTruthChapterList[i])
       },
       // description: `Koring is a town in Shinovar on Roshar.`,
@@ -1280,7 +1296,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'point of interest',
       appearances: {
         7: [
-          
+          74, 83, 85, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `The Elsecaller Monastery is a Shinovar monastery dedicated to the Herald Battar.`,
@@ -1292,7 +1308,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'town',
       appearances: {
         7: [
-          
+          72, 74, 83, 85, 
         ].map(i => windAndTruthChapterList[i])
       },
       // description: `Mokdown is a town in Shinovar on Roshar.`,
@@ -1305,7 +1321,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       type: 'point of interest',
       appearances: {
         7: [
-          
+          79, 80, 81, 82
         ].map(i => windAndTruthChapterList[i])
       },
       description: `The Lightweaver Monastery is a Shinovar monastery dedicated to the Herald Shalash.`,
@@ -1395,6 +1411,18 @@ export const STORMLIGHT_DATA: DataBundle = {
       },
       // description: `Ayabiza is a city in Shinovar on Roshar.`,
       confirmed: true
+    },
+
+    {
+      title: `Venli's Camp`,
+      coordinates: [248.5, 1471.5],
+      type: 'point of interest',
+      appearances: {
+        7: [
+          63, 64, 66, 68
+        ].map(i => windAndTruthChapterList[i])
+      },
+      confirmed: false
     },
 
     {
@@ -1491,7 +1519,8 @@ export const STORMLIGHT_DATA: DataBundle = {
       coordinates: [672, 469],
       type: 'region',
       appearances: {
-        2: [14].map(i => wordsOfRadianceChapterList[i])
+        2: [14].map(i => wordsOfRadianceChapterList[i]),
+        7: [88].map(i => windAndTruthChapterList[i])
       },
       description: `Iri is a kingdom in northwestern Roshar. Prior to the Recreance, it was one of the Silver Kingdoms. People from Iri are called Iriali. Iri is ruled by three monarchs, currently two kings and a queen. The Iriali queen has authority over foreign policy.`,
       wikiLink: 'Iri',
@@ -1524,7 +1553,8 @@ export const STORMLIGHT_DATA: DataBundle = {
           71, 
         ].map(i => oathbringerChapterList[i]),
         7: [
-          13, 16, 38, 41, 43, 44, 45, 46, 47
+          13, 16, 38, 41, 43, 44, 45, 46, 47,
+          53, 56, 58, 60, 68, 71, 75, 86, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Azimir is the capital city of Azir, and the seat of the Prime Aqasix, the leader of the Azish Empire.`,
@@ -1564,7 +1594,7 @@ export const STORMLIGHT_DATA: DataBundle = {
         7: [
           1, 2, 4, 6, 8, 9, 10, 12, 13, 16,
           17, 18, 19, 20, 22, 23, 24, 23, 24,
-          25, 27, 31, 32, 33, 34, 35
+          25, 27, 31, 32, 33, 34, 35, 87
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Urithiru is a tower-city on Roshar that functioned as the home of the Knights Radiant and the central point of the Silver Kingdoms during the Heraldic Epochs.`,
@@ -1587,7 +1617,7 @@ export const STORMLIGHT_DATA: DataBundle = {
           80
         ].map(i => rhythmOfWarChapterList[i]),
         7: [
-          16
+          16, 69, 79, 81, 
         ].map(i => windAndTruthChapterList[i])
       },
       description: `Thaylen City is located on the northwestern coast of the largest of the islands forming Thaylenah. It sits on the shores of Longbrow's Straits, a strip of ocean dividing Thaylenah from the Rosharan mainland. The city was built inside a massive natural lait to protect it from highstorms.`,
