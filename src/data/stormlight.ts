@@ -396,7 +396,6 @@ const dawnshardChapterList: Chapter[] = [
   { altName: 'Epilogue', chapter: 19.1 },
 ];
 
-
 const rhythmOfWarChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
   { chapter: 1, part: 1 },
@@ -530,71 +529,6 @@ const rhythmOfWarChapterList: Chapter[] = [
   { chapter: 117, part: 5 },
   { altName: 'Epilogue', chapter: 117.1, part: 5 },
 ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const windAndTruthChapterList: Chapter[] = [
   { altName: 'Prologue', chapter: 0, part: 0 },
@@ -863,6 +797,20 @@ export const characters: Character[] =[
     wikiLink: 'Lift',
     firstAppearance: { 2: wordsOfRadianceChapterList[67] }
   },
+  {
+    name: 'Sigzil',
+    image: 'https://uploads.coppermind.net/Sigzil_Shuravf.jpg',
+    color: 'rgb(247,108,7)',
+    wikiLink: 'Sigzil',
+    firstAppearance: { 7: windAndTruthChapterList[0] }
+  },
+  {
+    name: 'Renarin',
+    image: 'https://uploads.coppermind.net/Renarin_Shuravf.jpg',
+    color: 'rgb(176,0,147)',
+    wikiLink: 'Renarin_Kholin',
+    firstAppearance: { 7: windAndTruthChapterList[0] }
+  },
 ];
 
 enum CharacterIndex {
@@ -884,6 +832,9 @@ enum CharacterIndex {
   'Eshonai' = 11, // bk1 ch68
   'Venli' = 12, //bk2 int1
   'Lift' = 13, // bk2 int9
+
+  'Sigzil' = 14,
+  'Renarin' = 15
 };
 
 export const books: Installment[] = [
@@ -5694,7 +5645,7 @@ export const STORMLIGHT_DATA: DataBundle = {
     {
       character: characters[CharacterIndex.Taravangian],
       installment: books[6],
-      chapter: windAndTruthChapterList[48],
+      chapter: windAndTruthChapterList[47],
       confirmed: false,
       coordinates: [
         [513, 1363.5],
@@ -5888,5 +5839,1096 @@ export const STORMLIGHT_DATA: DataBundle = {
         [396.5, 426.5]
       ]
     },
+
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[51],
+      confirmed: true,
+      coordinates: [
+        [396.5, 426.5],
+        [473.5, 426], [474.5, 427],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[58],
+      confirmed: true,
+      coordinates: [
+        [474.5, 427],
+        [476.5, 396], [473, 380], [467.5, 374],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[72],
+      confirmed: true,
+      coordinates: [
+        [467.5, 374],
+        [457.5, 367.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[79],
+      confirmed: true,
+      coordinates: [
+        [457.5, 367.5],
+        [462, 333], [479.5, 317.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[80],
+      confirmed: true,
+      coordinates: [
+        [479.5, 317.5],
+        [496, 316],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[82],
+      confirmed: true,
+      coordinates: [
+        [496, 316],
+        [494.5, 350.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[98],
+      confirmed: true,
+      coordinates: [
+        [494.5, 350.5], 
+        [511, 378], [522, 402], [519.5, 419.5], [529.5, 438.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[109],
+      confirmed: true,
+      coordinates: [
+        [529.5, 438.5],
+        [543, 431.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[119],
+      confirmed: true,
+      coordinates: [
+        [543, 431.5],
+        [551.5, 426],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[124],
+      confirmed: true,
+      coordinates: [
+        [551.5, 426],
+        [559.5, 420],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[144],
+      confirmed: true,
+      coordinates: [
+        [559.5, 420],
+        [583.5, 393.5], [589.5, 397.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[146],
+      confirmed: true,
+      coordinates: [
+        [589.5, 397.5],
+        [595, 401],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Szeth],
+      installment: books[6],
+      chapter: windAndTruthChapterList[147],
+      confirmed: true,
+      coordinates: [
+        [595, 401],
+        [602, 407],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[51],
+      confirmed: true,
+      coordinates: [
+        [396.5, 426.5],
+        [473.5, 426], [474.5, 427],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[58],
+      confirmed: true,
+      coordinates: [
+        [474.5, 427],
+        [476.5, 396], [473, 380], [467.5, 374],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[72],
+      confirmed: true,
+      coordinates: [
+        [467.5, 374],
+        [457.5, 367.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[79],
+      confirmed: true,
+      coordinates: [
+        [457.5, 367.5],
+        [462, 333], [479.5, 317.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[80],
+      confirmed: true,
+      coordinates: [
+        [479.5, 317.5],
+        [496, 316],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[82],
+      confirmed: true,
+      coordinates: [
+        [496, 316],
+        [494.5, 350.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[98],
+      confirmed: true,
+      coordinates: [
+        [494.5, 350.5], 
+        [511, 378], [522, 402], [519.5, 419.5], [529.5, 438.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[109],
+      confirmed: true,
+      coordinates: [
+        [529.5, 438.5],
+        [543, 431.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[119],
+      confirmed: true,
+      coordinates: [
+        [543, 431.5],
+        [551.5, 426],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[124],
+      confirmed: true,
+      coordinates: [
+        [551.5, 426],
+        [559.5, 420],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[144],
+      confirmed: true,
+      coordinates: [
+        [559.5, 420],
+        [583.5, 393.5], [589.5, 397.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[146],
+      confirmed: true,
+      coordinates: [
+        [589.5, 397.5],
+        [595, 401],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Kaladin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[147],
+      confirmed: true,
+      coordinates: [
+        [595, 401],
+        [602, 407],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[49],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [421, 490.5],
+        [442, 447],
+        [396.5, 426.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[63],
+      confirmed: false,
+      coordinates: [
+        [396.5, 426.5],
+        [442, 447],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[70],
+      confirmed: false,
+      coordinates: [
+        [442, 447],
+        [415.5, 499.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[84],
+      confirmed: false,
+      coordinates: [
+        [415.5, 499.5],
+        [498, 381],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[87],
+      confirmed: false,
+      coordinates: [
+        [498, 381],
+        [602, 407],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[94],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [795.5, 520.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[97],
+      confirmed: false,
+      coordinates: [
+        [795.5, 520.5],
+        [764.5, 519.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[102],
+      confirmed: false,
+      coordinates: [
+        [764.5, 519.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[105],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [273.5, 1412.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[113],
+      confirmed: false,
+      coordinates: [
+        [273.5, 1412.5],
+        [392, 1337.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[144],
+      confirmed: false,
+      coordinates: [
+        [392, 1337.5],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Dalinar],
+      installment: books[6],
+      chapter: windAndTruthChapterList[160],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [431.5, 430],
+        [513, 1363.5],
+        [431.5, 430],
+        [362, 802]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[49],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [442, 447],
+        [396.5, 426.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[63],
+      confirmed: false,
+      coordinates: [
+        [396.5, 426.5],
+        [442, 447],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[70],
+      confirmed: false,
+      coordinates: [
+        [442, 447],
+        [415.5, 499.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[84],
+      confirmed: false,
+      coordinates: [
+        [415.5, 499.5],
+        [498, 381],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[87],
+      confirmed: false,
+      coordinates: [
+        [498, 381],
+        [602, 407],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[94],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [748.5, 498.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[97],
+      confirmed: false,
+      coordinates: [
+        [748.5, 498.5],
+        [795.5, 520.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[117],
+      confirmed: false,
+      coordinates: [
+        [795.5, 520.5],
+        [495.5, 1446.5],
+        [513, 1363.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Navani],
+      installment: books[6],
+      chapter: windAndTruthChapterList[121],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [362, 802]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[50],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[55],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [396.5, 426.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[82],
+      confirmed: false,
+      coordinates: [
+        [396.5, 426.5],
+        [273.5, 1412.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[84],
+      confirmed: false,
+      coordinates: [
+        [273.5, 1412.5],
+        [498, 381],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[91],
+      confirmed: false,
+      coordinates: [
+        [498, 381],
+        [553, 1099],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[96],
+      confirmed: false,
+      coordinates: [
+        [553, 1099],
+        [259.5, 1429],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[98],
+      confirmed: false,
+      coordinates: [
+        [259.5, 1429],
+        [190, 674],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[98],
+      confirmed: false,
+      coordinates: [
+        [190, 674],
+        [795.5, 520.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[107],
+      confirmed: false,
+      coordinates: [
+        [795.5, 520.5],
+        [553, 1099],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[111],
+      confirmed: false,
+      coordinates: [
+        [553, 1099],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[134],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [152, 1070],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[137],
+      confirmed: false,
+      coordinates: [
+        [152, 1070],
+        [553, 1099],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[158],
+      confirmed: false,
+      coordinates: [
+        [553, 1099],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Shallan],
+      installment: books[6],
+      chapter: windAndTruthChapterList[165],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [485.5, 1149]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Moash],
+      installment: books[6],
+      chapter: windAndTruthChapterList[61],
+      confirmed: false,
+      coordinates: [
+        [395, 808],
+        [513, 1363.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      installment: books[6],
+      chapter: windAndTruthChapterList[75],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [292, 1434.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Moash],
+      installment: books[6],
+      chapter: windAndTruthChapterList[93],
+      confirmed: false,
+      coordinates: [
+        [292, 1434.5],
+        [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      installment: books[6],
+      chapter: windAndTruthChapterList[69],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049],
+        // [362, 802],
+        // [138, 1049],
+        // [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      installment: books[6],
+      chapter: windAndTruthChapterList[103],
+      confirmed: true,
+      coordinates: [
+        [138, 1049],
+        [362, 802],
+        // [138, 1049],
+        // [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      installment: books[6],
+      chapter: windAndTruthChapterList[124],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [138, 1049],
+        // [362, 802]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Jasnah],
+      installment: books[6],
+      chapter: windAndTruthChapterList[147],
+      confirmed: true,
+      coordinates: [
+        [138, 1049],
+        [362, 802]
+      ]
+    },
+    
+    {
+      character: characters[CharacterIndex.Venli],
+      installment: books[6],
+      chapter: windAndTruthChapterList[63],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [248.5, 1471.5]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      installment: books[6],
+      chapter: windAndTruthChapterList[68],
+      confirmed: true,
+      coordinates: [
+        [248.5, 1471.5],
+        [253.5, 1459],
+        // [255.5, 1450.5],
+        // [257, 1439],
+        // [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      installment: books[6],
+      chapter: windAndTruthChapterList[80],
+      confirmed: true,
+      coordinates: [
+        [253.5, 1459],
+        [255.5, 1450.5],
+        // [257, 1439],
+        // [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      installment: books[6],
+      chapter: windAndTruthChapterList[90],
+      confirmed: true,
+      coordinates: [
+        [255.5, 1450.5],
+        [257, 1439],
+        // [259.5, 1429]
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Venli],
+      installment: books[6],
+      chapter: windAndTruthChapterList[103],
+      confirmed: true,
+      coordinates: [
+        [257, 1439],
+        [259.5, 1429]
+      ]
+    },
+    
+    {
+      character: characters[CharacterIndex.Sigzil],
+      installment: books[6],
+      chapter: windAndTruthChapterList[53],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [259.5, 1429],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sigzil],
+      installment: books[6],
+      chapter: windAndTruthChapterList[75],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [292, 1434.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sigzil],
+      installment: books[6],
+      chapter: windAndTruthChapterList[84],
+      confirmed: true,
+      coordinates: [
+        [292, 1434.5],
+        [259.5, 1429],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sigzil],
+      installment: books[6],
+      chapter: windAndTruthChapterList[134],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Sigzil],
+      installment: books[6],
+      chapter: windAndTruthChapterList[165],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [372, 769], 
+        [385, 735], 
+        [447, 620], 
+        [529, 531], 
+        [606, 471], 
+        [676, 429],
+        [695, 424],
+        [722, 412],
+        [738, 403],
+        [775, 378],
+        [799, 346]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[50],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[55],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [396.5, 426.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[60],
+      confirmed: false,
+      coordinates: [
+        [396.5, 426.5],
+        [273.5, 1412.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[70],
+      confirmed: false,
+      coordinates: [
+        [273.5, 1412.5],
+        [415.5, 499.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[82],
+      confirmed: false,
+      coordinates: [
+        [415.5, 499.5],
+        [273.5, 1412.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[84],
+      confirmed: false,
+      coordinates: [
+        [273.5, 1412.5],
+        [498, 381],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[91],
+      confirmed: false,
+      coordinates: [
+        [498, 381],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[96],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [259.5, 1429],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[98],
+      confirmed: false,
+      coordinates: [
+        [259.5, 1429],
+        [190, 674],
+        [795.5, 520.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[137],
+      confirmed: false,
+      coordinates: [
+        [795.5, 520.5],
+        [273.5, 1412.5],
+        [513, 1363.5],
+        // [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Renarin],
+      installment: books[6],
+      chapter: windAndTruthChapterList[158],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [362, 802],
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[61],
+      confirmed: false,
+      coordinates: [
+        [235.5, 1006.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[62],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [235.5, 1006.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[78],
+      confirmed: false,
+      coordinates: [
+        [235.5, 1006.5],
+        [442, 476],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[89],
+      confirmed: false,
+      coordinates: [
+        [442, 476],
+        [362, 802],
+        [235.5, 1006.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[99],
+      confirmed: false,
+      coordinates: [
+        [235.5, 1006.5],
+        [795.5, 520.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[102],
+      confirmed: false,
+      coordinates: [
+        [795.5, 520.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[103],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[105],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [273.5, 1412.5],
+        [362, 802],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[113],
+      confirmed: false,
+      coordinates: [
+        [362, 802],
+        [392, 1337.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[121],
+      confirmed: false,
+      coordinates: [
+        [392, 1337.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[121],
+      confirmed: false,
+      coordinates: [
+        [392, 1337.5],
+        [513, 1363.5],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[124],
+      confirmed: false,
+      coordinates: [
+        [513, 1363.5],
+        [138, 1049],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Taravangian],
+      installment: books[6],
+      chapter: windAndTruthChapterList[148],
+      confirmed: false,
+      coordinates: [
+        [138, 1049],
+        [362, 802]
+      ]
+    },
+
+    {
+      character: characters[CharacterIndex.Lopen],
+      installment: books[6],
+      chapter: windAndTruthChapterList[119],
+      confirmed: true,
+      coordinates: [
+        [362, 802],
+        [663, 1259],
+        [362, 802],
+        [259.5, 1429],
+      ]
+    },
+    {
+      character: characters[CharacterIndex.Lopen],
+      installment: books[6],
+      chapter: windAndTruthChapterList[134],
+      confirmed: true,
+      coordinates: [
+        [259.5, 1429],
+        [362, 802]
+      ]
+    },
   ]
 }; 
+
+
