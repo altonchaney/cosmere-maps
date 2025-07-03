@@ -2702,7 +2702,7 @@ export const STORMLIGHT_DATA: DataBundle = {
       chapter: oathbringerChapterList[24],
       confirmed: true,
       coordinates: [
-        [235.5, 1006.5],
+        [326, 1076.5],
         [362, 802]
       ]
     },
@@ -2730,11 +2730,6 @@ export const STORMLIGHT_DATA: DataBundle = {
         [544, 1270],
         [521, 1201],
         [497, 1129],
-        // [471, 1067],
-        // [450, 1014],
-        // [427, 951],
-        // [403, 890],
-        // [382, 842],
       ]
     },
     {
@@ -2873,16 +2868,8 @@ export const STORMLIGHT_DATA: DataBundle = {
       chapter: oathbringerChapterList[54],
       confirmed: true,
       coordinates: [
-        // [566.5, 1320.5],
         [558, 1328],
         [553, 1333],
-        // [547, 1338],
-        // [542, 1342.5],
-        // [537, 1347.5],
-        // [529.5, 1353],
-        // [522.5, 1357],
-        // [520, 1358.5],
-        // [513, 1363.5],
       ]
     },
     {
@@ -2917,16 +2904,10 @@ export const STORMLIGHT_DATA: DataBundle = {
       chapter: oathbringerChapterList[57],
       confirmed: true,
       coordinates: [
-        // [566.5, 1320.5],
-        // [558, 1328],
         [553, 1333],
         [547, 1338],
         [542, 1342.5],
         [537, 1347.5],
-        // [529.5, 1353],
-        // [522.5, 1357],
-        // [520, 1358.5],
-        // [513, 1363.5],
       ]
     },
     {

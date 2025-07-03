@@ -233,7 +233,7 @@ export const characters: Character[] =[
   },
   {
     name: 'Marsh',
-    image: 'https://uploads.coppermind.net/thumb/Marsh_by_eyeronis.png/400px-Marsh_by_eyeronis.png',
+    image: 'https://uploads.coppermind.net/thumb/Marsh_Kelsier.jpg/400px-Marsh_Kelsier.jpg',
     color: 'rgb(58,68,75)',
     wikiLink: 'Marsh'
   },
